@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import { StoreProvider } from '@/utils/Store'
+
 import { NextComponentType } from 'next'
 import { SessionProvider, useSession } from 'next-auth/react'
 
@@ -23,7 +23,7 @@ export default function App({ Component, pageProps:{session, ...pageProps} }: Cu
   return (
     <>
     <SessionProvider session={session}>
-    <StoreProvider>
+    
     
       {Component.auth ? (
         <Auth adminOnly={Component.auth.adminOnly}>
@@ -38,7 +38,7 @@ export default function App({ Component, pageProps:{session, ...pageProps} }: Cu
       )}
      
         
-    </StoreProvider>
+    
     </SessionProvider>
     </>
   )
