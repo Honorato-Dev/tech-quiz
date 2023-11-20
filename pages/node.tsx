@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import quizDataNode from '@/utils/quizzDataNode';
+import Layout from '@/components/Layout';
 
 
 
@@ -27,7 +28,8 @@ function NodeJsScreen() {
   };
 
   return (
-    <div className="App">
+    <Layout titlte='Node'>
+      <div className="App">
       {currentQuiz < quizDataNode.length ? (
         <div>
           <h2>Question {currentQuiz + 1}</h2>
@@ -57,6 +59,9 @@ function NodeJsScreen() {
         </div>
       )}
     </div>
+
+    </Layout>
+    
   );
 }
 
