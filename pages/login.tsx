@@ -4,9 +4,10 @@ import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { signIn, useSession } from 'next-auth/react';
 import { toast } from 'react-toastify';
-import { getError } from '@/utils/error';
+
 import { useRouter } from 'next/router';
 import Layout from '@/components/Layout';
+import { getError } from '@/utils/error';
 
 interface FormType {
   email: string;
