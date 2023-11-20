@@ -66,3 +66,4 @@ function NodeJsScreen() {
 }
 
 export default NodeJsScreen;
+NodeJsScreen.auth=true;

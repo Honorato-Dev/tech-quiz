@@ -65,3 +65,4 @@ function JavascriptScreen() {
 }
 
 export default JavascriptScreen;
+JavascriptScreen.auth=true;
