@@ -90,7 +90,7 @@ const Layout = ({children, title}:any) => {
             </div>
           
            </nav>
-          <div className='flex h-20 justify-between shadow-md items-center px-4'>
+          <div className='flex h-20 justify-between  items-center px-4'>
             <div className={bebas.className}>
            <ul className="hidden absolute  left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
               <li><Link className="nav-bar text-sm text-gray-400 hover:text-gray-500" href="/">Home</Link></li>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import quizDataJs from '@/utils/quizzDataJs';
+import Layout from '@/components/Layout';
 
 
 
@@ -27,7 +28,8 @@ function JavascriptScreen() {
   };
 
   return (
-    <div className="App">
+    <Layout title='Javascript'>
+       <div className="App">
       {currentQuiz < quizDataJs.length ? (
         <div>
           <h2>Question {currentQuiz + 1}</h2>
@@ -57,6 +59,8 @@ function JavascriptScreen() {
         </div>
       )}
     </div>
+    </Layout>
+   
   );
 }
 
