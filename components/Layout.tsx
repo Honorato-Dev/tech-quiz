@@ -27,7 +27,7 @@ const Layout = ({children, title}:any) => {
   return (
     <>
         <Head>
-        <title>{title ? title + ' - Barra do Jacuípe':'Barra do Jacuípe'}</title>
+        <title>{title ? title + ' - Tech Quiz':'Tech Quiz'}</title>
         <meta name="description" content="news portal" />
        
         <link rel="icon" href="/favicon.ico" />
@@ -166,7 +166,7 @@ const Layout = ({children, title}:any) => {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Resources</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
                           <Link href="https://flowbite.com/" className="hover:underline">Flowbite</Link>
@@ -177,7 +177,7 @@ const Layout = ({children, title}:any) => {
                   </ul>
               </div>
               <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Follow us</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
                           <Link href="https://github.com/themesberg/flowbite" className="hover:underline ">Github</Link>
@@ -188,7 +188,7 @@ const Layout = ({children, title}:any) => {
                   </ul>
               </div>
               <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Legal</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
                           <Link href="#" className="hover:underline">Política de Privacidade</Link>
