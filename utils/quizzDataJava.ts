@@ -42,58 +42,58 @@ const quizDataJava = [
 
 },
 {
-    question: "",
+    question: "Qual é a expressão mais confiável para testar se os valores de duas variáveis ​​de string são iguais?",
     options: [
-      { text: "", id: "a" },
-      { text: "", id: "b" },
-      { text: "", id: "c" },
-      { text: "", id: "d" },
+      { text: "string1 == string2", id: "a" },
+      { text: "string1 = string2", id: "b" },
+      { text: "string1.matches(string2)", id: "c" },
+      { text: "string1.equals(string2)", id: "d" },
     ],
-    correct: "",
+    correct: "d",
 
 },
 {
-    question: "",
+    question: "Quais são palavras-chave válidas em um descritor de módulo Java (module-info.java)?",
     options: [
-      { text: "", id: "a" },
-      { text: "", id: "b" },
-      { text: "", id: "c" },
-      { text: "", id: "d" },
+      { text: "provides, employs", id: "a" },
+      { text: "imports, exports", id: "b" },
+      { text: "consumes, supplies", id: "c" },
+      { text: "requires, exports", id: "d" },
     ],
-    correct: "",
+    correct: "d",
 
 },
 {
-    question: "",
+    question: "Que tipo de variável mantém um valor constante depois de atribuído?",
     options: [
-      { text: "", id: "a" },
-      { text: "", id: "b" },
-      { text: "", id: "c" },
-      { text: "", id: "d" },
+      { text: "non-static", id: "a" },
+      { text: "static", id: "b" },
+      { text: "final", id: "c" },
+      { text: "private", id: "d" },
     ],
-    correct: "",
+    correct: "c",
 
 },
 {
-    question: "",
+    question: "Se você encontrar UnsupportedClassVersionError, significa que o código estava ___ em uma versão mais recente do Java que o JRE ___.",
     options: [
-      { text: "", id: "a" },
-      { text: "", id: "b" },
-      { text: "", id: "c" },
-      { text: "", id: "d" },
+      { text: "executed; interpreting", id: "a" },
+      { text: "executed; compiling", id: "b" },
+      { text: "compiled; executing", id: "c" },
+      { text: "compiled, translating", id: "d" },
     ],
-    correct: "",
+    correct: "c",
 
 },
 {
-    question: "",
+    question: "Qual palavra-chave permite chamar o construtor de uma classe pai?",
     options: [
-      { text: "", id: "a" },
-      { text: "", id: "b" },
-      { text: "", id: "c" },
-      { text: "", id: "d" },
+      { text: "parent", id: "a" },
+      { text: "super", id: "b" },
+      { text: "this", id: "c" },
+      { text: "new", id: "d" },
     ],
-    correct: "",
+    correct: "b",
 
 },
 
