@@ -5,39 +5,40 @@ const quizDataJava = [
       { text: "protected", id: "b" },
       { text: "no-modifier", id: "c" },
       { text: "public", id: "d" },
-    ]
+    ],
+    correct:"a",
 },
 {
-    question: "",
+    question: "O sistema de tempo de execução inicia seu programa chamando qual função primeiro?",
     options: [
-      { text: "", id: "a" },
-      { text: "", id: "b" },
-      { text: "", id: "c" },
-      { text: "", id: "d" },
+      { text: "print", id: "a" },
+      { text: "iterative", id: "b" },
+      { text: "hello", id: "c" },
+      { text: "main", id: "d" },
     ],
-    correct: "",
+    correct: "d",
 
 },
 {
-    question: "",
+    question: "A programação orientada a objetos é um estilo de programação em que você organiza seu programa em torno de _ e dados, em vez de _ e lógica",
     options: [
-      { text: "", id: "a" },
-      { text: "", id: "b" },
-      { text: "", id: "c" },
-      { text: "", id: "d" },
+      { text: "functions; actions", id: "a" },
+      { text: "objects; actions", id: "b" },
+      { text: "actions; functions", id: "c" },
+      { text: "actions; objects", id: "d" },
     ],
-    correct: "",
+    correct: "b",
 
 },
 {
-    question: "",
+    question: "Qual método pode ser usado para criar uma nova instância de um objeto?",
     options: [
-      { text: "", id: "a" },
-      { text: "", id: "b" },
-      { text: "", id: "c" },
-      { text: "", id: "d" },
+      { text: "another instance", id: "a" },
+      { text: "field", id: "b" },
+      { text: "constructor", id: "c" },
+      { text: "private method", id: "d" },
     ],
-    correct: "",
+    correct: "c",
 
 },
 {
