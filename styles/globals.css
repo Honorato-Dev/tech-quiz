@@ -18,13 +18,13 @@ body {
 }
 
 .primary-button {
-    @apply rounded text-white bg-orange-300 py-2 px-4 shadow outline-none hover:bg-white active:bg-gray-300
+    @apply rounded text-white bg-purple-300 py-2 px-4 shadow outline-none hover:bg-white active:bg-gray-300
   }
   .default-button{
     @apply rounded bg-gray-400 py-2 px-4 text-black shadow outline-none hover:bg-gray-600 active:bg-gray-800
  }
   .login-button {
-    @apply rounded text-white bg-orange-400 py-2 px-4 shadow outline-none hover:bg-orange-500 active:bg-orange-700
+    @apply rounded text-white bg-purple-400 py-2 px-4 shadow outline-none hover:bg-purple-500 active:bg-purple-700
   }
   .delete-button {
     @apply rounded  bg-red-600 py-2 px-4 shadow outline-none hover:bg-red-400 active:bg-red-600;
@@ -33,10 +33,10 @@ body {
     @apply rounded  bg-green-300 py-2 px-4 shadow outline-none hover:bg-green-500 active:bg-green-800;
   }
   .dropdown-link {
-    @apply flex p-2 bg-orange-300 hover:bg-orange-500 bg-opacity-80 hover:bg-opacity-80 ;
+    @apply flex p-2 bg-purple-300 hover:bg-purple-500 bg-opacity-80 hover:bg-opacity-80 ;
 }
 .nav-bar {
-  @apply flex p-2 text-gray-600 hover:text-orange-500
+  @apply flex p-2 text-gray-600 hover:text-purple-500
  }
 .alert-error {
   @apply  my-3 rounded-lg bg-red-600 p-3 text-red-300;
@@ -49,5 +49,5 @@ body {
   input,
 select,
 textarea {
-    @apply rounded border p-2 outline-none ring-orange-400 focus:ring;
+    @apply rounded border p-2 outline-none ring-purple-400 focus:ring;
 }
