@@ -98,11 +98,11 @@ const Layout = ({children, title}:any) => {
            <ul className="hidden absolute  left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
               <li><Link className="nav-bar text-sm text-gray-400 hover:text-gray-500" href="/">Home</Link></li>
             
-              <li><Link className="nav-bar text-sm text-gray-400 hover:text-gray-500" href="/services">Serviços</Link></li>
+              <li><Link className="nav-bar text-sm text-gray-400 hover:text-gray-500" href="/javascript">Javascript</Link></li>
               
-              <li><Link className="nav-bar text-sm text-gray-400 hover:text-gray-500" href="/vacancies">Vagas</Link></li>
+              <li><Link className="nav-bar text-sm text-gray-400 hover:text-gray-500" href="/node">Node</Link></li>
               
-              <li><Link className="nav-bar text-sm text-gray-400 hover:text-gray-500" href="/products">Vendas</Link></li>
+              <li><Link className="nav-bar text-sm text-gray-400 hover:text-gray-500" href="/java">Java</Link></li>
               
               <li><Link className="nav-bar text-sm text-gray-400 hover:text-gray-500" href="contact">Contato</Link></li>
 		       </ul>
@@ -120,24 +120,24 @@ const Layout = ({children, title}:any) => {
                        
                         <Menu.Item>
                                     
-                                    <Link className='dropdown-link' href='/services' >
-                                        Serviços
+                                    <Link className='dropdown-link' href='/javascript' >
+                                        Javascript
                                     </Link>
                                     
                                 
                             </Menu.Item>
                             <Menu.Item>
                                     
-                                    <Link className='dropdown-link' href='/vacancies' >
-                                        Vagas
+                                    <Link className='dropdown-link' href='/node' >
+                                        Node
                                     </Link>
                                     
                                 
                             </Menu.Item>
                              <Menu.Item>
                                     
-                                    <Link className='dropdown-link' href='/products' >
-                                        Vendas
+                                    <Link className='dropdown-link' href='/java' >
+                                        Java
                                     </Link>
                                     
                                 
