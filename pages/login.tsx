@@ -8,6 +8,9 @@ import { toast } from 'react-toastify';
 import { useRouter } from 'next/router';
 import Layout from '@/components/Layout';
 import { getError } from '@/utils/error';
+import SignInGoogleBtn from '@/components/SignInGoogleBtn';
+import SignInFacebookBtn from '@/components/SignInFacebookBtn';
+import SignInGithubBtn from '@/components/SignInGithubBtn';
 
 interface FormType {
   email: string;
@@ -52,6 +55,12 @@ const LoginScreen = () => {
           onSubmit={handleSubmit(submitHandler)}
         >
           <h1 className="mb-4 text-xl">Login</h1>
+          <div className='flex flex-col justify-center'>
+
+<SignInGoogleBtn/>
+<SignInFacebookBtn/>
+<SignInGithubBtn/>
+</div>
           <div className="mb-4">
             <label htmlFor="email">Email</label>
             <input
