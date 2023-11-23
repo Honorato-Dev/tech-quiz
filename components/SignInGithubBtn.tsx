@@ -2,7 +2,7 @@ import { useSession, signIn, signOut } from "next-auth/react"
 import Image from 'next/image'
 import React from 'react'
 
-function SignInFacebookBtn() {
+function SignInGithubBtn() {
   const { data: session } = useSession()
  
  
@@ -17,9 +17,9 @@ function SignInFacebookBtn() {
     return (
 
       <button onClick={()=> signIn()} className='flex items-center m-1 gap-4 shadow-xl rounded-none'>
-       <Image src='/images/facebook-logo2.png' alt='Facebook Logo' width={30} height={30}/>
+       <Image src='/images/github-logo.png' alt='GIthub Logo' width={30} height={30}/>
        <span className='bg-blue-500 w-full rounded-none p-4  text-white px-4 scroll-py-3'>
-        Entrar com Facebook
+        Entrar com Github
        </span>
     </button>
     )
@@ -27,4 +27,4 @@ function SignInFacebookBtn() {
   
 }
 
-export default SignInFacebookBtn
+export default SignInGithubBtn
