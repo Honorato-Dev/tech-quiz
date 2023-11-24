@@ -17,8 +17,8 @@ const Home = () => {
       <div className="flex flex-row justify-center">
 
           <div className={alfa.className}>
-        <h1 className="text-xl md:text-3xl lg:text-5xl  text-white ">Bem-vindo ao Tech Quiz!</h1>
-        <h2 className="text-xl md:text-3xl lg:text-5xl  text-white "> Explore o Universo da Tecnologia.</h2>
+        <h1 className="text-xl md:text-3xl lg:text-5xl text-center  text-white ">Bem-vindo ao Tech Quiz!</h1>
+        <h2 className="text-xl md:text-3xl lg:text-5xl text-center text-white "> Explore o Universo da Tecnologia.</h2>
       </div>
       </div>
     
