@@ -27,12 +27,12 @@ export default function App({ Component, pageProps:{session, ...pageProps} }: Cu
     
       {Component.auth ? (
         <Auth adminOnly={Component.auth.adminOnly}>
-          <div className='bg-icem'>
+          <div className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
             <Component {...pageProps} />
           </div>
         </Auth>
       ):(
-        <div className='bg-icem'>
+        <div className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
           <Component {...pageProps} />
         </div>
       )}

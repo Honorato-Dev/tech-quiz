@@ -39,7 +39,7 @@ const Layout = ({children, title}:any) => {
       <div className='flex min-h-screen flex-col justify-between'>
         <header>
         {/* <CurrentDate/> */}
-           <nav className='flex h-25 bg-white  justify-between items-center px-4'>
+           <nav className='flex h-25 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  justify-between items-center px-4'>
             
             <div  className='text-3xl py-3 flex items-center'>
              <Link href='/'>
@@ -158,7 +158,7 @@ const Layout = ({children, title}:any) => {
             {children}
         </main>
         
-<footer className="bg-white ">
+<footer className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">
     <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
