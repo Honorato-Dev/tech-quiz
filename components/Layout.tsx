@@ -172,10 +172,10 @@ const Layout = ({children, title}:any) => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Resources</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <Link href="https://flowbite.com/" className="hover:underline">Flowbite</Link>
+                          <Link href="https://flowbite.com/" className="hover:text-white">Flowbite</Link>
                       </li>
                       <li>
-                          <Link href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</Link>
+                          <Link href="https://tailwindcss.com/" className="hover:text-white">Tailwind CSS</Link>
                       </li>
                   </ul>
               </div>
@@ -183,10 +183,10 @@ const Layout = ({children, title}:any) => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Follow us</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <Link href="https://github.com/themesberg/flowbite" className="hover:underline ">Github</Link>
+                          <Link href="https://github.com/themesberg/flowbite" className="hover:text-white ">Github</Link>
                       </li>
                       <li>
-                          <Link href="https://discord.gg/4eeurUVvTy" className="hover:underline">Discord</Link>
+                          <Link href="https://discord.gg/4eeurUVvTy" className="hover:text-white">Discord</Link>
                       </li>
                   </ul>
               </div>
@@ -194,10 +194,10 @@ const Layout = ({children, title}:any) => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Legal</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <Link href="#" className="hover:underline">Política de Privacidade</Link>
+                          <Link href="#" className="hover:text-white">Política de Privacidade</Link>
                       </li>
                       <li>
-                          <Link href="#" className="hover:underline">Termos &amp; Condições</Link>
+                          <Link href="#" className="hover:text-white">Termos &amp; Condições</Link>
                       </li>
                   </ul>
               </div>
