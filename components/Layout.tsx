@@ -43,7 +43,7 @@ const Layout = ({children, title}:any) => {
             
             <div  className='text-3xl py-3 flex items-center'>
              <Link href='/'>
-             <Image src='/images/logo.png' alt='pmc logo'  width={120} height={120}/>
+             <Image src='/images/techquiz-logo.png' alt='pmc logo'  width={120} height={120}/>
                 {/* <p className={bebas.className}>portal Barra do Jacuípe</p> */}
                 
              </Link>
@@ -163,7 +163,7 @@ const Layout = ({children, title}:any) => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
               <Link href="https://flowbite.com/" className="flex items-center">
-                   <Image src='/images/logo.png' alt='pmc logo'  width={80} height={80} />
+                   <Image src='/images/techquiz-logo.png' alt='pmc logo'  width={80} height={80} />
                   
               </Link>
           </div>
