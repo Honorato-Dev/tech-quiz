@@ -183,7 +183,7 @@ const Layout = ({children, title}:any) => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Follow us</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <Link href="https://github.com/themesberg/flowbite" className="hover:text-white ">Github</Link>
+                          <Link href="https://github.com/vituhonorato" className="hover:text-white ">Github</Link>
                       </li>
                       <li>
                           <Link href="https://discord.gg/4eeurUVvTy" className="hover:text-white">Discord</Link>
@@ -208,7 +208,7 @@ const Layout = ({children, title}:any) => {
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" className="hover:underline">Tech Quiz™</a>. Todos os Direitos Reservardos.
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-              <Link href="https://www.facebook.com/barradojacuipenoticias" className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-700">
+              <Link href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-700">
               <FaFacebookF />
                   <span className="sr-only">Facebook page</span>
               </Link>
