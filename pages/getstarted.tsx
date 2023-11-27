@@ -16,6 +16,8 @@ import { FaWordpress } from "react-icons/fa";
 import { FaSwift } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { FaLinux } from "react-icons/fa";
+import { SiCsharp } from "react-icons/si";
+import { SiDotnet } from "react-icons/si";
 import Link from 'next/link';
 
 
@@ -89,12 +91,12 @@ const GetStarted = () => {
            <div className='flex'><FaLinux className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
           </Link>
 
-          <Link href='/' >
-           <div className='flex'></div>
+          <Link href='/csharp' >
+           <div className='flex'><SiCsharp className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
           </Link>
 
-          <Link href='/' >
-           <div className='flex'></div>
+          <Link href='/dotnet' >
+           <div className='flex'><SiDotnet className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
           </Link>
 
           
