@@ -96,7 +96,7 @@ const Layout = ({ children, title }: any) => {
               )}
             </div>
           </nav>
-          <div className="flex h-20 justify-end  px-4">
+          <div className="flex h-20 justify-end  px-4 font-bold text-white">
             <Menu as="div" className="relative inline-block lg:hidden absolute">
               <Menu.Button className="text-blue-600">
                 <ImMenu />
@@ -109,20 +109,11 @@ const Layout = ({ children, title }: any) => {
                 </Menu.Item>
 
                 <Menu.Item>
-                  <DropdownLink className="dropdown-link" href="/javascript">
-                    Javascript
+                  <DropdownLink className="dropdown-link" href="/getstarted">
+                    Get Started
                   </DropdownLink>
                 </Menu.Item>
-                <Menu.Item>
-                  <DropdownLink className="dropdown-link" href="/node">
-                    Node
-                  </DropdownLink>
-                </Menu.Item>
-                <Menu.Item>
-                  <DropdownLink className="dropdown-link" href="/java">
-                    Java
-                  </DropdownLink>
-                </Menu.Item>
+                
                 <Menu.Item>
                   <DropdownLink className="dropdown-link" href="/contact">
                     Contato
