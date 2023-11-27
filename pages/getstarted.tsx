@@ -17,6 +17,7 @@ const GetStarted = () => {
     <Layout title="Get Started">
       <div className="flex  flex-col justify-center">
         <div className="flex flex-row justify-center">
+          <div className='grid grid-cols-4 gap-2 md:grid-cols-4 lg:grid-cols-6'>
           <div className='flex '><SiJavascript className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 mx-5' /></div>
           <div className='flex'><SiNodedotjs className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 mx-5' /></div>
           <div className='flex'><FaJava className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 mx-5' /></div>
@@ -31,6 +32,9 @@ const GetStarted = () => {
           <div className='flex'></div>
           <div className='flex'></div>
           <div className='flex'></div>
+
+          </div>
+         
         </div>
       </div>
     </Layout>
