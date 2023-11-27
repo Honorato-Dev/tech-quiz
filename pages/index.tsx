@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
    <Layout>
-     <div className="flex justify-center mx-auto ">
+     <div className="flex h-screen justify-center mx-auto ">
       <div className="flex flex-col justify-center">
 
           <div className={alfa.className}>
@@ -23,9 +23,12 @@ const Home = () => {
       <p className="text-lg md:text-xl lg:text-2xl text-center  text-white mt-11 mb-4">
       No Tech Quiz, sua jornada pelo vasto universo da tecnologia começa aqui! Somos um destino online que se aprofunda nas profundezas do conhecimento digital, oferecendo um espaço dinâmico e interativo para testar suas habilidades nas principais linguagens de tecnologia utilizadas atualmente. Este é o lugar onde entusiastas, profissionais da área e curiosos se encontram para explorar, aprender e aprimorar suas habilidades no mundo digital.
       </p>
-      <div className="text-center mt-12">
+      <div className="text-center mt-14">
       <Link className="font-bold py-7 px-7 rounded-md bg-blue-500 text-white bg-blue-700;" href='/getstarted'>Get Started</Link>
      </div>
+      </div>
+      <div className="flex flex-col justify-center">
+
       </div>
   
       
