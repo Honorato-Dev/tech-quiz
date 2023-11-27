@@ -9,6 +9,13 @@ import { SiDjango } from "react-icons/si";
 import { SiPhp } from "react-icons/si";
 import { TbBrandLaravel } from "react-icons/tb";
 import { FaRust } from "react-icons/fa";
+import { FaGolang } from "react-icons/fa6";
+import { FaReact } from "react-icons/fa";
+import { FaAngular } from "react-icons/fa";
+import { FaWordpress } from "react-icons/fa";
+import { FaSwift } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { FaLinux } from "react-icons/fa";
 import Link from 'next/link';
 
 
@@ -54,11 +61,47 @@ const GetStarted = () => {
           <Link href='/rust' >
             <div className='flex'><FaRust className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
           </Link>
+          <Link href='/golang' >
+            <div className='flex'><FaGolang className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+          </Link>
           
-          <div className='flex'></div>
-          <div className='flex'></div>
-          <div className='flex'></div>
-          <div className='flex'></div>
+          <Link href='/react' >
+            <div className='flex'><FaReact className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
+          </Link>
+          
+          <Link href='/angular' >
+            <div className='flex'><FaAngular className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
+          </Link>
+
+          <Link href='/wordpress' >
+            <div className='flex'><FaWordpress className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
+          </Link>
+
+          <Link href='/swift' >
+            <div className='flex'><FaSwift className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+          </Link>
+
+          <Link href='/mongodb' >
+            <div className='flex'><SiMongodb className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+          </Link>
+
+          <Link href='/linux' >
+           <div className='flex'><FaLinux className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+          </Link>
+
+          <Link href='/' >
+           <div className='flex'></div>
+          </Link>
+
+          <Link href='/' >
+           <div className='flex'></div>
+          </Link>
+
+          
+          {/* <Link href='/' >
+           <div className='flex'></div>
+          </Link> */}
+          
 
           </div>
          
