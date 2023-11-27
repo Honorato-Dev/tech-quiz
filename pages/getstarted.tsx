@@ -8,6 +8,7 @@ import { SiPython } from "react-icons/si";
 import { SiDjango } from "react-icons/si";
 import { SiPhp } from "react-icons/si";
 import { TbBrandLaravel } from "react-icons/tb";
+import { FaRust } from "react-icons/fa";
 
 
 
@@ -25,6 +26,10 @@ const GetStarted = () => {
           <div className='flex'><SiDjango className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 mx-5' /></div>
           <div className='flex'><SiPhp className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 mx-5' /></div>
           <div className='flex'><TbBrandLaravel className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 mx-5'/></div>
+          <div className='flex'><FaRust className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 mx-5' /></div>
+          <div className='flex'></div>
+          <div className='flex'></div>
+          <div className='flex'></div>
           <div className='flex'></div>
         </div>
       </div>
