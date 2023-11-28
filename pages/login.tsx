@@ -63,7 +63,7 @@ const LoginScreen = () => {
 <SignInFacebookBtn/>
 <SignInGithubBtn/>
 </div>
-          <div className="mb-4">
+          <div className="mb-4 mt-4">
             <label htmlFor="email">Email</label>
             <input
               type="email"
