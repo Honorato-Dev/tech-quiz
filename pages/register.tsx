@@ -77,8 +77,8 @@ const RegisterScreen = () => {
         onSubmit={handleSubmit}
       >
         <Form className="mx-auto max-w-screen-md ">
-          <h1 className="mb-4 text-3xl font-semibold">Criar nova conta</h1>
-          <div className="bg-white p-3 rounded-md bg-opacity-80">
+          <h1 className="mb-4 text-3xl text-center font-semibold">Criar nova conta</h1>
+          <div className="bg-white py-8 px-6 rounded-sm bg-opacity-80">
             <div className="mb-4">
               <label htmlFor="email" className="text-lg font-semibold">
                 Nome de usuário
