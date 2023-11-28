@@ -70,12 +70,13 @@ const RegisterScreen = () => {
 
   return (
     <Layout title="Registrar">
+      <div className='h-screen'>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        <Form className="mx-auto max-w-screen-md">
+        <Form className="mx-auto max-w-screen-md ">
           <h1 className="mb-4 text-3xl font-semibold">Criar nova conta</h1>
           <div className="bg-white p-3 rounded-md bg-opacity-80">
             <div className="mb-4">
@@ -89,7 +90,7 @@ const RegisterScreen = () => {
                 id="name"
                 name="name"
               />
-              <div className="text-red">
+              <div className="text-red-600">
                 <ErrorMessage name="name" />
               </div>
             </div>
@@ -105,7 +106,7 @@ const RegisterScreen = () => {
                 id="email"
                 name="email"
               />
-              <div className="text-red">
+              <div className="text-red-600">
                 <ErrorMessage name="email" />
               </div>
             </div>
@@ -120,7 +121,7 @@ const RegisterScreen = () => {
                 id="password"
                 name="password"
               />
-              <div className="text-red">
+              <div className="text-red-600">
                 <ErrorMessage name="password" />
               </div>
             </div>
@@ -135,7 +136,7 @@ const RegisterScreen = () => {
                 id="confirmpassword"
                 name="confirmpassword"
               />
-              <div className="text-red">
+              <div className="text-red-600">
                 <ErrorMessage name="confirmpassword" />
               </div>
             </div>
@@ -147,6 +148,7 @@ const RegisterScreen = () => {
           </div>
         </Form>
       </Formik>
+      </div>
     </Layout>
   );
 };
