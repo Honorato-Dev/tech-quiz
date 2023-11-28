@@ -11,6 +11,7 @@ import { getError } from '@/utils/error';
 import SignInGoogleBtn from '@/components/SignInGoogleBtn';
 import SignInFacebookBtn from '@/components/SignInFacebookBtn';
 import SignInGithubBtn from '@/components/SignInGithubBtn';
+import Link from 'next/link';
 
 interface FormType {
   email: string;
@@ -49,6 +50,7 @@ const LoginScreen = () => {
 
   return (
     <Layout title="Login">
+      <div className='h-screen'>
       <div className="pt-14">
         <form
           className="mx-auto max-w-screen-md bg-white bg-opacity-80   rounded-lg p-6"
@@ -102,16 +104,17 @@ const LoginScreen = () => {
           <div className="mb-4">
             <button className="login-button">Login</button>
           </div>
-          {/* <div className="mb-4">
+          <div className="mb-4">
             Ainda não se cadastrou? &nbsp;
             <Link
-              className="text-indigo600  rounded-lg p-1 font-semibold"
+              className="text-indigo-600  rounded-lg p-1 font-semibold"
               href="/register"
             >
               Registrar
             </Link>
-          </div> */}
+          </div>
         </form>
+      </div>
       </div>
     </Layout>
   );
