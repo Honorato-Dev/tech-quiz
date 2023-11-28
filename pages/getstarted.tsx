@@ -25,7 +25,7 @@ import Link from 'next/link';
 const GetStarted = () => {
   return (
     <Layout title="Get Started">
-      <div className="flex  flex-col justify-center">
+      <div className="flex h-screen flex-col justify-center">
         <div className="flex flex-row justify-center">
           <div className='grid grid-cols-4 gap-2 md:grid-cols-4 lg:grid-cols-6'>
             <Link href='/javascript' >
