@@ -1,4 +1,4 @@
-const quizzDataSpring = [
+const quizDataSpring = [
     {
         question: "",
         options: [
@@ -41,4 +41,4 @@ const quizzDataSpring = [
     //   }
 ]
 
-export default quizzDataSpring
+export default quizDataSpring
