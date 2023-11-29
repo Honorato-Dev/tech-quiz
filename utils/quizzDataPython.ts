@@ -60,3 +60,5 @@ const quizDataPython = [
     //     correct: "",
     //   },
 ]
+
+export default quizDataPython
