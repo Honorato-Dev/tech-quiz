@@ -8,7 +8,7 @@ const Unauthorized = () => {
   return (
     <Layout title="Página não Autorizada">
       <div className=''>
-        <div className="text-xl lg:text-2xl font-bold">Acesso não permitido</div>
+        <div className="text-xl lg:text-2xl font-semibold">Acesso não permitido</div>
       {message && <div className="text-red-700 text-lg lg:text-xl">{message}</div>}
       </div>
       
