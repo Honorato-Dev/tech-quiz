@@ -100,3 +100,5 @@ const quizDataPhp = [
     //     correct: "",
     //   },
 ]
+
+export default quizDataPhp
