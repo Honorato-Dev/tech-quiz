@@ -28,7 +28,7 @@ function PhpScreen() {
   };
 
   return (
-    <Layout titlte='Spring'>
+    <Layout title='Php'>
       <div className="App">
       {currentQuiz < quizDataPhp.length ? (
         <div>

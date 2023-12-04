@@ -28,7 +28,7 @@ function SpringScreen() {
   };
 
   return (
-    <Layout titlte='Spring'>
+    <Layout title='Spring'>
       <div className="App">
       {currentQuiz < quizDataSpring.length ? (
         <div>
