@@ -31,12 +31,12 @@ function JavascriptScreen() {
     <Layout title='Javascript'>
        <div className="App">
       {currentQuiz < quizDataJs.length ? (
-        <div>
-          <h2>Question {currentQuiz + 1}</h2>
-          <p>{quizDataJs[currentQuiz].question}</p>
-          <ul>
+        <div className='flex flex-col text-center mx-auto max-w-screen-md bg-white bg-opacity-80  rounded-sm p-6'>
+          <h2 className=''>Questão {currentQuiz + 1}</h2>
+          <p className=''>{quizDataJs[currentQuiz].question}</p>
+          <ul className='flex flex-col text-left'>
             {quizDataJs[currentQuiz].options.map((option) => (
-              <li key={option.id}>
+              <li className='' key={option.id}>
                 <label>
                   <input
                     type="radio"
@@ -50,7 +50,7 @@ function JavascriptScreen() {
               </li>
             ))}
           </ul>
-          <button onClick={handleNextQuestion}>Next</button>
+          <button onClick={handleNextQuestion}>Próxima</button>
         </div>
       ) : (
         <div>
