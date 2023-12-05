@@ -14,7 +14,7 @@ function JavaScreen() {
   };
 
   const handleNextQuestion = () => {
-    if (selected === quizDataJs[currentQuiz].correct) {
+    if (selected === quizDataJava[currentQuiz].correct) {
       setScore(score + 1);
     }
     setSelected(null);
