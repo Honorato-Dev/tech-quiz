@@ -51,7 +51,7 @@ function JavascriptScreen() {
               </li>
             ))}
           </ul>
-          <button onClick={handleNextQuestion}>Próxima</button>
+          <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-14' onClick={handleNextQuestion}>Responder</button>
         </div>
       ) : (
         <div>
