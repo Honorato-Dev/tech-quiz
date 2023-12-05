@@ -1,6 +1,7 @@
 const quizDataPhp = [
     {
         question: "",
+        image:"",
         options: [
           { text: "", id: "a" },
           { text: "", id: "b" },
@@ -11,6 +12,7 @@ const quizDataPhp = [
       },
       {
         question: "",
+        image:"",
         options: [
           { text: "", id: "a" },
           { text: "", id: "b" },
@@ -21,6 +23,7 @@ const quizDataPhp = [
       },
       {
         question: "",
+        image:"",
         options: [
           { text: "", id: "a" },
           { text: "", id: "b" },
@@ -31,6 +34,7 @@ const quizDataPhp = [
       },
       {
         question: "",
+        image:"",
         options: [
           { text: "", id: "a" },
           { text: "", id: "b" },
@@ -41,6 +45,7 @@ const quizDataPhp = [
       },
       {
         question: "",
+        image:"",
         options: [
           { text: "", id: "a" },
           { text: "", id: "b" },
@@ -51,6 +56,7 @@ const quizDataPhp = [
       },
       {
         question: "",
+        image:"",
         options: [
           { text: "", id: "a" },
           { text: "", id: "b" },
@@ -61,6 +67,7 @@ const quizDataPhp = [
       },
       {
         question: "",
+        image:"",
         options: [
           { text: "", id: "a" },
           { text: "", id: "b" },
@@ -71,6 +78,7 @@ const quizDataPhp = [
       },
       {
         question: "",
+        image:"",
         options: [
           { text: "", id: "a" },
           { text: "", id: "b" },
@@ -81,6 +89,7 @@ const quizDataPhp = [
       },
       {
         question: "",
+        image:"",
         options: [
           { text: "", id: "a" },
           { text: "", id: "b" },
@@ -91,6 +100,7 @@ const quizDataPhp = [
       },
     //   {
     //     question: "",
+     //    image:"",
     //     options: [
     //       { text: "", id: "a" },
     //       { text: "", id: "b" },

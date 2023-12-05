@@ -1,6 +1,7 @@
 const quizDataNode = [
     {
         question: "Quando uma função JavaScript é invocada (chamada) no Node, onde um novo quadro é colocado?",
+        image:"",
         options: [
           { text: "call stack", id: "a" },
           { text: "event loop", id: "b" },
@@ -11,6 +12,7 @@ const quizDataNode = [
       },
       {
         question: "Qual dos seguintes é um módulo principal do Node?",
+        image:"",
         options: [
           { text: "webpack", id: "a" },
           { text: "crypto", id: "b" },
@@ -21,6 +23,7 @@ const quizDataNode = [
       },
       {
         question: "Qual dos seguintes métodos da classe Buffer retorna um buffer não inicializado?",
+        image:"",
         options: [
           { text: "allocUnsafe", id: "a" },
           { text: "concat", id: "b" },
@@ -31,6 +34,7 @@ const quizDataNode = [
       },
       {
         question: "Qual dos seguintes módulos NÃO é um módulo integrado no Node?",
+        image:"",
         options: [
           { text: "ftp", id: "a" },
           { text: "events", id: "b" },
@@ -41,6 +45,7 @@ const quizDataNode = [
       },
       {
         question: "Qual método do módulo fs pode ser usado para ler o conteúdo de um arquivo sem armazená-lo em buffer na memória?",
+        image:"",
         options: [
           { text: "read", id: "a" },
           { text: "readFile", id: "b" },
@@ -51,6 +56,7 @@ const quizDataNode = [
       },
       {
         question: "Qual dos seguintes métodos de módulo DNS usa os recursos subjacentes do sistema operacional e não executa necessariamente nenhuma comunicação de rede?",
+        image:"",
         options: [
           { text: "lookup", id: "a" },
           { text: "resolve", id: "b" },
@@ -61,6 +67,7 @@ const quizDataNode = [
       },
       {
         question: "Como você verifica se um valor é um objeto de data no Node?",
+        image:"",
         options: [
           { text: "util.types.isDate(value)", id: "a" },
           { text: "assert.isDate(value)", id: "b" },
@@ -71,6 +78,7 @@ const quizDataNode = [
       },
       {
         question: "Você pode criar um servidor web https com Node.js?",
+        image:"",
         options: [
           { text: "não, ainda não há módulos que suportem isso", id: "a" },
           { text: "sim, com os módulos https ou http2", id: "b" },
@@ -81,6 +89,7 @@ const quizDataNode = [
       },
       {
         question: "Qual é a API projetada para isolar complementos de alterações no mecanismo JavaScript subjacente?",
+        image:"",
         options: [
           { text: "A-API", id: "a" },
           { text: "Z-API", id: "b" },
@@ -91,6 +100,7 @@ const quizDataNode = [
       },
       {
         question: "Qual opção CLI você pode usar para depurar um script de nó no Chrome DevTools?",
+        image:"",
         options: [
           { text: "--dev-tools", id: "a" },
           { text: "--inspect", id: "b" },
@@ -101,6 +111,7 @@ const quizDataNode = [
       },
       /*{
         question: "",
+        image:"",
         options: [
           { text: "", id: "a" },
           { text: "", id: "b" },

@@ -1,6 +1,7 @@
 const quizDataJs = [
     {
       question: "Which language runs in a web browser?",
+      image:"",
       options: [
         { text: "Java", id: "a" },
         { text: "C", id: "b" },
@@ -11,6 +12,7 @@ const quizDataJs = [
     },
     {
       question: "What does CSS stand for?",
+      image:"",
       options: [
         { text: "Central Style Sheets", id: "a" },
         { text: "Cascading Style Sheets", id: "b" },
@@ -21,6 +23,7 @@ const quizDataJs = [
     },
     {
       question: "What does HTML stand for?",
+      image:"",
       options: [
         { text: "Hypertext Markup Language", id: "a" },
         { text: "Hypertext Markdown Language", id: "b" },
@@ -31,6 +34,7 @@ const quizDataJs = [
     },
     {
       question: "What year was JavaScript launched?",
+      image:"",
       options: [
         { text: "1996", id: "a" },
         { text: "1995", id: "b" },
@@ -41,6 +45,7 @@ const quizDataJs = [
     },
     {
         question: "Qual operador retorna verdadeiro se os dois valores comparados não forem iguais?",
+        image:"",
         options: [
           { text: "<>", id: "a" },
           { text: "~", id: "b" },
@@ -51,6 +56,7 @@ const quizDataJs = [
       },
       {
         question: "Como uma instrução forEach é diferente de uma instrução for?",
+        image:"",
         options: [
           { text: "A instrução for usa somente uma função de retorno de chamada.", id: "a" },
           { text: "Uma instrução for é genérica, mas uma instrução forEach pode ser usada apenas com um array.", id: "b" },
@@ -61,6 +67,7 @@ const quizDataJs = [
       },
       {
         question: "Qual declaração é a maneira correta de criar uma variável chamada rate e atribuir a ela o valor 100?",
+        image:"",
         options: [
           { text: "let rate = 100;", id: "a" },
           { text: "let 100 = rate;", id: "b" },
@@ -71,6 +78,7 @@ const quizDataJs = [
       },
       {
         question: "Qual instrução cria um novo objeto usando o construtor Person? Qual instrução cria um novo objeto Person chamado 'student'?",
+        image:"",
         options: [
           { text: "var student = new Person();", id: "a" },
           { text: "var student = construct Person;", id: "b" },
@@ -81,6 +89,7 @@ const quizDataJs = [
       },
       {
         question: "Como uma função cria uma clausura?",
+        image:"",
         options: [
           { text: "Ele recarrega o documento sempre que o valor muda.", id: "a" },
           { text: "Ele retorna uma referência a uma variável em seu escopo pai.", id: "b" },
@@ -91,6 +100,7 @@ const quizDataJs = [
       },
       {
         question: "Você precisa corresponder a um valor de tempo como 12:00:32. Qual das seguintes expressões regulares funcionaria para o seu código?",
+        image:"",
         options: [
           { text: "/[0-9]{2,}:[0-9]{2,}:[0-9]{2,}/", id: "a" },
           { text: "/\d\d:\d\d:\d\d/", id: "b" },
@@ -101,6 +111,7 @@ const quizDataJs = [
       },
       {
         question: "Qual propriedade referencia o objeto DOM que despachou um evento?",
+        image:"",
         options: [
           { text: "self", id: "a" },
           { text: "object", id: "b" },
@@ -111,6 +122,7 @@ const quizDataJs = [
       },
       {
         question: " Qual método converte dados JSON em um objeto JavaScript?",
+        image:"",
         options: [
           { text: "JSON.fromString();", id: "a" },
           { text: "JSON.parse()", id: "b" },
@@ -121,6 +133,7 @@ const quizDataJs = [
       },
       {
         question: "Quando você usaria uma instrução condicional?",
+        image:"",
         options: [
           { text: "Quando você deseja reutilizar um conjunto de instruções várias vezes.", id: "a" },
           { text: "Quando você deseja que seu código escolha entre várias opções.", id: "b" },
@@ -131,6 +144,7 @@ const quizDataJs = [
       },
       {
         question: "Qual método Object retorna um iterável que pode ser usado para iterar sobre as propriedades de um objeto?",
+        image:"",
         options: [
           { text: "Object.get()", id: "a" },
           { text: "Object.loop()", id: "b" },
@@ -141,6 +155,7 @@ const quizDataJs = [
       },
       {
         question: "Qual é a diferença entre coleções criadas com Map e coleções criadas com Object?",
+        image:"",
         options: [
           { text: "Você pode iterar sobre valores em um mapa em sua ordem de inserção.", id: "a" },
           { text: "Você pode contar os registros em um mapa com uma única chamada de método.", id: "b" },
@@ -151,6 +166,7 @@ const quizDataJs = [
       },
       {
         question: "Qual dos seguintes operadores pode ser usado para fazer uma avaliação de curto-circuito?",
+        image:"",
         options: [
           { text: "++", id: "a" },
           { text: "--", id: "b" },
@@ -161,6 +177,7 @@ const quizDataJs = [
       },
       {
         question: "Qual instrução define o construtor Person como pai do construtor Student na cadeia de protótipos?",
+        image:"",
         options: [
           { text: "Student.parent = Person;", id: "a" },
           { text: "Student.prototype = new Person();", id: "b" },
@@ -171,6 +188,7 @@ const quizDataJs = [
       },
       {
         question: "Qual palavra-chave que define variável permite que sua variável seja acessada (como indefinida) antes da linha que a define?",
+        image:"",
         options: [
           { text: "Todas elas", id: "a" },
           { text: "const", id: "b" },
@@ -181,6 +199,7 @@ const quizDataJs = [
       },
       {
         question: "Qual dos seguintes valores não é um booleano falso?",
+        image:"",
         options: [
           { text: "Boolean(0)", id: "a" },
           { text: "Boolean('')", id: "b" },
@@ -191,6 +210,7 @@ const quizDataJs = [
       },
       {
         question: "Qual das alternativas a seguir não é uma palavra-chave em JavaScript?",
+        image:"",
         options: [
           { text: "this", id: "a" },
           { text: "catch", id: "b" },
@@ -201,6 +221,7 @@ const quizDataJs = [
       },
       {
         question: "Qual variável é um parâmetro implícito para cada função em JavaScript?",
+        image:"",
         options: [
           { text: "Arguments", id: "a" },
           { text: "args", id: "b" },
@@ -211,6 +232,7 @@ const quizDataJs = [
       },
       {
         question: "Que tipo de função pode ter sua execução suspensa e retomada posteriormente?",
+        image:"",
         options: [
           { text: "Generator function", id: "a" },
           { text: "Arrow function", id: "b" },
@@ -221,6 +243,7 @@ const quizDataJs = [
       },
       {
         question: "Qual afirmação é verdadeira sobre Programação Funcional?",
+        image:"",
         options: [
           { text: "Cada objeto no programa deve ser uma função.", id: "a" },
           { text: "O código é agrupado com o estado que ele modifica.", id: "b" },
@@ -231,6 +254,7 @@ const quizDataJs = [
       },
       {
         question: "Seu código está produzindo o erro: TypeError: Não é possível ler a propriedade 'reduzir' de indefinido. O que isso significa?",
+        image:"",
         options: [
           { text: "Você está chamando um método chamado reduzir em um objeto declarado, mas sem valor.", id: "a" },
           { text: "Você está chamando um método chamado reduzir em um objeto que não existe.", id: "b" },
@@ -241,6 +265,7 @@ const quizDataJs = [
       },
       {
         question: "Qual escolha não é um operador unário?",
+        image:"",
         options: [
           { text: "typeof", id: "a" },
           { text: "delete", id: "b" },
@@ -251,6 +276,7 @@ const quizDataJs = [
       },
       {
         question: "Qual palavra-chave é usada para criar um erro?",
+        image:"",
         options: [
           { text: "throw", id: "a" },
           { text: "exception", id: "b" },
@@ -261,6 +287,7 @@ const quizDataJs = [
       },
       {
         question: "Qual é a diferença entre os atributos async e defer da tag de script HTML?",
+        image:"",
         options: [
           { text: "O atributo defer pode funcionar de forma síncrona.", id: "a" },
           { text: "O atributo defer funciona apenas com geradores", id: "b" },
@@ -271,6 +298,7 @@ const quizDataJs = [
       },
       /*{
         question: "",
+        image:"",
         options: [
           { text: "", id: "a" },
           { text: "", id: "b" },
