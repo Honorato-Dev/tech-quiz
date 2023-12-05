@@ -44,8 +44,8 @@ const Layout = ({ children, title }: any) => {
                 <Image
                   src="/images/techquiz-logo.png"
                   alt="pmc logo"
-                  width={120}
-                  height={120}
+                  width={80}
+                  height={80}
                 />
                 
               </Link>
@@ -136,8 +136,8 @@ const Layout = ({ children, title }: any) => {
                   <Image
                     src="/images/techquiz-logo.png"
                     alt="pmc logo"
-                    width={80}
-                    height={80}
+                    width={60}
+                    height={60}
                   />
                 </Link>
               </div>
