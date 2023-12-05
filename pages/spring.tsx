@@ -28,17 +28,19 @@ function SpringScreen() {
   };
 
   return (
-    <Layout title='Spring'>
-      <div className="App">
+    <Layout title='Java'>
+       <div className="h-screen">
       {currentQuiz < quizDataSpring.length ? (
-        <div>
-          <h2>Question {currentQuiz + 1}</h2>
-          <p>{quizDataSpring[currentQuiz].question}</p>
-          <ul>
+        <div className='flex flex-col text-center mx-auto max-w-screen-md bg-white bg-opacity-80  rounded-sm p-6'>
+          <h2 className='text-lg lg:text-xl font-semibold mb-4'>Questão {currentQuiz + 1}</h2>
+          <p className='text-lg lg:text-xl mb-6 mt-4'>{quizDataSpring[currentQuiz].question}</p>
+          <div className=''>{quizDataSpring[currentQuiz].image}</div>
+          <ul className='flex flex-col text-left'>
             {quizDataSpring[currentQuiz].options.map((option) => (
-              <li key={option.id}>
-                <label>
+              <li className='' key={option.id}>
+                <label className='space-y-12'>
                   <input
+                  className='m-4'
                     type="radio"
                     name="answer"
                     value={option.id}
@@ -50,7 +52,7 @@ function SpringScreen() {
               </li>
             ))}
           </ul>
-          <button onClick={handleNextQuestion}>Next</button>
+          <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-14' onClick={handleNextQuestion}>Responder</button>
         </div>
       ) : (
         <div>
@@ -59,9 +61,8 @@ function SpringScreen() {
         </div>
       )}
     </div>
-
     </Layout>
-    
+   
   );
 }
 
