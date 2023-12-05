@@ -32,14 +32,15 @@ function JavascriptScreen() {
        <div className="App">
       {currentQuiz < quizDataJs.length ? (
         <div className='flex flex-col text-center mx-auto max-w-screen-md bg-white bg-opacity-80  rounded-sm p-6'>
-          <h2 className=''>Questão {currentQuiz + 1}</h2>
-          <p className=''>{quizDataJs[currentQuiz].question}</p>
+          <h2 className='text-lg lg:text-xl font-semibold mb-4'>Questão {currentQuiz + 1}</h2>
+          <p className='text-lg lg:text-xl mb-6 mt-4'>{quizDataJs[currentQuiz].question}</p>
           <div className=''>{quizDataJs[currentQuiz].image}</div>
           <ul className='flex flex-col text-left'>
             {quizDataJs[currentQuiz].options.map((option) => (
               <li className='' key={option.id}>
-                <label>
+                <label className='space-y-12'>
                   <input
+                  className='m-4'
                     type="radio"
                     name="answer"
                     value={option.id}
