@@ -1,42 +1,46 @@
-import Layout from '@/components/Layout'
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import quizDataJava from '@/utils/quizzDataJava';
+import Layout from '@/components/Layout';
 
-const Java = () => {
-    const [currentQuiz, setCurrentQuiz] = useState(0);
-    const [score, setScore] = useState(0);
-    const [selected, setSelected] = useState(null);
-  
-    const handleAnswerClick = (optionId:any) => {
-      setSelected(optionId);
-    };
-  
-    const handleNextQuestion = () => {
-      if (selected === quizDataJava[currentQuiz].correct) {
-        setScore(score + 1);
-      }
-      setSelected(null);
-      setCurrentQuiz(currentQuiz + 1);
-    };
-  
-    const resetQuiz = () => {
-      setCurrentQuiz(0);
-      setScore(0);
-      setSelected(null);
-    };
+
+
+function JavaScreen() {
+  const [currentQuiz, setCurrentQuiz] = useState(0);
+  const [score, setScore] = useState(0);
+  const [selected, setSelected] = useState(null);
+
+  const handleAnswerClick = (optionId:any) => {
+    setSelected(optionId);
+  };
+
+  const handleNextQuestion = () => {
+    if (selected === quizDataJs[currentQuiz].correct) {
+      setScore(score + 1);
+    }
+    setSelected(null);
+    setCurrentQuiz(currentQuiz + 1);
+  };
+
+  const resetQuiz = () => {
+    setCurrentQuiz(0);
+    setScore(0);
+    setSelected(null);
+  };
 
   return (
     <Layout title='Java'>
- <div className="App">
+       <div className="h-screen">
       {currentQuiz < quizDataJava.length ? (
-        <div>
-          <h2>Question {currentQuiz + 1}</h2>
-          <p>{quizDataJava[currentQuiz].question}</p>
-          <ul>
+        <div className='flex flex-col text-center mx-auto max-w-screen-md bg-white bg-opacity-80  rounded-sm p-6'>
+          <h2 className='text-lg lg:text-xl font-semibold mb-4'>Questão {currentQuiz + 1}</h2>
+          <p className='text-lg lg:text-xl mb-6 mt-4'>{quizDataJava[currentQuiz].question}</p>
+          <div className=''>{quizDataJava[currentQuiz].image}</div>
+          <ul className='flex flex-col text-left'>
             {quizDataJava[currentQuiz].options.map((option) => (
-              <li key={option.id}>
-                <label>
+              <li className='' key={option.id}>
+                <label className='space-y-12'>
                   <input
+                  className='m-4'
                     type="radio"
                     name="answer"
                     value={option.id}
@@ -48,7 +52,7 @@ const Java = () => {
               </li>
             ))}
           </ul>
-          <button onClick={handleNextQuestion}>Next</button>
+          <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-14' onClick={handleNextQuestion}>Responder</button>
         </div>
       ) : (
         <div>
@@ -58,7 +62,9 @@ const Java = () => {
       )}
     </div>
     </Layout>
-  )
+   
+  );
 }
 
-export default Java
+export default JavaScreen;
+JavaScreen.auth=true;
