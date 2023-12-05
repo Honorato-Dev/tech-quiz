@@ -34,6 +34,7 @@ function JavascriptScreen() {
         <div className='flex flex-col text-center mx-auto max-w-screen-md bg-white bg-opacity-80  rounded-sm p-6'>
           <h2 className=''>Questão {currentQuiz + 1}</h2>
           <p className=''>{quizDataJs[currentQuiz].question}</p>
+          <div className=''>{quizDataJs[currentQuiz].image}</div>
           <ul className='flex flex-col text-left'>
             {quizDataJs[currentQuiz].options.map((option) => (
               <li className='' key={option.id}>

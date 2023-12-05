@@ -56,7 +56,7 @@ const Layout = ({ children, title }: any) => {
                 'loading'
               ) : session?.user ? (
                 <Menu as="div" className="relative inline-block">
-                  <Menu.Button className="text-blue-600 flex">
+                  <Menu.Button className="text-black flex">
                     <p className="px-2 font-bold">Olá</p>
                     {session.user.name}
                   </Menu.Button>
