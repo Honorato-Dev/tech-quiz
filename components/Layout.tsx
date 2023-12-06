@@ -90,7 +90,7 @@ const Layout = ({ children, title }: any) => {
               ) : (
                 <>
                   <Link href="/login">
-                    <p className="text-lg font-semibold">Login</p>
+                    <p className="text-lg font-semibold">Logar</p>
                   </Link>
                 </>
               )}

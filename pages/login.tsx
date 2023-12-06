@@ -56,7 +56,7 @@ const LoginScreen = () => {
           className="mx-auto max-w-screen-md bg-white bg-opacity-80  rounded-sm p-6"
           onSubmit={handleSubmit(submitHandler)}
         >
-          <h1 className="mb-4 text-xl">Login</h1>
+          <h1 className="mb-4 text-xl">Logar</h1>
           <div className='flex flex-col justify-center'>
 
 <SignInGoogleBtn/>
