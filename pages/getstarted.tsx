@@ -28,74 +28,74 @@ const GetStarted = () => {
       <div className="flex h-screen flex-col justify-center">
         <div className="flex flex-row justify-center">
           <div className='grid grid-cols-4 gap-2 md:grid-cols-4 lg:grid-cols-6'>
-            <Link href='/javascript' >
+            <Link href='/login?redirect=/javascript' >
               <div className='flex '><SiJavascript className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
             </Link>
           
-          <Link href='/node' >
+          <Link href='/login?redirect=/node' >
             <div className='flex'><SiNodedotjs className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
           </Link>
           
-          <Link href='/java' >
+          <Link href='/login?redirect=/java' >
             <div className='flex'><FaJava className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
           </Link>
           
-          <Link href='/spring' >
+          <Link href='/login?redirect=/spring' >
             <div className='flex'><SiSpring className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
           </Link>
           
-          <Link href='/python' >
+          <Link href='/login?redirect=/python' >
             <div className='flex'><SiPython className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
           </Link>
           
-          <Link href='/django' >
+          <Link href='/login?redirect=/django' >
             <div className='flex'><SiDjango className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
           </Link>
           
-          <Link href='/php' >
+          <Link href='/login?redirect=/php' >
             <div className='flex'><SiPhp className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
           </Link>
           
-          <Link href='/laravel' >
+          <Link href='/login?redirect=/laravel' >
             <div className='flex'><TbBrandLaravel className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
           </Link>
           
-          <Link href='/rust' >
+          <Link href='/login?redirect=/rust' >
             <div className='flex'><FaRust className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
           </Link>
-          <Link href='/golang' >
+          <Link href='/login?redirect=/golang' >
             <div className='flex'><FaGolang className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
           </Link>
           
-          <Link href='/react' >
+          <Link href='/login?redirect=/react' >
             <div className='flex'><FaReact className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
           </Link>
           
-          <Link href='/angular' >
+          <Link href='/login?redirect=/angular' >
             <div className='flex'><FaAngular className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
           </Link>
 
-          <Link href='/wordpress' >
+          <Link href='/login?redirect=/wordpress' >
             <div className='flex'><FaWordpress className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
           </Link>
 
-          <Link href='/swift' >
+          <Link href='/login?redirect=/swift' >
             <div className='flex'><FaSwift className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
           </Link>
 
-          <Link href='/mongodb' >
+          <Link href='/login?redirect=/mongodb' >
             <div className='flex'><SiMongodb className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
           </Link>
 
-          <Link href='/linux' >
+          <Link href='/login?redirect=/linux' >
            <div className='flex'><FaLinux className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
           </Link>
 
-          <Link href='/csharp' >
+          <Link href='/login?redirect=/csharp' >
            <div className='flex'><SiCsharp className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
           </Link>
 
-          <Link href='/dotnet' >
+          <Link href='/login?redirect=/dotnet' >
            <div className='flex'><SiDotnet className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
           </Link>
 
