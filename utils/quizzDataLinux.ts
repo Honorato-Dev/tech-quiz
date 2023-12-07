@@ -1,4 +1,4 @@
-const quizDataMongoDb = [
+const quizDataLinux = [
     {
         question: "",
         image:"",
@@ -54,6 +54,19 @@ const quizDataMongoDb = [
         ],
         correct: "",
       },
+
+       {
+        question: "",
+        image:"",
+        options: [
+          { text: "", id: "a" },
+          { text: "", id: "b" },
+          { text: "", id: "c" },
+          { text: "", id: "d" },
+        ],
+        correct: "",
+      },
+
       {
         question: "",
         image:"",
@@ -66,6 +79,17 @@ const quizDataMongoDb = [
         correct: "",
       },
       {
+        question: "",
+        image:"",
+        options: [
+          { text: "", id: "a" },
+          { text: "", id: "b" },
+          { text: "", id: "c" },
+          { text: "", id: "d" },
+        ],
+        correct: "",
+      },
+       {
         question: "",
         image:"",
         options: [
@@ -87,6 +111,5 @@ const quizDataMongoDb = [
     //     ],
     //     correct: "",
     //   },
-
 ]
-export default quizDataMongoDb
+export default quizDataLinux
