@@ -12,6 +12,7 @@ import SignInGoogleBtn from '@/components/SignInGoogleBtn';
 import SignInFacebookBtn from '@/components/SignInFacebookBtn';
 import SignInGithubBtn from '@/components/SignInGithubBtn';
 import Link from 'next/link';
+import SignInLinkedinBtn from '@/components/signInLinkedinBtn';
 
 interface FormType {
   email: string;
@@ -60,8 +61,10 @@ const LoginScreen = () => {
           <div className='flex flex-col justify-center'>
 
 <SignInGoogleBtn/>
+<SignInLinkedinBtn/>
 <SignInFacebookBtn/>
 <SignInGithubBtn/>
+
 </div>
           <div className="mb-4 mt-4">
             <label htmlFor="email">Email</label>
