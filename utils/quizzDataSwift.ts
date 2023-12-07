@@ -1,4 +1,4 @@
-const quizDataWordpress = [
+const quizDataSwift = [~
     {
         question: "",
         image:"",
@@ -32,6 +32,62 @@ const quizDataWordpress = [
         ],
         correct: "b",
       },
+      {
+        question: "",
+        image:"",
+        options: [
+          { text: "", id: "a" },
+          { text: "", id: "b" },
+          { text: "", id: "c" },
+          { text: "", id: "d" },
+        ],
+        correct: "b",
+      },
+      {
+        question: "",
+        image:"",
+        options: [
+          { text: "", id: "a" },
+          { text: "", id: "b" },
+          { text: "", id: "c" },
+          { text: "", id: "d" },
+        ],
+        correct: "b",
+      },
+      {
+        question: "",
+        image:"",
+        options: [
+          { text: "", id: "a" },
+          { text: "", id: "b" },
+          { text: "", id: "c" },
+          { text: "", id: "d" },
+        ],
+        correct: "b",
+      },
+
+      {
+        question: "",
+        image:"",
+        options: [
+          { text: "", id: "a" },
+          { text: "", id: "b" },
+          { text: "", id: "c" },
+          { text: "", id: "d" },
+        ],
+        correct: "b",
+      },
+      {
+        question: "",
+        image:"",
+        options: [
+          { text: "", id: "a" },
+          { text: "", id: "b" },
+          { text: "", id: "c" },
+          { text: "", id: "d" },
+        ],
+        correct: "b",
+      },
 
       {
         question: "",
@@ -66,6 +122,7 @@ const quizDataWordpress = [
         ],
         correct: "b",
       },
+
       {
         question: "",
         image:"",
@@ -77,17 +134,5 @@ const quizDataWordpress = [
         ],
         correct: "b",
       },
-
-    //   {
-    //     question: "",
-    //     image:"",
-    //     options: [
-    //       { text: "", id: "a" },
-    //       { text: "", id: "b" },
-    //       { text: "", id: "c" },
-    //       { text: "", id: "d" },
-    //     ],
-    //     correct: "b",
-    //   },
 ]
-export default quizDataWordpress
+export default quizDataSwift
