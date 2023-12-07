@@ -1,4 +1,4 @@
-const quizDataSwift = [~
+const quizDataSwift = [
     {
         question: "",
         image:"",
