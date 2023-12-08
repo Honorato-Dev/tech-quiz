@@ -66,6 +66,11 @@ const Layout = ({ children, title }: any) => {
                         Perfil
                       </DropdownLink>
                     </Menu.Item>
+                    <Menu.Item>
+                  <DropdownLink className="dropdown-link" href="/getstarted">
+                    Get Started
+                  </DropdownLink>
+                </Menu.Item>
                     {session.user.isAdmin && (
                       <Menu.Item>
                         <DropdownLink
