@@ -29,74 +29,74 @@ const GetStarted = () => {
         <div className="flex flex-row justify-center">
           <div className='grid grid-cols-4 gap-2 md:grid-cols-4 lg:grid-cols-6'>
             <Link href='/login?redirect=/javascript' >
-              <div className='flex '><SiJavascript className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+              <div className='flex flex-col text-center hover:scale-125 transition duration-500'><SiJavascript className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /><p className='font-semibold text-sm lg:text-lg'>Javascript</p></div>
             </Link>
           
           <Link href='/login?redirect=/node' >
-            <div className='flex'><SiNodedotjs className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+            <div className='flex flex-col text-center '><SiNodedotjs className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /> <p className='font-semibold text-sm lg:text-lg'>Node</p></div>
           </Link>
           
           <Link href='/login?redirect=/java' >
-            <div className='flex'><FaJava className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+            <div className='flex flex-col text-center'><FaJava className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /> <p className='font-semibold text-sm lg:text-lg'>Java</p></div>
           </Link>
           
           <Link href='/login?redirect=/spring' >
-            <div className='flex'><SiSpring className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+            <div className='flex flex-col text-center'><SiSpring className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /><p className='font-semibold text-sm lg:text-lg'>Spring</p></div>
           </Link>
           
           <Link href='/login?redirect=/python' >
-            <div className='flex'><SiPython className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+            <div className='flex flex-col text-center'><SiPython className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /><p className='font-semibold text-sm lg:text-lg'>Python</p></div>
           </Link>
           
           <Link href='/login?redirect=/django' >
-            <div className='flex'><SiDjango className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+            <div className='flex flex-col text-center'><SiDjango className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /><p className='font-semibold text-sm lg:text-lg'>Django</p></div>
           </Link>
           
           <Link href='/login?redirect=/php' >
-            <div className='flex'><SiPhp className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+            <div className='flex flex-col text-center'><SiPhp className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /><p className='font-semibold text-sm lg:text-lg'>PHP</p></div>
           </Link>
           
           <Link href='/login?redirect=/laravel' >
-            <div className='flex'><TbBrandLaravel className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
+            <div className='flex flex-col text-center'><TbBrandLaravel className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/><p className='font-semibold text-sm lg:text-lg'>Laravel</p></div>
           </Link>
           
           <Link href='/login?redirect=/rust' >
-            <div className='flex'><FaRust className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+            <div className='flex flex-col text-center'><FaRust className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /><p className='font-semibold text-sm lg:text-lg'>Rust</p></div>
           </Link>
           <Link href='/login?redirect=/golang' >
-            <div className='flex'><FaGolang className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+            <div className='flex flex-col text-center'><FaGolang className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /><p className='font-semibold text-sm lg:text-lg'>GO</p></div>
           </Link>
           
           <Link href='/login?redirect=/react' >
-            <div className='flex'><FaReact className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
+            <div className='flex flex-col text-center'><FaReact className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/><p className='font-semibold text-sm lg:text-lg'>React</p></div>
           </Link>
           
           <Link href='/login?redirect=/angular' >
-            <div className='flex'><FaAngular className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
+            <div className='flex flex-col text-center'><FaAngular className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/><p className='font-semibold text-sm lg:text-lg'>Angular</p></div>
           </Link>
 
           <Link href='/login?redirect=/wordpress' >
-            <div className='flex'><FaWordpress className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
+            <div className='flex flex-col text-center'><FaWordpress className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/><p className='font-semibold text-sm lg:text-lg'>Wordpress</p></div>
           </Link>
 
           <Link href='/login?redirect=/swift' >
-            <div className='flex'><FaSwift className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+            <div className='flex flex-col text-center'><FaSwift className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /><p className='font-semibold text-sm lg:text-lg'>Swift</p></div>
           </Link>
 
           <Link href='/login?redirect=/mongodb' >
-            <div className='flex'><SiMongodb className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+            <div className='flex flex-col text-center'><SiMongodb className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /><p className='font-semibold text-sm lg:text-lg'>MongoDB</p></div>
           </Link>
 
           <Link href='/login?redirect=/linux' >
-           <div className='flex'><FaLinux className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /></div>
+           <div className='flex flex-col text-center'><FaLinux className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /><p className='font-semibold text-sm lg:text-lg'>Linux</p></div>
           </Link>
 
           <Link href='/login?redirect=/csharp' >
-           <div className='flex'><SiCsharp className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
+           <div className='flex flex-col text-center'><SiCsharp className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/><p className='font-semibold text-sm lg:text-lg'>C#</p></div>
           </Link>
 
           <Link href='/login?redirect=/dotnet' >
-           <div className='flex'><SiDotnet className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/></div>
+           <div className='flex flex-col text-center'><SiDotnet className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5'/><p className='font-semibold text-sm lg:text-lg'>.NET</p></div>
           </Link>
 
           
