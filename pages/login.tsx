@@ -61,8 +61,8 @@ const LoginScreen = () => {
           <div className='flex flex-col justify-center'>
 
 <SignInGoogleBtn/>
-<SignInLinkedinBtn/>
-<SignInFacebookBtn/>
+{/* <SignInLinkedinBtn/> */}
+{/* <SignInFacebookBtn/> */}
 <SignInGithubBtn/>
 
 </div>
