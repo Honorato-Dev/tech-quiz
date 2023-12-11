@@ -212,7 +212,7 @@ const Layout = ({ children, title }: any) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="hover:text-white">
+                      <Link href="/terms-and-conditions" className="hover:text-white">
                         Termos &amp; Condições
                       </Link>
                     </li>
