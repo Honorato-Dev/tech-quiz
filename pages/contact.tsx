@@ -81,7 +81,7 @@ export default function Contact() {
           Fale conosco
         </h3>
 
-        <div className="flex justify-content mt-12 ">
+        <div className="flex justify-content  mt-12 ">
           {error && (
             <Text color="red.300" my={4} fontSize="xl">
               {error}
@@ -89,27 +89,6 @@ export default function Contact() {
           )}
         </div>
 
-        {/* <div className="flex flex-col space-y-5 mt-10 lg:space-y-10 ">
-          <h4 className=" font-semibold text-center sm:text-sm  md:text-xl lg:text-3xl ">
-            Do que você precisa?
-          </h4>
-
-          <div className=" flex items-center space-x-5 justify-center">
-            <PhoneIcon className="text-[#f7ab0a] h-4 w-4 md:h-5 md:w-5   lg:h-7 lg:w-7 animate-pulse" />
-            <p className="text-sm lg:text-xl lg:text-2xl">71 99964-8719</p>
-          </div>
-          <div className=" flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="text-[#f7ab0a] h-4 w-4 md:h-5 md:w-5   lg:h-7 lg:w-7 animate-pulse" />
-            <p className="text-sm lg:text-xl lg:text-2xl">
-              universotattoostudio@gmail.com
-            </p>
-          </div>
-
-          <div className=" flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-[#f7ab0a] h-4 w-4 md:h-5 md:w-5   lg:h-7 lg:w-7 animate-pulse" />
-            <p className="text-sm lg:text-xl lg:text-2xl">Litoral Norte</p>
-          </div>
-        </div> */}
 
         <Container maxW="450px" mt={1}>
           <FormControl
@@ -163,9 +142,12 @@ export default function Contact() {
             <FormErrorMessage>Required</FormErrorMessage>
           </FormControl>
           <Button
-            className="bg-purple-600 py-4 px-4  rounded-sm mt-3 text-white  font-bold text-lg"
-            variant="outline"
-            colorScheme="blue"
+              size='md'
+              height='48px'
+              width='full'
+              border='2px'
+            variant="solid"
+            colorScheme="purple"
             isLoading={isLoading}
             disabled={
               !values.name ||

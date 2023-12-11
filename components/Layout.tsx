@@ -220,9 +220,14 @@ const Layout = ({ children, title }: any) => {
                         Política de Privacidade
                       </Link>
                     </li>
-                    <li>
+                    <li className="mb-4">
                       <Link href="/terms-and-conditions" className="hover:text-white">
                         Termos &amp; Condições
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/contact" className="hover:text-white">
+                        Contato
                       </Link>
                     </li>
                   </ul>
