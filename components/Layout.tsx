@@ -232,28 +232,28 @@ const Layout = ({ children, title }: any) => {
               <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
                 <Link
                   href="#"
-                  className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-700"
+                  className="text-gray-800 hover:text-gray-900 dark:hover:text-gray-700"
                 >
                   <FaFacebookF />
                   <span className="sr-only">Facebook page</span>
                 </Link>
                 <Link
                   href="#"
-                  className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-700"
+                  className="text-gray-800 hover:text-gray-900 dark:hover:text-gray-700"
                 >
                   <FaDiscord />
                   <span className="sr-only">Discord community</span>
                 </Link>
                 <Link
                   href="#"
-                  className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-700"
+                  className="text-gray-800 hover:text-gray-900 dark:hover:text-gray-700"
                 >
                   <FaInstagram />
                   <span className="sr-only">Instagram</span>
                 </Link>
                 <Link
                   href="https://github.com/vituhonorato"
-                  className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-700"
+                  className="text-gray-800 hover:text-gray-900 dark:hover:text-gray-700"
                 >
                   <FaGithub />
                   <span className="sr-only">GitHub account</span>
