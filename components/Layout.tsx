@@ -14,6 +14,7 @@ import { FaFacebookF } from 'react-icons/fa';
 import { FaDiscord } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
+import { FaLinkedin } from "react-icons/fa";
 
 const bebas = Bebas_Neue({
   subsets: ['latin'],
@@ -191,12 +192,20 @@ const Layout = ({ children, title }: any) => {
                         Github
                       </Link>
                     </li>
-                    <li>
+                    <li className="mb-4">
                       <Link
-                        href="https://discord.gg/4eeurUVvTy"
+                        href="https://discord.gg/TJu3XjEw"
                         className="hover:text-white"
                       >
                         Discord
+                      </Link>
+                    </li>
+                     <li>
+                      <Link
+                        href="https://www.linkedin.com/company/101332373/admin/feed/posts/?feedType=following"
+                        className="hover:text-white"
+                      >
+                        Linkedin
                       </Link>
                     </li>
                   </ul>
@@ -224,21 +233,21 @@ const Layout = ({ children, title }: any) => {
             <div className="sm:flex sm:items-center sm:justify-between">
               <span className="text-sm text-gray-500 sm:text-center dark:text-gray-900">
                 © 2023{' '}
-                <a href="https://flowbite.com/" className="hover:underline">
+                <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">
                   Tech Quiz™
                 </a>
                 . Todos os Direitos Reservardos.
               </span>
               <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
                 <Link
-                  href="#"
+                  href="https://www.linkedin.com/in/jvmh/"
                   className="text-gray-800 hover:text-gray-900 dark:hover:text-gray-700"
                 >
-                  <FaFacebookF />
-                  <span className="sr-only">Facebook page</span>
+                  <FaLinkedin />
+                  <span className="sr-only">Linkedin page</span>
                 </Link>
                 <Link
-                  href="#"
+                  href="https://discord.gg/TJu3XjEw"
                   className="text-gray-800 hover:text-gray-900 dark:hover:text-gray-700"
                 >
                   <FaDiscord />
