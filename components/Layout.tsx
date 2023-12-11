@@ -149,15 +149,23 @@ const Layout = ({ children, title }: any) => {
               <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                 <div>
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-                    Resources
+                    Recursos
                   </h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                     <li className="mb-4">
                       <Link
-                        href="https://flowbite.com/"
+                        href="https://www.mongodb.com/"
                         className="hover:text-white"
                       >
-                        Flowbite
+                        MongoDB
+                      </Link>
+                    </li>
+                    <li className="mb-4">
+                      <Link
+                        href="https://next-auth.js.org/"
+                        className="hover:text-white"
+                      >
+                        NextAuth
                       </Link>
                     </li>
                     <li>
@@ -172,7 +180,7 @@ const Layout = ({ children, title }: any) => {
                 </div>
                 <div>
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-                    Follow us
+                    Sigam-nos
                   </h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                     <li className="mb-4">
