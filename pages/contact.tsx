@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react';
 
 import { sendContactForm } from '@/pages/api/mail';
+import Layout from '@/components/Layout';
 type FormValues = {
   name: string;
   email: string;
@@ -73,11 +74,11 @@ export default function Contact() {
   };
 
   return (
-    <>
-      <div className="h-screen  flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center ">
+    <Layout title='Contato'>
+      <div className="h-screen  flex relative flex-col text-center md:text-left  max-w-7xl px-10 justify-evenly mx-auto items-center ">
         <div></div>
-        <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-sm lg:text-2xl ">
-          contato
+        <h3 className="absolute top-24 uppercase tracking-[20px] text-white text-sm lg:text-2xl ">
+          Fale conosco
         </h3>
 
         <div className="flex justify-content mt-12 ">
@@ -88,7 +89,7 @@ export default function Contact() {
           )}
         </div>
 
-        <div className="flex flex-col space-y-5 mt-10 lg:space-y-10 ">
+        {/* <div className="flex flex-col space-y-5 mt-10 lg:space-y-10 ">
           <h4 className=" font-semibold text-center sm:text-sm  md:text-xl lg:text-3xl ">
             Do que você precisa?
           </h4>
@@ -108,7 +109,7 @@ export default function Contact() {
             <MapPinIcon className="text-[#f7ab0a] h-4 w-4 md:h-5 md:w-5   lg:h-7 lg:w-7 animate-pulse" />
             <p className="text-sm lg:text-xl lg:text-2xl">Litoral Norte</p>
           </div>
-        </div>
+        </div> */}
 
         <Container maxW="450px" mt={1}>
           <FormControl
@@ -162,7 +163,7 @@ export default function Contact() {
             <FormErrorMessage>Required</FormErrorMessage>
           </FormControl>
           <Button
-            className="bg-[#f7ab0a] py-5 px-1- rounded-md text-black font-bold text-lg"
+            className="bg-purple-600 py-4 px-4  rounded-sm mt-3 text-white  font-bold text-lg"
             variant="outline"
             colorScheme="blue"
             isLoading={isLoading}
@@ -178,6 +179,6 @@ export default function Contact() {
           </Button>
         </Container>
       </div>
-    </>
+    </Layout>
   );
 }
