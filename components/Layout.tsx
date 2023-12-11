@@ -207,7 +207,7 @@ const Layout = ({ children, title }: any) => {
                   </h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                     <li className="mb-4">
-                      <Link href="#" className="hover:text-white">
+                      <Link href="/privacy-policy" className="hover:text-white">
                         Política de Privacidade
                       </Link>
                     </li>

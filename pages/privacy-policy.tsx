@@ -4,7 +4,7 @@ import React from 'react';
 const PrivacyPolicyScreen = () => {
   return (
     <Layout title="Política de privacidade">
-      <div className="flex flex-col space-y-4  px-4 bg-white justify-center">
+      <div className="flex flex-col space-y-4 py-4 px-4 bg-white justify-center">
         <h1 className="text-xl md:text-2xl lg:text-3xl">
           {' '}
           Política de Privacidade
