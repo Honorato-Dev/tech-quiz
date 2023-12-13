@@ -10,7 +10,7 @@ const alfa = Alfa_Slab_One({
 const Home = () => {
   return (
     <Layout>
-      <div className="flex flex-col space-y-8 h-screen justify-center mx-auto ">
+      <div className="flex flex-col space-y-8  justify-center mx-auto ">
         <div className="flex flex-col justify-center">
           <div className={alfa.className}>
             <h1 className="text-2xl md:text-3xl lg:text-5xl text-center  text-white ">
@@ -38,14 +38,16 @@ const Home = () => {
               Get Started
             </Link>
           </div>
+          
         </div>
-
+        
         <div className="flex flex-row justify-center">
-          <div className='flex '>
-            <div className="bg-white w-[280px] h-[350px] ">teste</div>
-            <div className="bg-white w-[280px] h-[350px]">teste</div>
+          <div className='flex space-x-1  '>
+            <div className="bg-white bg-opacity-70 rounded-md w-[480px] h-[650px] ">teste</div>
+            <div className="bg-white bg-opacity-70 rounded-md w-[480px]  h-[650px]">teste</div>
           </div>
         </div>
+        
       </div>
     </Layout>
   );
