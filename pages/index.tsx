@@ -41,9 +41,9 @@ const Home = () => {
         </div>
 
         <div className="flex flex-row justify-center">
-          <div className='flex justify-between'>
-            <div className="bg-white">teste</div>
-            <div className="bg-white">teste</div>
+          <div className='flex '>
+            <div className="bg-white w-[280px] h-[350px] ">teste</div>
+            <div className="bg-white w-[280px] h-[350px]">teste</div>
           </div>
         </div>
       </div>
