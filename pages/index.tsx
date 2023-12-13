@@ -38,14 +38,14 @@ const Home = () => {
               Get Started
             </Link>
           </div>
-          
         </div>
-        
+
         <div className="flex flex-row justify-center">
-          <div className='bg-white'>teste</div>
-          <div className='bg-white'>teste</div>
+          <div className='flex justify-between'>
+            <div className="bg-white">teste</div>
+            <div className="bg-white">teste</div>
+          </div>
         </div>
-        
       </div>
     </Layout>
   );
