@@ -41,11 +41,11 @@ const Home = () => {
           
         </div>
         
-        <div className="flex flex-row justify-center">
-          <div className='flex space-x-1  '>
-            <div className="bg-white bg-opacity-70 rounded-md w-[480px] h-[650px] ">teste</div>
-            <div className="bg-white bg-opacity-70 rounded-md w-[480px]  h-[650px]">teste</div>
-          </div>
+        <div className="flex flex-col  lg:flex-row  lg:space-x-16 justify-center">
+          
+            <div className="bg-white bg-opacity-70 w-[] h-[350px] mt-4 rounded-md lg:w-[680px] lg:h-[450px] ">teste</div>
+            <div className="bg-white bg-opacity-70 w-[] h-[350px] mt-4 rounded-md lg:w-[680px] lg:h-[450px]">teste</div>
+          
         </div>
         
       </div>
