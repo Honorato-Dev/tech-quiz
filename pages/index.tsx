@@ -42,7 +42,7 @@ const Home = () => {
 
         <div className="flex flex-col   lg:flex-row  lg:space-x-16 justify-center">
           <div className="   bg-opacity-70 w-[] h-[350px] mt-4 rounded-md lg:w-[680px] lg:h-[450px] ">
-            <p className="flex mt-20  text-white font-semibold text-base lg:text-2xl">
+            <p className="flex  text-white font-semibold text-base lg:text-2xl">
               Responder a um questionário de tecnologia pode oferecer uma série
               de vantagens significativas no contexto da evolução de carreira.
               Em um mundo cada vez mais orientado pela inovação e digitalização,
