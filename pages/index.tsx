@@ -49,15 +49,15 @@ const Home = () => {
               </p>
               
             </div>
-            <div className="bg-white p-4 space-y-3 bg-opacity-70 w-[] h-[350px] mt-4 rounded-md lg:w-[680px] lg:h-[450px]">
-              <p className='flex font-semibold p-1 text-sm lg:text-base'><span className=''></span>Atualização de Conhecimentos: Ao responder perguntas sobre tecnologia, os profissionais são desafiados a revisar e atualizar seus conhecimentos. Isso é vital em um cenário onde a tecnologia evolui rapidamente, garantindo que as habilidades estejam alinhadas com as demandas do mercado.
+            <div className=" p-4 space-y-3 bg-opacity-70 w-[] h-[350px] mt-4 rounded-md lg:w-[680px] lg:h-[450px]">
+              <p className='flex font-semibold p-1 text-sm lg:text-base'><span className={alfa.className}><span className='mr-4 text-lg lg:text-xl text-white font-normal '>Atualização de Conhecimentos:</span></span> Ao responder perguntas sobre tecnologia, os profissionais são desafiados a revisar e atualizar seus conhecimentos. Isso é vital em um cenário onde a tecnologia evolui rapidamente, garantindo que as habilidades estejam alinhadas com as demandas do mercado.
 
               </p>
-              <p className='flex font-semibold p-1 text-sm lg:text-base'><span className=''></span>
-              Destaque no Mercado: Participar ativamente de questionários de tecnologia pode destacar um profissional no mercado de trabalho. Isso demonstra proatividade, interesse em aprender e adaptabilidade, características valorizadas por empregadores que buscam talentos capazes de acompanhar as mudanças tecnológicas.
+              <p className='flex font-semibold p-1 text-sm lg:text-base'><span className={alfa.className}><span className='mr-4 text-lg lg:text-xl text-white font-normal '>Destaque no Mercado:</span></span>
+              Participar ativamente de questionários de tecnologia pode destacar um profissional no mercado de trabalho. Isso demonstra proatividade, interesse em aprender e adaptabilidade, características valorizadas por empregadores que buscam talentos capazes de acompanhar as mudanças tecnológicas.
               </p>
-              <p className='flex font-semibold p-1 text-sm lg:text-base'><span className=''></span>
-              Networking e Oportunidades: Muitos questionários de tecnologia são promovidos por comunidades e empresas do setor. Ao participar, os profissionais têm a chance de expandir sua rede de contatos, interagindo com colegas, líderes e especialistas. Isso pode resultar em novas oportunidades de emprego, colaborações e parcerias.
+              <p className='flex font-semibold p-1 text-sm lg:text-base'><span className={alfa.className}><span className='mr-4 text-lg lg:text-xl text-white font-normal '>Networking e Oportunidades:</span></span>
+               Muitos questionários de tecnologia são promovidos por comunidades e empresas do setor. Ao participar, os profissionais têm a chance de expandir sua rede de contatos, interagindo com colegas, líderes e especialistas. Isso pode resultar em novas oportunidades de emprego, colaborações e parcerias.
               </p>
             
               <p></p>
