@@ -1,12 +1,13 @@
 const nodemailer = require("nodemailer");
+import Env from '@/config/env'
 
 export const transporter = nodemailer.createTransport({
-    host: "smtp.forwardemail.net",
-    port: 465,
-    secure: true,
+    host: Env.SMPTP_HOST,
+    port: Env.SMPTP_PORT,
+    secure: Env.SMPTP_SECURE,
     auth: {
       // TODO: replace `user` and `pass` values from <https://forwardemail.net>
-      user: "REPLACE-WITH-YOUR-ALIAS@YOURDOMAIN.COM",
-      pass: "REPLACE-WITH-YOUR-GENERATED-PASSWORD",
+      user: Env.SMPTP_USER,
+      pass: Env.SMPTP_PASSWORD,
     },
   });
