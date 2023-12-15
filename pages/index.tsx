@@ -40,7 +40,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex flex-col   lg:flex-row  lg:space-x-16 justify-center ">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-2   lg:flex-row  lg:space-x-16 justify-center ">
           <div className="   bg-opacity-70 w-[] h-[350px] mt-4 rounded-md lg:w-[680px] lg:h-[450px] ">
             <p className="flex  text-white font-semibold text-base lg:text-2xl">
               Responder a um questionário de tecnologia pode oferecer uma série
@@ -52,7 +52,7 @@ const Home = () => {
               benefícios como:
             </p>
           </div>
-          <div className=" p-4 space-y-3 bg-opacity-70 w-[] h-[650px] mt-4 rounded-md lg:w-[680px] lg:h-[450px]">
+          <div className=" p-4 space-y-3 bg-opacity-70  mt-4 rounded-md lg:w-[680px] lg:h-[450px]">
             <p className="flex font-semibold p-1 text-sm lg:text-base">
               <span className={alfa.className}>
                 <span className="mr-4 text-lg lg:text-xl text-white font-normal ">
@@ -92,8 +92,8 @@ const Home = () => {
             <p></p>
           </div>
         </div>
-        <div className="flex flex-col mt-10 lg:mt-4   lg:flex-row  lg:space-y-3 justify-center">
-          <div className="  p-4 space-y-3 bg-opacity-70 w-[] h-[650px]  lg:mt-4 rounded-md lg:w-[680px] lg:h-[450px] ">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-3 lg:grid-cols-2 mt-10 lg:mt-4   lg:flex-row  lg:space-x-16 justify-center">
+          <div className="  p-4 space-y-3  bg-opacity-70   lg:mt-4 rounded-md lg:w-[680px] lg:h-[450px] ">
             <p className="flex font-semibold p-1 ml-1 text-sm lg:text-base">
               <span className={alfa.className}>
                 <span className="flex mr-4 pr-2 text-lg lg:text-xl text-white font-normal ">
