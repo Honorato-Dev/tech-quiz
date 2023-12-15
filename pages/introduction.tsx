@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import quizDataJs from '@/utils/quizzDataJs';
+import quizDataIntroduction from '@/utils/quizzDataIntroduction';
 import Layout from '@/components/Layout';
 
 
@@ -14,7 +14,7 @@ function IntroductionScreen() {
   };
 
   const handleNextQuestion = () => {
-    if (selected === quizDataJs[currentQuiz].correct) {
+    if (selected === quizDataIntroduction[currentQuiz].correct) {
       setScore(score + 1);
     }
     setSelected(null);
@@ -30,13 +30,13 @@ function IntroductionScreen() {
   return (
     <Layout title='Javascript'>
        <div className="h-screen">
-      {currentQuiz < quizDataJs.length ? (
+      {currentQuiz < quizDataIntroduction.length ? (
         <div className='flex flex-col text-center mx-auto max-w-screen-md bg-white bg-opacity-80  rounded-sm p-6'>
           <h2 className='text-lg lg:text-xl font-semibold mb-4'>Questão {currentQuiz + 1}</h2>
-          <p className='text-lg lg:text-xl mb-6 mt-4'>{quizDataJs[currentQuiz].question}</p>
-          <div className=''>{quizDataJs[currentQuiz].image}</div>
+          <p className='text-lg lg:text-xl mb-6 mt-4'>{quizDataIntroduction[currentQuiz].question}</p>
+          <div className=''>{quizDataIntroduction[currentQuiz].image}</div>
           <ul className='flex flex-col text-left'>
-            {quizDataJs[currentQuiz].options.map((option) => (
+            {quizDataIntroduction[currentQuiz].options.map((option) => (
               <li className='' key={option.id}>
                 <label className='space-y-12'>
                   <input
@@ -56,7 +56,7 @@ function IntroductionScreen() {
         </div>
       ) : (
         <div>
-          <h2>You answered {score}/{quizDataJs.length} questions correctly</h2>
+          <h2>You answered {score}/{quizDataIntroduction.length} questions correctly</h2>
           <button onClick={resetQuiz}>Reload</button>
         </div>
       )}
@@ -67,4 +67,3 @@ function IntroductionScreen() {
 }
 
 export default IntroductionScreen;
-IntroductionScreen.auth=true;
