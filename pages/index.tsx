@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout';
 import { Alfa_Slab_One } from 'next/font/google';
 import Link from 'next/link';
+import IntroductionScreen from './introduction';
 
 const alfa = Alfa_Slab_One({
   subsets: ['latin'],
@@ -132,7 +133,9 @@ const Home = () => {
               formação contínua.
             </p>
           </div>
-          <div className=" bg-white  bg-opacity-70 w-[] h-[650px] mt-4 mb-10 rounded-md lg:w-[680px] lg:h-[450px] "></div>
+          <div className="  bg-opacity-70 w-[] h-[650px] mt-4 mb-10 rounded-md lg:w-[680px] lg:h-[450px] ">
+            <IntroductionScreen/>
+          </div>
         </div>
       </div>
     </Layout>

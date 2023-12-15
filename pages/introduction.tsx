@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import quizDataIntroduction from '@/utils/quizzDataIntroduction';
-import Layout from '@/components/Layout';
+import { Alfa_Slab_One } from 'next/font/google';
+
+const alfa = Alfa_Slab_One({
+    subsets: ['latin'],
+    weight: ['400'],
+  });
 
 
 
@@ -28,10 +33,14 @@ function IntroductionScreen() {
   };
 
   return (
-    <Layout title='Javascript'>
-       <div className="h-screen">
+    <>
+       <div className="">
+        <div className={alfa.className}>
+            <h1 className=' text-center text-white text-base lg:text-xl p-3'>Aprenda a usar</h1>
+        </div>
+        
       {currentQuiz < quizDataIntroduction.length ? (
-        <div className='flex flex-col text-center mx-auto max-w-screen-md bg-white bg-opacity-80  rounded-sm p-6'>
+        <div className='flex flex-col text-center mx-auto max-w-screen-md bg-white bg-opacity-70  rounded-sm p-6'>
           <h2 className='text-lg lg:text-xl font-semibold mb-4'>Questão {currentQuiz + 1}</h2>
           <p className='text-lg lg:text-xl mb-6 mt-4'>{quizDataIntroduction[currentQuiz].question}</p>
           <div className=''>{quizDataIntroduction[currentQuiz].image}</div>
@@ -61,7 +70,7 @@ function IntroductionScreen() {
         </div>
       )}
     </div>
-    </Layout>
+    </>
    
   );
 }
