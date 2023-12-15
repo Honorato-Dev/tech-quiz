@@ -94,7 +94,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col mt-10 lg:mt-4   lg:flex-row  lg:space-x-16 justify-center">
           <div className="  p-4  bg-opacity-70 w-[] h-[650px]  lg:mt-4 rounded-md lg:w-[680px] lg:h-[450px] ">
-            <p className="flex font-semibold pl-1 ml-1 text-sm lg:text-base">
+            <p className="flex font-semibold p-1 ml-1 text-sm lg:text-base">
               <span className={alfa.className}>
                 <span className="flex mr-4 pr-2 text-lg lg:text-xl text-white font-normal ">
                   Certificação Informal:
