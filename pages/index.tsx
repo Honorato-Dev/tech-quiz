@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <Layout>
       <div className="flex flex-col space-y-8  justify-center mx-auto ">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center lg:mt-24 lg:mb-24">
           <div className={alfa.className}>
             <h1 className="text-2xl md:text-3xl lg:text-5xl text-center  text-white ">
               Bem-vindo ao Tech Quiz!
@@ -40,7 +40,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex flex-col   lg:flex-row  lg:space-x-16 justify-center">
+        <div className="flex flex-col   lg:flex-row  lg:space-x-16 justify-center ">
           <div className="   bg-opacity-70 w-[] h-[350px] mt-4 rounded-md lg:w-[680px] lg:h-[450px] ">
             <p className="flex  text-white font-semibold text-base lg:text-2xl">
               Responder a um questionário de tecnologia pode oferecer uma série
@@ -92,7 +92,7 @@ const Home = () => {
             <p></p>
           </div>
         </div>
-        <div className="flex flex-col mt-10 lg:mt-4   lg:flex-row  lg:space-x-16 justify-center">
+        <div className="flex flex-col mt-10 lg:mt-4   lg:flex-row  lg:space-y-3 justify-center">
           <div className="  p-4  bg-opacity-70 w-[] h-[650px]  lg:mt-4 rounded-md lg:w-[680px] lg:h-[450px] ">
             <p className="flex font-semibold p-1 ml-1 text-sm lg:text-base">
               <span className={alfa.className}>
@@ -132,7 +132,7 @@ const Home = () => {
               formação contínua.
             </p>
           </div>
-          <div className=" bg-white  bg-opacity-70 w-[] h-[650px] mt-4 rounded-md lg:w-[680px] lg:h-[450px] "></div>
+          <div className=" bg-white  bg-opacity-70 w-[] h-[650px] mt-4 mb-10 rounded-md lg:w-[680px] lg:h-[450px] "></div>
         </div>
       </div>
     </Layout>
