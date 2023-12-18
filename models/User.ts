@@ -5,6 +5,7 @@ interface IUser extends Document {
   email: string;
   password: string;
   isAdmin: boolean;
+  password_reset_token: string;
 }
 
 const userSchema = new mongoose.Schema<IUser>(
@@ -13,12 +14,14 @@ const userSchema = new mongoose.Schema<IUser>(
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     isAdmin: { type: Boolean, required: true, default: false },
+    password_reset_token: { required: false, trim: true },
   },
   {
     timestamps: true,
   }
 );
 
-const User: Model<IUser> = mongoose.models.User || mongoose.model<IUser>('User', userSchema);
+const User: Model<IUser> =
+  mongoose.models.User || mongoose.model<IUser>('User', userSchema);
 
 export default User;

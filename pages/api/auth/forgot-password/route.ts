@@ -6,9 +6,9 @@ import Env from "@/config/env";
 import { render } from "@react-email/render";
 import ForgotPasswordEmail from "@/emails/ForgotPasswordEmail";
 import { sendEmail } from "@/config/mail";
-import { connect } from "@/database/mongo.config";
+import db from "@/utils/db";
 
-connect();
+db.connect();
 
 export async function POST(request: NextRequest) {
   const payload: ForgotPasswordPayload = await request.json();
