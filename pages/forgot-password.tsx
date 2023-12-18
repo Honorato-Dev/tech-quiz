@@ -46,7 +46,7 @@ const ForgotPasswordScreen = () => {
               <label className="block">Email</label>
               <input
                 type="email"
-                placeholder="exmplo@gmail.com"
+                placeholder="exmplo@mail.com"
                 className="w-full h-10 p-2 border rounded-md outline-red-400"
                 onChange={(event) => setEmail(event.target.value)}
               />
