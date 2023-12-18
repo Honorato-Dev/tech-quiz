@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "crypto-random-string": "^5.0.0",
+    "cryptr": "^6.3.0",
     "framer-motion": "^10.16.16",
     "next": "14.0.3",
     "react": "^18",
