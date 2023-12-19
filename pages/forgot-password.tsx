@@ -35,7 +35,7 @@ const ForgotPasswordScreen = () => {
     <Layout title='Recuperar senha'>
         <ToastContainer />
       <div className="flex justify-center">
-        <div className="w-[500px] p-5 rounded-lg shadow-lg">
+        <div className="w-[500px] p-5 rounded-lg shadow-lg bg-white bg-opacity-70">
           <h1 className="text-2xl font-bold">Esqueçeu a senha ?</h1>
           <p>
           Não se preocupe isso acontece o tempo todo.
@@ -43,7 +43,7 @@ const ForgotPasswordScreen = () => {
           </p>
           <form onSubmit={submit}>
             <div className="mt-5">
-              <label className="block">Email</label>
+              <label className="block mb-3">Email</label>
               <input
                 type="email"
                 placeholder="exmplo@mail.com"
