@@ -10,25 +10,11 @@ import { NextRequest, NextResponse } from "next/server";
 import { render } from "@react-email/render";
  
 const handler = async(req:any,res:any) => {
- if(req.method !== 'POST') {
-    return;
- }
- const { email}:any = req.body;
- if (
-    
-    !email ||
-    !email.includes('@') 
+    const payload: ForgotPasswordPayload = await req.body
 
-    
- ){
-    res.status(422).json({
-        message: 'Validation error'
-    });
-    return;
- }
 
  await db.connect();
- const  existingUser = await User.findOne({email: email})
+ const  existingUser = await User.findOne({email: payload.email})
  if (!existingUser || null) {
     res.status(422).json({message: "No user found with this email."});
     await db.disconnect();
@@ -59,7 +45,7 @@ const handler = async(req:any,res:any) => {
     );
 
     // * Send email to user
-    await sendEmail(email, "Reset Password", html);
+    await sendEmail(payload.email, "Reset Password", html);
     return NextResponse.json({
       status: 200,
       message: "Email sent successfully.please check your email.",

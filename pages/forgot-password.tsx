@@ -30,7 +30,6 @@ const ForgotPasswordScreen = () => {
           console.log("The error is", err);
         });
     };
-
   return (
     <Layout title='Recuperar senha'>
         <ToastContainer />

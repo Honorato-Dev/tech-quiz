@@ -1,20 +1,20 @@
-import  User  from "@/models/User";
-import { NextRequest, NextResponse } from "next/server";
-import cryptoRandomString from "crypto-random-string";
-import Cryptr from "cryptr";
+import db from "@/utils/db";
+import User from "@/models/User";
+let bcrypt = require('bcryptjs');
 import Env from "@/config/env";
-import { render } from "@react-email/render";
+import Cryptr from "cryptr";
+import cryptoRandomString from "crypto-random-string";
 import ForgotPasswordEmail from "@/emails/ForgotPasswordEmail";
 import { sendEmail } from "@/config/mail";
-import db from "@/utils/db";
+import { NextRequest, NextResponse } from "next/server";
+import { render } from "@react-email/render";
 
-
-
+db.connect()
+ 
 export async function POST(request: NextRequest) {
   const payload: ForgotPasswordPayload = await request.json();
 
-  // * Check user email first
-  await db.connect();
+  // * Check user email firsr
   const user = await User.findOne({ email: payload.email });
   if (user == null) {
     return NextResponse.json({
