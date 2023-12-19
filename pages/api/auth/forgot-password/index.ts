@@ -8,13 +8,13 @@ import ForgotPasswordEmail from "@/emails/ForgotPasswordEmail";
 import { sendEmail } from "@/config/mail";
 import db from "@/utils/db";
 
-db.connect();
+
 
 export async function POST(request: NextRequest) {
   const payload: ForgotPasswordPayload = await request.json();
 
   // * Check user email first
-  
+  await db.connect();
   const user = await User.findOne({ email: payload.email });
   if (user == null) {
     return NextResponse.json({

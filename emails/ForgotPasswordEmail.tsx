@@ -6,7 +6,7 @@ import { Text } from "@react-email/text";
 import { Hr } from "@react-email/hr";
 export default function ForgotPasswordEmail({
   params,
-}: {
+}:{
   params: { name: string; url: string };
 }) {
   return (

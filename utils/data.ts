@@ -6,6 +6,7 @@ interface User {
     email: string;
     password: string
     isAdmin: boolean;
+    password_reset_token?: string;
 }
 
 interface Data {
@@ -19,12 +20,14 @@ const data:Data = {
            email:'admin@techquiz.com',
            password:bcrypt.hashSync('123456'),
            isAdmin: true, 
+           password_reset_token: '',
         },
         {
             name:'Victor',
             email:'victorpachara@gmail.com',
             password:bcrypt.hashSync('123456'),
             isAdmin: false, 
+            password_reset_token: '',
          },
     ],
 }

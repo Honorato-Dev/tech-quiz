@@ -14,6 +14,12 @@ const userSchema = new mongoose.Schema<IUser>(
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     isAdmin: { type: Boolean, required: true, default: false },
+    password_reset_token: {
+      type: String,
+      required: false,
+      
+      trim: true,
+    },
     
   },
   {
