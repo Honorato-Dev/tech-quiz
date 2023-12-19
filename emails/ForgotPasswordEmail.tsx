@@ -26,7 +26,7 @@ export default function ForgotPasswordEmail({
       <Hr />
 
       <Heading as="h3">Regards</Heading>
-      <Text>Coding with Tushar</Text>
+      <Text>Tech Quiz</Text>
     </Html>
   );
 }
