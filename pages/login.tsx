@@ -107,13 +107,22 @@ const LoginScreen = () => {
           <div className="mb-4">
             <button className="login-button">Login</button>
           </div>
-          <div className="mb-4">
+          <div className="mb-2">
             Ainda não se cadastrou? &nbsp;
             <Link
               className="text-indigo-600  rounded-lg p-1 font-semibold"
               href="/register"
             >
               Registrar
+            </Link>
+          </div>
+          <div className="mb-4 text-sm">
+            Esqueçeu a senha? &nbsp;
+            <Link
+              className="text-indigo-600  rounded-lg p-1 font-semibold"
+              href="/forgot-password"
+            >
+              Clique aqui
             </Link>
           </div>
         </form>
