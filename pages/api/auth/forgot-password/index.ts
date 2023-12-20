@@ -8,24 +8,34 @@ import ForgotPasswordEmail from "@/emails/ForgotPasswordEmail";
 import { sendEmail } from "@/config/mail";
 import { NextRequest, NextResponse } from "next/server";
 import { render } from "@react-email/render";
-import { connect } from "@/utils/mongo.config";
 
-db.connect()
+
+
  
 export default async function POST(request: NextRequest) {
-  // const payload: ForgotPasswordPayload = await request.json();
-  const { email }:any = request.body;
+  const payload:ForgotPasswordPayload = await request.json();
+  if(request.method !== 'POST') {
+    return;
+ }
+  // const { email }:any = await request.body;
 
   // * Check user email first
-  const user = await User.findOne({ email: email });
-  if (user == null) {
-    return NextResponse.json({
+  await db.connect();
+  const user = await User.findOne({ email: payload.email });
+  if (user == null ) {
+    NextResponse.json({
       status: 400,
       errors: {
         email: "No user found with this email.",
       },
+      
     });
+   
+     await db.disconnect();
+  return
+    
   }
+ 
 
   //   * Generate random string
   const randomStr = cryptoRandomString({
@@ -53,7 +63,7 @@ export default async function POST(request: NextRequest) {
     );
 
     // * Send email to user
-    await sendEmail(email, "Reset Password", html);
+    await sendEmail(payload.email, "Reset Password", html);
     return NextResponse.json({
       status: 200,
       message: "Email sent successfully.please check your email.",
