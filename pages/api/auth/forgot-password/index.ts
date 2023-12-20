@@ -12,9 +12,9 @@ import { render } from "@react-email/render";
 
 
  
-export default async function POST(request: NextRequest) {
-  const payload:ForgotPasswordPayload = await request.json();
-  if(request.method !== 'POST') {
+export default async function POST(req:any, res:any) {
+  const payload:ForgotPasswordPayload = await req.body;
+  if(req.method !== 'POST') {
     return;
  }
   // const { email }:any = await request.body;
@@ -22,19 +22,24 @@ export default async function POST(request: NextRequest) {
   // * Check user email first
   await db.connect();
   const user = await User.findOne({ email: payload.email });
-  if (user == null ) {
-    NextResponse.json({
-      status: 400,
-      errors: {
-        email: "No user found with this email.",
-      },
-      
-    });
-   
-     await db.disconnect();
-  return
-    
+  if (user == null) {
+    res.status(422).json({message: 'User do not exists'},console.log('out'));
+    await db.disconnect();
+    return;
   }
+  // if (user == null ) {
+  //   res.json({
+  //     status: 400,
+  //     errors: {
+  //       email: "No user found with this email.",
+  //     },
+      
+  //   });
+   
+  //    await db.disconnect();
+  // return
+    
+  // }
  
 
   //   * Generate random string

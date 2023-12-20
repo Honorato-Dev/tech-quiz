@@ -16,6 +16,7 @@ const ForgotPasswordScreen = () => {
         await axios.post("/api/auth/forgot-password", { email: email })
         .then((res) => {
           setLoading(false);
+          console.log('deu pau')
           const response = res.data;
           if (response.status == 200) {
             toast.success(response.message, { theme: "colored" });
