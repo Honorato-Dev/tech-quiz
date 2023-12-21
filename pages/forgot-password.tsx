@@ -65,8 +65,8 @@ const ForgotPasswordScreen = () => {
         
       <div className="flex justify-center">
         <div className="w-[500px] p-5 rounded-sm shadow-lg bg-white bg-opacity-70">
-          <h1 className="text-2xl font-bold">Esqueçeu a senha ?</h1>
-          <p>
+          <h1 className="text-xl lg:text-2xl font-bold">Esqueçeu a senha ?</h1>
+          <p className='flex text-sm lg:text-base'>
           Não se preocupe isso acontece o tempo todo.
            Escreva o seu email abaixo e mandaremos um email de recuperação.
           </p>
@@ -106,7 +106,7 @@ const ForgotPasswordScreen = () => {
                 className="w-full bg-black p-2 rounded-sm text-white"
                 disabled={loading}
               >
-                {loading ? "Processing" : "Submit"}
+                {loading ? "Processando" : "Enviar"}
               </button>
             </div>
           </form>
