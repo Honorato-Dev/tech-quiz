@@ -4,6 +4,7 @@ import axios from "axios";
 import { useForm } from 'react-hook-form';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { signIn } from 'next-auth/react';
 
 
 interface FormType {
@@ -37,8 +38,13 @@ const ForgotPasswordScreen = () => {
       setLoading(true);
       try {
         await axios.post("/api/auth/forgot-password", { email: email })
+        const result: any = await signIn('credentials', {
+          redirect: false,
+          email,
+         
+        });
         if(email!){
-          
+          toast.error('');
         }
      
   
@@ -74,11 +80,11 @@ const ForgotPasswordScreen = () => {
               />
               <span className="text-red-500">{errors?.email}</span>
             </div> */}
-            <div className="mb-4 mt-4">
+            <div className="mb-3 mt-4">
             <label htmlFor="email">Email</label>
             <input
               type="email"
-              className="w-full mt-3"
+              className="w-full mt-1"
               placeholder='exemplo@email.com'
               id="email"
               autoFocus
