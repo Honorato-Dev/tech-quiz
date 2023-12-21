@@ -1,31 +1,46 @@
 import Layout from '@/components/Layout'
 import React, { useState } from "react";
 import axios from "axios";
+import { useForm } from 'react-hook-form';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
+interface FormType {
+  email: string;
+  password?: string;
+}
+
+
+
+
+
+
+
 const ForgotPasswordScreen = () => {
-    const [email, setEmail] = useState("");
+    
     const [loading, setLoading] = useState(false);
-    const [errors, setErrors] = useState<LoginErrorType>();
+    // const [errors, setErrors] = useState<LoginErrorType>();
+
+
+
+    const {
+      register,
+      handleSubmit,
+      formState: { errors },
+    } = useForm<FormType>();
+
+
   
-    const submit = async (event: React.FormEvent) => {
-      event.preventDefault();
+    const submitHandler = async ({ email, password }: FormType) => {
+  
       setLoading(true);
       try {
         await axios.post("/api/auth/forgot-password", { email: email })
-        .then((res) => {
-          setLoading(false);
-          console.log('deu pau')
-          const response = res.data;
-          if (response.status == 200) {
-            toast.success(response.message, { theme: "colored" });
-          } else if (response.status == 400) {
-            setErrors(response.errors);
-          } else if (response.status == 500) {
-            toast.success(response.message, { theme: "colored" });
-          }
-        })
+        if(email!){
+          
+        }
+     
   
        
       } catch (err) {
@@ -33,26 +48,10 @@ const ForgotPasswordScreen = () => {
         setLoading(false);
           console.log("The error is", err);
       }
-      //
-      // event.preventDefault();
-      // setLoading(true);
-      // axios
-      //   .post("/api/auth/forgot-password", { email: email })
-      //   .then((res) => {
-      //     setLoading(false);
-      //     const response = res.data;
-      //     if (response.status == 200) {
-      //       toast.success(response.message, { theme: "colored" });
-      //     } else if (response.status == 400) {
-      //       setErrors(response.errors);
-      //     } else if (response.status == 500) {
-      //       toast.success(response.message, { theme: "colored" });
-      //     }
-      //   })
-      //   .catch((err) => {
-      //     setLoading(false);
-      //     console.log("The error is", err);
-      //   });
+     
+
+
+
     };
   return (
     <Layout title='Recuperar senha'>
@@ -64,8 +63,8 @@ const ForgotPasswordScreen = () => {
           Não se preocupe isso acontece o tempo todo.
            Escreva o seu email abaixo e mandaremos um email de recuperação.
           </p>
-          <form onSubmit={submit}>
-            <div className="mt-5">
+          <form onSubmit={handleSubmit(submitHandler)}>
+            {/* <div className="mt-5">
               <label className="block mb-3">Email</label>
               <input
                 type="email"
@@ -74,7 +73,27 @@ const ForgotPasswordScreen = () => {
                 onChange={(event) => setEmail(event.target.value)}
               />
               <span className="text-red-500">{errors?.email}</span>
-            </div>
+            </div> */}
+            <div className="mb-4 mt-4">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              className="w-full mt-3"
+              placeholder='exemplo@email.com'
+              id="email"
+              autoFocus
+              {...register('email', {
+                required: 'Por favor insira um email válido',
+                pattern: {
+                  value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/i,
+                  message: 'Por favor use um formato de email válido',
+                },
+              })}
+            />
+            {errors.email && (
+              <div className="text-red-600">{errors.email.message}</div>
+            )}
+          </div>
             <div className="mt-5">
               <button
                 className="w-full bg-black p-2 rounded-sm text-white"
