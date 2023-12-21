@@ -70,14 +70,14 @@ const ForgotPasswordScreen = () => {
               <input
                 type="email"
                 placeholder="exemplo@mail.com"
-                className="w-full h-10 p-2 border rounded-md outline-red-400"
+                className="w-full h-10 p-2 border rounded-sm outline-red-400"
                 onChange={(event) => setEmail(event.target.value)}
               />
               <span className="text-red-500">{errors?.email}</span>
             </div>
             <div className="mt-5">
               <button
-                className="w-full bg-black p-2 rounded-lg text-white"
+                className="w-full bg-black p-2 rounded-sm text-white"
                 disabled={loading}
               >
                 {loading ? "Processing" : "Submit"}
