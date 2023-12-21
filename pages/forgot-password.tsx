@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { signIn } from 'next-auth/react';
+import { getError } from '@/utils/error';
 
 
 interface FormType {
@@ -43,14 +44,14 @@ const ForgotPasswordScreen = () => {
           email,
          
         });
-        if(email!){
-          toast.error('');
+        if(result.error){
+          toast.error(result.error);
         }
      
   
        
       } catch (err) {
-        //toast.error(getError(err));
+        toast.error(getError(err));
         setLoading(false);
           console.log("The error is", err);
       }
@@ -61,7 +62,7 @@ const ForgotPasswordScreen = () => {
     };
   return (
     <Layout title='Recuperar senha'>
-        <ToastContainer />
+        
       <div className="flex justify-center">
         <div className="w-[500px] p-5 rounded-sm shadow-lg bg-white bg-opacity-70">
           <h1 className="text-2xl font-bold">Esqueçeu a senha ?</h1>

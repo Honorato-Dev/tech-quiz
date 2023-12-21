@@ -23,7 +23,7 @@ export default async function POST(req:any, res:any) {
   await db.connect();
   const user = await User.findOne({ email: payload.email });
   if (user == null) {
-    res.status(422).json({message: 'User do not exists'},console.log('out'));
+    res.status(422).json({message: 'Usuário inexistente!'},console.log('out'));
     await db.disconnect();
     return;
   }
