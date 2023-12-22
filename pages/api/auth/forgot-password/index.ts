@@ -27,19 +27,9 @@ export default async function POST(req:any, res:any) {
     await db.disconnect();
     return;
   }
-  // if (user == null ) {
-  //   res.json({
-  //     status: 400,
-  //     errors: {
-  //       email: "No user found with this email.",
-  //     },
-      
-  //   });
-   
-  //    await db.disconnect();
-  // return
-    
-  // }
+  
+
+  
  
 
   //   * Generate random string
