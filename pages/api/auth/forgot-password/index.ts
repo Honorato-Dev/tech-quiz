@@ -44,7 +44,7 @@ export default async function POST(req:any, res:any) {
   // * Encrypt user email
   const crypt = new Cryptr(Env.SECRET_KEY);
   const encryptedEmail = crypt.encrypt(user.email);
-
+  
   const url = `${Env.APP_URL}/reset-password/${encryptedEmail}?signature=${randomStr}`;
 
   try {
@@ -59,13 +59,13 @@ export default async function POST(req:any, res:any) {
 
     // * Send email to user
     await sendEmail(payload.email, "Reset Password", html);
-    return NextResponse.json({
+    return res.json({
       status: 200,
       message: "Email sent successfully.please check your email.",
     });
   } catch (error) {
     console.log("the error is", error);
-    return NextResponse.json({
+    return res.json({
       status: 500,
       message: "Something went wrong.please try again!",
     });

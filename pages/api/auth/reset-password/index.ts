@@ -5,7 +5,7 @@ import Env from "@/config/env";
 import db from "@/utils/db";
 let bcrypt = require('bcryptjs');
 
-connect();
+
 
 export async function POST(request: NextRequest) {
   const payload: ResetPasswordPayload = await request.json();
@@ -27,12 +27,12 @@ export async function POST(request: NextRequest) {
       status: 400,
       message: "Reset url is not correct. pls double check it .",
     });
-    await db.disconnect();
+    
   }
 
   const salt = bcrypt.genSaltSync(10);
   user.password = bcrypt.hashSync(payload.password, salt);
-  user.password_reset_token = null;
+  user.password_reset_token = '';
   await user.save();
 
   return NextResponse.json({

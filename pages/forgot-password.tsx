@@ -45,7 +45,9 @@ const ForgotPasswordScreen = () => {
          
         });
         if(result.error){
+          console.log('fhsikghagk')
           toast.error(result.error);
+          setLoading(false);
         }
      
   
