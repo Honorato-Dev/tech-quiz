@@ -46,6 +46,7 @@ export default async function POST(req:any, res:any) {
   const encryptedEmail = crypt.encrypt(user.email);
   
   const url = `${Env.APP_URL}/reset-password/${encryptedEmail}?signature=${randomStr}`;
+  console.log(url)
 
   try {
     const html = render(

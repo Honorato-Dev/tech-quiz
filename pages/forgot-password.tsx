@@ -38,7 +38,16 @@ const ForgotPasswordScreen = () => {
   
       setLoading(true);
       try {
-        await axios.post("/api/auth/forgot-password", { email: email })
+        await axios.post("/api/auth/forgot-password", { email: email }).then((res:any)=>{
+          const response = res.data;
+          if (response.status == 200) {
+            toast.success(response.message, { theme: "colored" });
+          } else if (response.status == 400) {
+            
+          } else if (response.status == 500) {
+            toast.success(response.message, { theme: "colored" });
+          }
+        })
         const result: any = await signIn('credentials', {
           redirect: false,
           email,
