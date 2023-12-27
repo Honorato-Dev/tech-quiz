@@ -14,19 +14,20 @@ import Env from '@/config/env'
 
   //TO send the email
 
-    const  sendEmail = async (
-
-     to:string,
- subject:string,
- html:string,
-  ) : Promise<string|null> => {
-    const info = await transporter.sendEmail({
-    from:Env.EMAIL_FROM,
-    subject:subject,
-    html:html
-    })
+  const sendEmail = async (
+    to: string,
+    subject: string,
+    html: string
+  ): Promise<string | null> => {
+    const info = await transporter.sendMail({
+      from: Env.EMAIL_FROM,
+      to: to,
+      subject: subject,
+      html: html,
+    });
+  
     return info?.messageId;
-  }
+  };
 
   export { transporter, sendEmail };
  
