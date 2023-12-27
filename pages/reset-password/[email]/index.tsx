@@ -51,7 +51,7 @@ export default function ResetPassword({
               <label className="block">Senha</label>
               <input
                 type="password"
-                placeholder="Enter your new password"
+                placeholder="Digite a nova senha"
                 className="w-full h-10 p-2 border rounded-md outline-red-400"
                 onChange={(event) =>
                   setAuthState({ ...authState, password: event.target.value })
@@ -62,7 +62,7 @@ export default function ResetPassword({
               <label className="block">Confirmar senha</label>
               <input
                 type="password"
-                placeholder="Enter your confirm password"
+                placeholder="Confirme a nova senha"
                 className="w-full h-10 p-2 border rounded-md outline-red-400"
                 onChange={(event) =>
                   setAuthState({ ...authState, cpassword: event.target.value })
