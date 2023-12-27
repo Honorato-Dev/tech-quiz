@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 import Env from '@/config/env'
 
-export const transporter = nodemailer.createTransport({
+ const transporter = nodemailer.createTransport({
     host: Env.SMTP_HOST,
     port: Number(Env.SMTP_PORT),
     secure: Env.SMTP_SECURE,
@@ -14,7 +14,7 @@ export const transporter = nodemailer.createTransport({
 
   //TO send the email
 
-  export  const  sendEmail = async (
+    const  sendEmail = async (
 
      to:string,
  subject:string,
@@ -27,5 +27,7 @@ export const transporter = nodemailer.createTransport({
     })
     return info?.messageId;
   }
+
+  export { transporter, sendEmail };
  
   

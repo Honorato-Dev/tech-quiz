@@ -40,24 +40,26 @@ const ForgotPasswordScreen = () => {
       try {
         await axios.post("/api/auth/forgot-password", { email: email }).then((res:any)=>{
           const response = res.data;
+          console.log('ESSE È O RESPONSE',response);
           if (response.status == 200) {
             toast.success(response.message, { theme: "colored" });
           } else if (response.status == 400) {
             
           } else if (response.status == 500) {
-            toast.success(response.message, { theme: "colored" });
+            toast.error(response.message, { theme: "colored" });
+            setLoading(false);
           }
         })
-        const result: any = await signIn('credentials', {
-          redirect: false,
-          email,
+        // const result: any = await signIn('credentials', {
+        //   redirect: false,
+        //   email,
          
-        });
-        if(result.error){
-          console.log('fhsikghagk')
-          toast.error(result.error);
-          setLoading(false);
-        }
+        // });
+        // if(result.error){
+        //   console.log('fhsikghagk')
+        //   toast.error(result.error);
+        //   setLoading(false);
+        // }
      
   
        
@@ -82,16 +84,7 @@ const ForgotPasswordScreen = () => {
            Escreva o seu email abaixo e mandaremos um email de recuperação.
           </p>
           <form onSubmit={handleSubmit(submitHandler)}>
-            {/* <div className="mt-5">
-              <label className="block mb-3">Email</label>
-              <input
-                type="email"
-                placeholder="exemplo@mail.com"
-                className="w-full h-10 p-2 border rounded-sm outline-red-400"
-                onChange={(event) => setEmail(event.target.value)}
-              />
-              <span className="text-red-500">{errors?.email}</span>
-            </div> */}
+          
             <div className="mb-3 mt-4">
             <label htmlFor="email">Email</label>
             <input

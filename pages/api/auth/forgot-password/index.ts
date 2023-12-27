@@ -57,10 +57,11 @@ export default async function POST(req:any, res:any) {
         },
       })
     );
+    
 
     // * Send email to user
     await sendEmail(payload.email, "Reset Password", html);
-    return res.json({
+    return NextResponse.json({
       status: 200,
       message: "Email sent successfully.please check your email.",
     });
