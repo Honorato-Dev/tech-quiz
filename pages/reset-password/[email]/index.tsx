@@ -43,12 +43,12 @@ export default function ResetPassword({
     <>
       <ToastContainer />
       <div className="h-screen w-screen flex justify-center items-center">
-        <div className="w-[500px] p-5 rounded-lg shadow-lg">
-          <h1 className="text-2xl font-bold">Reset Passowrd ?</h1>
+        <div className="w-[500px] p-5 rounded-sm shadow-lg bg-white bg-opacity-70">
+          <h1 className="text-2xl font-bold">Mudar a senha?</h1>
 
           <form onSubmit={submit}>
             <div className="mt-5">
-              <label className="block">Password</label>
+              <label className="block">Senha</label>
               <input
                 type="password"
                 placeholder="Enter your new password"
@@ -59,7 +59,7 @@ export default function ResetPassword({
               />
             </div>
             <div className="mt-5">
-              <label className="block">Confirm Password</label>
+              <label className="block">Confirmar senha</label>
               <input
                 type="password"
                 placeholder="Enter your confirm password"
@@ -74,13 +74,13 @@ export default function ResetPassword({
                 className="w-full bg-black p-2 rounded-lg text-white"
                 disabled={loading}
               >
-                {loading ? "Processing.." : "Submit"}
+                {loading ? "Processando.." : "Confirmar"}
               </button>
             </div>
             <div className="mt-5 text-center">
-              <Link href="/login" className="text-orange-400">
+              <Link href="/login" className="text-indigo-500 font-semibold">
                 {" "}
-                Back to Login
+                Voltar 
               </Link>
             </div>
           </form>
