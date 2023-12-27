@@ -49,7 +49,7 @@ export default async function POST(req:any, res:any) {
   console.log(url)
 
   try {
-    const html = render(
+    const html =  render(
       ForgotPasswordEmail({
         params: {
           name: user.name,
@@ -61,7 +61,7 @@ export default async function POST(req:any, res:any) {
 
     // * Send email to user
     await sendEmail(payload.email, "Reset Password", html);
-    return NextResponse.json({
+    return res.json({
       status: 200,
       message: "Email sent successfully.please check your email.",
     });
@@ -69,7 +69,7 @@ export default async function POST(req:any, res:any) {
     console.log("the error is", error);
     return res.json({
       status: 500,
-      message: "Something went wrong.please try again!",
+      message: "Algo deu errado, por favor tente novamente!",
     });
   }
 }

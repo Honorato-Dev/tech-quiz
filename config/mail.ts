@@ -26,7 +26,7 @@ import Env from '@/config/env'
       html: html,
     });
   
-    return info?.messageId;
+    return info ?.messageId;
   };
 
   export { transporter, sendEmail };
