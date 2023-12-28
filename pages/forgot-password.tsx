@@ -50,16 +50,7 @@ const ForgotPasswordScreen = () => {
             setLoading(false);
           }
         })
-        // const result: any = await signIn('credentials', {
-        //   redirect: false,
-        //   email,
-         
-        // });
-        // if(result.error){
-        //   console.log('fhsikghagk')
-        //   toast.error(result.error);
-        //   setLoading(false);
-        // }
+      
      
   
        
