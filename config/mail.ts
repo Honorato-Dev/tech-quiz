@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 import Env from '@/config/env'
 
- const transporter = nodemailer.createTransport({
+export const transporter = nodemailer.createTransport({
   host: Env.SMTP_HOST,
   port: Number(Env.SMTP_PORT),
   secure: false,
@@ -13,7 +13,7 @@ import Env from '@/config/env'
 
   //TO send the email
 
-  const sendEmail = async (
+ export const sendEmail = async (
     to: string,
     subject: string,
     html: string
@@ -28,6 +28,6 @@ import Env from '@/config/env'
     return info ?.messageId;
   };
 
-  export { transporter, sendEmail };
+
  
   
