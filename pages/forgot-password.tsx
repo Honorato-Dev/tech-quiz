@@ -74,7 +74,8 @@ const ForgotPasswordScreen = () => {
           <p className='flex text-sm lg:text-base'>
           Não se preocupe isso acontece o tempo todo.
            Escreva o seu email abaixo e mandaremos um email de recuperação.
-          </p>
+          </p >
+          <p className='text-xs mt-2'><span>(OBS: </span>verificar caixa de SPAM)</p>
           <form onSubmit={handleSubmit(submitHandler)}>
           
             <div className="mb-3 mt-4">
