@@ -25,7 +25,7 @@ export default function ForgotPasswordEmail({
       </Button>
       <Hr />
 
-      <Heading as="h3">Regards</Heading>
+      <Heading as="h3">Cumprimentos</Heading>
       <Text>Tech Quiz</Text>
     </Html>
   );
