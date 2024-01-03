@@ -48,7 +48,7 @@ export default function ResetPassword({
 
           <form onSubmit={submit}>
             <div className="mt-5">
-              <label className="block">Senha</label>
+              <label className="block mb-2">Senha</label>
               <input
                 type="password"
                 placeholder="Digite a nova senha"
@@ -59,7 +59,7 @@ export default function ResetPassword({
               />
             </div>
             <div className="mt-5">
-              <label className="block">Confirmar senha</label>
+              <label className="block mb-2">Confirmar senha</label>
               <input
                 type="password"
                 placeholder="Confirme a nova senha"
