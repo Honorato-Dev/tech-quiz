@@ -1,6 +1,6 @@
 import db from "@/utils/db";
 import User from "@/models/User";
-let bcrypt = require('bcryptjs');
+
 import Env from "@/config/env";
 import Cryptr from "cryptr";
 import cryptoRandomString from "crypto-random-string";
