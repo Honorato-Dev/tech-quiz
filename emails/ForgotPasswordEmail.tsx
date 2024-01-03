@@ -11,17 +11,17 @@ export default function ForgotPasswordEmail({
 }) {
   return (
     <Html>
-      <Heading as="h2"> Hello {params.name} </Heading>
+      <Heading as="h2"> Olá {params.name} </Heading>
       <Text>
-        We received the reset password request. if it's not you then pls ignore
-        it.
+        Nós recebemos uma requisição de alteração de senhas. Se não foi você ignore esse email
+        
       </Text>
       <Button
         
         href={params.url}
         style={{ background: "#000", color: "#FFFFFF", padding: "10px 20px"  }}
       >
-        Click Me
+        Click aqui
       </Button>
       <Hr />
 
