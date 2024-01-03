@@ -43,6 +43,7 @@ const ForgotPasswordScreen = () => {
           console.log('ESSE È O RESPONSE',response);
           if (response.status == 200) {
             toast.success(response.message, { theme: "colored" });
+            setLoading(false);
           } else if (response.status == 400) {
             
           } else if (response.status == 500) {
