@@ -7,8 +7,8 @@ let bcrypt = require('bcryptjs');
 
 
 
-export async function POST(request: NextRequest) {
-  const payload: ResetPasswordPayload = await request.json();
+export async function POST(req: any) {
+  const payload: ResetPasswordPayload = await req.body;
 
   // TODO: You have to add validation here to check both passwords are same
 
