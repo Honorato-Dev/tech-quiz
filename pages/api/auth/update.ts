@@ -53,3 +53,5 @@ async function handler(
     message: 'User updated successfully'
   })
 }
+
+export default handler;
