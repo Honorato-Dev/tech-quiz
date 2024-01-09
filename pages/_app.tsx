@@ -4,7 +4,7 @@ import { NextComponentType } from 'next'
 import { SessionProvider, useSession } from 'next-auth/react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
-
+import { StoreProvider } from '@/utils/Store'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import 'react-toastify/dist/ReactToastify.css';
@@ -33,6 +33,7 @@ export default function App({ Component, pageProps:{session, ...pageProps} }: Cu
     <>
     <ChakraProvider theme={theme}>
     <SessionProvider session={session}>
+    <StoreProvider>
     
     
       {Component.auth ? (
@@ -48,7 +49,7 @@ export default function App({ Component, pageProps:{session, ...pageProps} }: Cu
       )}
      
         
-    
+     </StoreProvider>
     </SessionProvider>
     </ChakraProvider>
     </>

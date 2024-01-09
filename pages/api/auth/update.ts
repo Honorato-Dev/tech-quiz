@@ -11,6 +11,7 @@ interface RequestWithBody extends NextApiRequest {
     email: string;
     password?: string;
     image?: string;
+    password_reset_token?: string;
   };
 }
 
