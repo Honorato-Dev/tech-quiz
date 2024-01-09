@@ -63,7 +63,7 @@ export default async function POST(req:any, res:any) {
     await sendEmail(payload.email, "Reset Password", html);
     return res.json({
       status: 200,
-      message: "Email sent successfully.please check your email.",
+      message: "Email enviado com sucesso. Por favor, verifique seu email.",
     });
   } catch (error) {
     console.log("the error is", error);
