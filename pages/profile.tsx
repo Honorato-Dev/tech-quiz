@@ -28,6 +28,7 @@ const ProfileScreen = () => {
                 name, email, password
             });
             const result = await signIn('credentials', {redirect:false, email, password});
+            console.log("result", result)
             toast.success('Profile updated successfully')
             if(result?.error){  
                 toast.error(result.error);
