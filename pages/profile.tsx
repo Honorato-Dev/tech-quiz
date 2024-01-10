@@ -10,12 +10,12 @@ type FormValues = {
    name: string;
    email:string
    password:string;
-   confirmPassword:string;
+   confirmPassword?:string;
   };
 
 const ProfileScreen = () => {
     const { data: session }:any = useSession()
-    const { handleSubmit, register, getValues, setValue, formState: { errors } } =useForm<FormValues>();
+    const { handleSubmit, register, getValues, setValue, formState: { errors } } = useForm<FormValues>();
 
     useEffect(() => {
         setValue('name', session.user.name ?? '');
@@ -29,7 +29,7 @@ const ProfileScreen = () => {
             });
             const result = await signIn('credentials', {redirect:false, email, password});
             console.log("result", result)
-            toast.success('Profile updated successfully')
+            toast.success('Perfil atualizado com sucesso!')
             if(result?.error){  
                 toast.error(result.error);
 
