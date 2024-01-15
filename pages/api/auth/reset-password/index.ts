@@ -7,16 +7,18 @@ let bcrypt = require('bcryptjs');
 
 
 
-export default async function POST(req: any) {
+export default async function POST(req: any, res:any) {
   const payload: ResetPasswordPayload = await req.body;
-
+  console.log(payload)
   // TODO: You have to add validation here to check both passwords are same
 
   // * Decrypt string
   const crypter = new Cryptr(Env.SECRET_KEY);
+  console.log(crypter)
   const email = crypter.decrypt(payload.email);
   console.log(email)
-
+  
+  console.log(email)
   await db.connect();
   const user = await User.findOne({
     email: email,
@@ -36,7 +38,7 @@ export default async function POST(req: any) {
   user.password_reset_token = '';
   await user.save();
 
-  return NextResponse.json({
+  return res.json({
     status: 200,
     message: "Password changed successfully. please login with new password.",
   });
