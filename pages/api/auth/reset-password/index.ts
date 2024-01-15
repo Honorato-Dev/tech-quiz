@@ -7,7 +7,7 @@ let bcrypt = require('bcryptjs');
 
 
 
-export async function POST(req: any) {
+export default async function POST(req: any) {
   const payload: ResetPasswordPayload = await req.body;
 
   // TODO: You have to add validation here to check both passwords are same
@@ -15,6 +15,7 @@ export async function POST(req: any) {
   // * Decrypt string
   const crypter = new Cryptr(Env.SECRET_KEY);
   const email = crypter.decrypt(payload.email);
+  console.log(email)
 
   await db.connect();
   const user = await User.findOne({

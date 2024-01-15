@@ -5,11 +5,9 @@ import "react-toastify/dist/ReactToastify.css";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
-export default function ResetPassword({
-  params,
-}: {
-  params: { email: string };
-}) {
+export default function ResetPassword(
+  params:any
+) {
   const searchParam = useSearchParams();
   const [authState, setAuthState] = useState({
     password: "",
