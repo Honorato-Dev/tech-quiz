@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Layout from "@/components/Layout";
 
-export default function ResetPassword( params : any ){
+export default function ResetPassword( {params }:{params: {email:string}} ){
   const searchParam = useSearchParams();
   const [authState, setAuthState] = useState({
     password: "",
@@ -18,8 +18,8 @@ export default function ResetPassword( params : any ){
     setLoading(true);
     axios
       .post("/api/auth/reset-password", {
-        //email: params.email,
-        email:searchParam.getAll(''),
+        email: params.email,
+        //email:searchParam.get(""),
         signature: searchParam.get("signature"),
         password: authState.password,
         password_confirmation: authState.cpassword,
@@ -38,9 +38,9 @@ export default function ResetPassword( params : any ){
       });
   };
   return (
-    <>
+    <Layout title='Atualizar senha'>
       <ToastContainer />
-      <div className="h-screen w-screen flex justify-center items-center">
+      <div className="flex justify-center">
         <div className="w-[500px] p-5 rounded-sm shadow-lg bg-white bg-opacity-70">
           <h1 className="text-2xl font-bold">Mudar a senha?</h1>
 
@@ -84,6 +84,6 @@ export default function ResetPassword( params : any ){
           </form>
         </div>
       </div>
-    </>
+    </Layout>
   );
 }

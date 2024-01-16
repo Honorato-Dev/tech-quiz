@@ -7,8 +7,9 @@ import bcrypt from "bcryptjs";
 
 
 
-export default async function POST(req: any, res:any) {
-  const payload: ResetPasswordPayload = await req.body;
+export default async function POST(req: NextRequest) {
+  //const payload: ResetPasswordPayload = await req.body;
+  const payload: any = await req.body;
   console.log(payload)
   // TODO: You have to add validation here to check both passwords are same
 
@@ -38,7 +39,7 @@ export default async function POST(req: any, res:any) {
   user.password_reset_token = '';
   await user.save();
 
-  return res.json({
+  return NextResponse.json({
     status: 200,
     message: "Password changed successfully. please login with new password.",
   });
