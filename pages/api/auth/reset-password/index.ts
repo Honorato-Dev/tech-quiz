@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 import Cryptr from "cryptr";
 import Env from "@/config/env";
 import db from "@/utils/db";
-let bcrypt = require('bcryptjs');
+import bcrypt from "bcryptjs";
 
 
 
