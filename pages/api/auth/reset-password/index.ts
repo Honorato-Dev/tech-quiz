@@ -12,10 +12,13 @@ export default async function POST(req: NextRequest) {
   console.log('eu aqui oh')
   
   // eslint-disable-next-line no-undef
-  const payload: ResetPasswordPayload = await req.json();
+  //const payload: ResetPasswordPayload = await req.body;
+  // eslint-disable-next-line no-undef
+  const payload: any = await req.body;
 
   // TODO: You have to add validation here to check both passwords are same
   console.log('eu aqui oh2')
+  console.log('payload: ',payload)
   // * Decrypt string
   const crypter = new Cryptr(Env.SECRET_KEY);
   console.log('eu aqui oh3')

@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
 const ResetPassword = (
-  params:any
+  {params} : {params: {email: string}}
 
 ) => {
   const searchParam = useSearchParams();

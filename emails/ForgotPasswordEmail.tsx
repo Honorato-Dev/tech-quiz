@@ -7,14 +7,14 @@ import { Hr } from "@react-email/hr";
 export default function ForgotPasswordEmail({
   params,
 }:{
-  params: { name: string; url: string };
+  params: { name: string; url: string; email:string; };
 }) {
   return (
     <Html>
       <Heading as="h2"> Olá {params.name} </Heading>
       <Text>
-        Nós recebemos uma requisição de alteração de senhas. Se não foi você ignore esse email
-        
+        Nós recebemos uma requisição de alteração de senhas. Se não foi você ignore esse email {''}
+        {params.email}
       </Text>
       <Button
         

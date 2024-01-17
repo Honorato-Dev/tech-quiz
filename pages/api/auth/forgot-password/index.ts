@@ -6,13 +6,14 @@ import Cryptr from "cryptr";
 import cryptoRandomString from "crypto-random-string";
 import ForgotPasswordEmail from "@/emails/ForgotPasswordEmail";
 import { sendEmail } from "@/config/mail";
-import { NextRequest, NextResponse } from "next/server";
+//import { NextRequest, NextResponse } from "next/server";
 import { render } from "@react-email/render";
 
 
 
  
 export default async function POST(req:any, res:any) {
+  // eslint-disable-next-line no-undef
   const payload:ForgotPasswordPayload = await req.body;
   if(req.method !== 'POST') {
     return;
@@ -53,6 +54,7 @@ export default async function POST(req:any, res:any) {
       ForgotPasswordEmail({
         params: {
           name: user.name,
+          email: user.email,
           url: url,
         },
       })
