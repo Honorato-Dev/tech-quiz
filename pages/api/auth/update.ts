@@ -4,7 +4,6 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { getSession } from "next-auth/react";
 let bcrypt = require('bcryptjs');
 
-
 interface RequestWithBody extends NextApiRequest {
   body: {
     name: string;
@@ -23,7 +22,6 @@ async function handler(
   }
 
   const session = await getSession({ req });
-  console.log(session)
   if (!session) {
     return res.status(401).send({ message: "signin required" });
   }

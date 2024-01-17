@@ -4,7 +4,6 @@ import { NextComponentType } from 'next'
 import { SessionProvider, useSession } from 'next-auth/react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
-import { StoreProvider } from '@/utils/Store'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import 'react-toastify/dist/ReactToastify.css';
@@ -17,6 +16,7 @@ interface AuthProps{
   children:any;
   adminOnly: boolean
 }
+
 const colors = {
   brand: {
     900: '#1a365d',
@@ -24,6 +24,7 @@ const colors = {
     700: '#2a69ac',
   },
 }
+
 export const theme = extendTheme({ colors })
 
 
@@ -33,10 +34,9 @@ export default function App({ Component, pageProps:{session, ...pageProps} }: Cu
     <>
     <ChakraProvider theme={theme}>
     <SessionProvider session={session}>
-    <StoreProvider>
     
     
-      {Component.auth ? (
+    {Component.auth ? (
         <Auth adminOnly={Component.auth.adminOnly}>
           <div className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
             <Component {...pageProps} />
@@ -49,7 +49,7 @@ export default function App({ Component, pageProps:{session, ...pageProps} }: Cu
       )}
      
         
-     </StoreProvider>
+    
     </SessionProvider>
     </ChakraProvider>
     </>

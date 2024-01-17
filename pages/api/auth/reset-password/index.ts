@@ -8,18 +8,21 @@ import bcrypt from "bcryptjs";
 
 
 export default async function POST(req: NextRequest) {
-  //const payload: ResetPasswordPayload = await req.body;
-  const payload: any = await req.body;
-  console.log(payload)
-  // TODO: You have to add validation here to check both passwords are same
+  
+  console.log('eu aqui oh')
+  
+  // eslint-disable-next-line no-undef
+  const payload: ResetPasswordPayload = await req.json();
 
+  // TODO: You have to add validation here to check both passwords are same
+  console.log('eu aqui oh2')
   // * Decrypt string
   const crypter = new Cryptr(Env.SECRET_KEY);
+  console.log('eu aqui oh3')
   console.log(crypter)
   const email = crypter.decrypt(payload.email);
-  console.log(email)
+  console.log('erro aqui 4')
   
-  console.log(email)
   await db.connect();
   const user = await User.findOne({
     email: email,

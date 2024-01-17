@@ -6,20 +6,16 @@ import React from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Menu } from '@headlessui/react';
-import { Bebas_Neue } from 'next/font/google';
+
 import { ImMenu } from 'react-icons/im';
 import Image from 'next/image';
 import DropdownLink from './DropdownLink';
-import { FaFacebookF } from 'react-icons/fa';
 import { FaDiscord } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from "react-icons/fa";
 
-const bebas = Bebas_Neue({
-  subsets: ['latin'],
-  weight: ['400'],
-});
+
 
 const Layout = ({ children, title }: any) => {
   const { status, data: session }: any = useSession();

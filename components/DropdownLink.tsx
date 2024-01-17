@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 
-const DropdownLink = (props:any) =>  {
+export default function DropdownLink(props:any) {
     let {href, children, ...rest} = props;
   return (
     <Link {...rest} href={href}>
@@ -11,4 +11,3 @@ const DropdownLink = (props:any) =>  {
     </Link>
   )
 }
-export default DropdownLink

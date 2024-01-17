@@ -4,9 +4,11 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import Layout from "@/components/Layout";
 
-export default function ResetPassword( {params }:{params: {email:string}} ){
+const ResetPassword = (
+  params:any
+
+) => {
   const searchParam = useSearchParams();
   const [authState, setAuthState] = useState({
     password: "",
@@ -15,11 +17,10 @@ export default function ResetPassword( {params }:{params: {email:string}} ){
   const [loading, setLoading] = useState(false);
   const submit = (event: React.FormEvent) => {
     event.preventDefault();
-    setLoading(true);
+    //setLoading(true);
     axios
       .post("/api/auth/reset-password", {
         email: params.email,
-        //email:searchParam.get(""),
         signature: searchParam.get("signature"),
         password: authState.password,
         password_confirmation: authState.cpassword,
@@ -38,9 +39,9 @@ export default function ResetPassword( {params }:{params: {email:string}} ){
       });
   };
   return (
-    <Layout title='Atualizar senha'>
+    <>
       <ToastContainer />
-      <div className="flex justify-center">
+      <div className="h-screen w-screen flex justify-center items-center">
         <div className="w-[500px] p-5 rounded-sm shadow-lg bg-white bg-opacity-70">
           <h1 className="text-2xl font-bold">Mudar a senha?</h1>
 
@@ -84,6 +85,8 @@ export default function ResetPassword( {params }:{params: {email:string}} ){
           </form>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }
+
+export default ResetPassword

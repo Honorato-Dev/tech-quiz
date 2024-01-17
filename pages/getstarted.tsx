@@ -9,7 +9,7 @@ import { SiDjango } from "react-icons/si";
 import { SiPhp } from "react-icons/si";
 import { TbBrandLaravel } from "react-icons/tb";
 import { FaRust } from "react-icons/fa";
-import { FaGolang } from "react-icons/fa6";
+import { TbBrandGolang } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
 import { FaAngular } from "react-icons/fa";
 import { FaWordpress } from "react-icons/fa";
@@ -64,7 +64,7 @@ const GetStarted = () => {
             <div className='flex flex-col text-center hover:scale-125 transition duration-500'><FaRust className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /><p className='font-semibold text-sm lg:text-lg'>Rust</p></div>
           </Link>
           <Link href='/login?redirect=/golang' >
-            <div className='flex flex-col text-center hover:scale-125 transition duration-500'><FaGolang className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /><p className='font-semibold text-sm lg:text-lg'>GO</p></div>
+            <div className='flex flex-col text-center hover:scale-125 transition duration-500'><TbBrandGolang className='w-10 h-10 md:w-16 md:h-16 lg:w-24 lg:h-24 m-5' /><p className='font-semibold text-sm lg:text-lg'>GO</p></div>
           </Link>
           
           <Link href='/login?redirect=/react' >
