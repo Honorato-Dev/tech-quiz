@@ -17,14 +17,14 @@ export default async function POST(req: any, res:any) {
   //const payload: any = await req.body;
 
   // TODO: You have to add validation here to check both passwords are same
-  console.log('eu aqui oh2')
+  
   console.log('payload: ',payload)
   // * Decrypt string
   const crypter = new Cryptr(Env.SECRET_KEY);
   console.log('eu aqui oh3')
-  console.log(crypter)
+  
   const email = crypter.decrypt(payload.email);
-  console.log('erro aqui 4')
+  
   
   await db.connect();
   const user = await User.findOne({
@@ -35,7 +35,7 @@ export default async function POST(req: any, res:any) {
   if (user == null || user == undefined) {
     return res.json({
       status: 400,
-      message: "Reset url is not correct. pls double check it .",
+      message: "Algo deu errado. Por favor tente novamente .",
     });
     
   }
@@ -47,6 +47,6 @@ export default async function POST(req: any, res:any) {
 
   return res.json({
     status: 200,
-    message: "Password changed successfully. please login with new password.",
+    message: "Password atualizado com sucesso. favor logar com novo password.",
   });
 }
