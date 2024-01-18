@@ -17,7 +17,7 @@ const ResetPassword = () => {
     //setLoading(true);
     axios
       .post("/api/auth/reset-password", {
-        email: searchParam.get("cmail"),
+        email: searchParam.get("mail"),
         signature: searchParam.get("signature"),
         password: authState.password,
         password_confirmation: authState.cpassword,

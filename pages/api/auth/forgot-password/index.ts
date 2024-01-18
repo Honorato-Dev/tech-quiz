@@ -45,7 +45,7 @@ export default async function POST(req:any, res:any) {
   const crypt = new Cryptr(Env.SECRET_KEY);
   const encryptedEmail = crypt.encrypt(user.email);
   
-  const url = `${Env.APP_URL}/reset-password/${encryptedEmail}?signature=${randomStr}?cmail=${encryptedEmail}`;
+  const url = `${Env.APP_URL}/reset-password/${encryptedEmail}?signature=${randomStr}&mail=${encryptedEmail}`;
   console.log(url)
 
   try {
