@@ -2,7 +2,7 @@ import Layout from '@/components/Layout';
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
-import { ToastContainer, toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { getError } from '@/utils/error';
@@ -22,7 +22,7 @@ const ForgotPasswordScreen = () => {
     formState: { errors },
   } = useForm<FormType>();
 
-  const submitHandler = async ({ email, password }: FormType) => {
+  const submitHandler = async ({ email }: FormType) => {
     setLoading(true);
     try {
       await axios
@@ -33,6 +33,7 @@ const ForgotPasswordScreen = () => {
           if (response.status == 200) {
             toast.success(response.message, { theme: 'colored' });
             setLoading(false);
+          // eslint-disable-next-line no-empty
           } else if (response.status == 400) {
           } else if (response.status == 500) {
             toast.error(response.message, { theme: 'colored' });
