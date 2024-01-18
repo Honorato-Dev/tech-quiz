@@ -1,12 +1,11 @@
 import db from "@/utils/db";
 import User from "@/models/User";
-
 import Env from "@/config/env";
 import Cryptr from "cryptr";
 import cryptoRandomString from "crypto-random-string";
 import ForgotPasswordEmail from "@/emails/ForgotPasswordEmail";
 import { sendEmail } from "@/config/mail";
-//import { NextRequest, NextResponse } from "next/server";
+
 import { render } from "@react-email/render";
 
 
@@ -46,7 +45,7 @@ export default async function POST(req:any, res:any) {
   const crypt = new Cryptr(Env.SECRET_KEY);
   const encryptedEmail = crypt.encrypt(user.email);
   
-  const url = `${Env.APP_URL}/reset-password/${encryptedEmail}?signature=${randomStr}`;
+  const url = `${Env.APP_URL}/reset-password/${encryptedEmail}?signature=${randomStr}?cmail=${encryptedEmail}`;
   console.log(url)
 
   try {

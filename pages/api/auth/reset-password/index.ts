@@ -1,5 +1,5 @@
 import  User  from "@/models/User";
-import { NextRequest, NextResponse } from "next/server";
+//import { NextRequest, NextResponse } from "next/server";
 import Cryptr from "cryptr";
 import Env from "@/config/env";
 import db from "@/utils/db";
@@ -7,12 +7,12 @@ import bcrypt from "bcryptjs";
 
 
 
-export default async function POST(req: NextRequest) {
+export default async function POST(req: any, res:any) {
   
   console.log('eu aqui oh')
   
   // eslint-disable-next-line no-undef
-  const payload: ResetPasswordPayload = await req.json();
+  const payload: ResetPasswordPayload = await req.body;
   // eslint-disable-next-line no-undef
   //const payload: any = await req.body;
 
@@ -33,7 +33,7 @@ export default async function POST(req: NextRequest) {
   });
   
   if (user == null || user == undefined) {
-    return NextResponse.json({
+    return res.json({
       status: 400,
       message: "Reset url is not correct. pls double check it .",
     });
@@ -45,7 +45,7 @@ export default async function POST(req: NextRequest) {
   user.password_reset_token = '';
   await user.save();
 
-  return NextResponse.json({
+  return res.json({
     status: 200,
     message: "Password changed successfully. please login with new password.",
   });

@@ -5,10 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
-const ResetPassword = (
-  {params} : {params: {email: string}}
-
-) => {
+const ResetPassword = () => {
   const searchParam = useSearchParams();
   const [authState, setAuthState] = useState({
     password: "",
@@ -20,7 +17,7 @@ const ResetPassword = (
     //setLoading(true);
     axios
       .post("/api/auth/reset-password", {
-        email: params.email,
+        email: searchParam.get("cmail"),
         signature: searchParam.get("signature"),
         password: authState.password,
         password_confirmation: authState.cpassword,
