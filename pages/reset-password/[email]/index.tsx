@@ -27,25 +27,25 @@ const ResetPassword = () => {
     
         // Check if password is empty
         if (!password) {
-          setPasswordError('Password is required');
+          setPasswordError('Digite a nova senha');
           return;
         }
     
         // Check if password meets certain criteria (e.g., length)
-        if (password.length < 6) {
-          setPasswordError('Password must be at least 8 characters long');
+        if (password.length < 8) {
+          setPasswordError('A senha deve ter pelo menos 8 caracteres');
           return;
         }
     
         // Check if confirmPassword is empty
         if (!confirmPassword) {
-          setConfirmPasswordError('Please confirm your password');
+          setConfirmPasswordError('Por favor, confirme sua senha');
           return;
         }
     
         // Check if passwords match
         if (password !== confirmPassword) {
-          setConfirmPasswordError('Passwords do not match');
+          setConfirmPasswordError('As senhas não correspondem');
           return;
         }
 
