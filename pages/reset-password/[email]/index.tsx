@@ -12,14 +12,11 @@ const ResetPassword = () => {
   const [passwordError, setPasswordError] = useState('');
   const [confirmPasswordError, setConfirmPasswordError] = useState('');
 
-  // const [authState, setAuthState] = useState({
-  //   password: "",
-  //   cpassword: "",
-  // });
+
   const [loading, setLoading] = useState(false);
   const submit = (event: React.FormEvent) => {
     event.preventDefault();
-    //setLoading(true);
+    setLoading(true);
 
         // Reset errors
         setPasswordError('');
