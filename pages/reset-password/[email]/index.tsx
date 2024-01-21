@@ -7,20 +7,55 @@ import Link from "next/link";
 
 const ResetPassword = () => {
   const searchParam = useSearchParams();
-  const [authState, setAuthState] = useState({
-    password: "",
-    cpassword: "",
-  });
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [passwordError, setPasswordError] = useState('');
+  const [confirmPasswordError, setConfirmPasswordError] = useState('');
+
+  // const [authState, setAuthState] = useState({
+  //   password: "",
+  //   cpassword: "",
+  // });
   const [loading, setLoading] = useState(false);
   const submit = (event: React.FormEvent) => {
     event.preventDefault();
     //setLoading(true);
+
+        // Reset errors
+        setPasswordError('');
+        setConfirmPasswordError('');
+    
+        // Check if password is empty
+        if (!password) {
+          setPasswordError('Password is required');
+          return;
+        }
+    
+        // Check if password meets certain criteria (e.g., length)
+        if (password.length < 6) {
+          setPasswordError('Password must be at least 8 characters long');
+          return;
+        }
+    
+        // Check if confirmPassword is empty
+        if (!confirmPassword) {
+          setConfirmPasswordError('Please confirm your password');
+          return;
+        }
+    
+        // Check if passwords match
+        if (password !== confirmPassword) {
+          setConfirmPasswordError('Passwords do not match');
+          return;
+        }
+
+
     axios
       .post("/api/auth/reset-password", {
         email: searchParam.get("mail"),
         signature: searchParam.get("signature"),
-        password: authState.password,
-        password_confirmation: authState.cpassword,
+        password: password,
+        password_confirmation: confirmPassword,
       })
       .then((res) => {
         const response = res.data;
@@ -47,23 +82,23 @@ const ResetPassword = () => {
               <label className="block mb-1">Senha</label>
               <input
                 type="password"
+                value={password}
                 placeholder="Digite a nova senha"
                 className="w-full h-10 p-2 border rounded-md outline-red-400"
-                onChange={(event) =>
-                  setAuthState({ ...authState, password: event.target.value })
-                }
+                onChange={(e) => setPassword(e.target.value)}
               />
+              <span style={{ color: 'red' }}>{passwordError}</span>
             </div>
             <div className="mt-5">
               <label className="block mb-1">Confirmar senha</label>
               <input
                 type="password"
+                value={confirmPassword}
                 placeholder="Confirme a nova senha"
                 className="w-full h-10 p-2 border rounded-md outline-red-400"
-                onChange={(event) =>
-                  setAuthState({ ...authState, cpassword: event.target.value })
-                }
+                onChange={(e) => setConfirmPassword(e.target.value)}
               />
+              <span style={{ color: 'red' }}>{confirmPasswordError}</span>
             </div>
             <div className="mt-5">
               <button

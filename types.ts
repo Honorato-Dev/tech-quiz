@@ -45,3 +45,4 @@ type registerErrorType = {
     email: string;
     token: string;
   };
+
