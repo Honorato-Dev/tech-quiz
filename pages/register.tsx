@@ -18,13 +18,13 @@ interface LoginFormValues {
 const validationSchema = Yup.object({
   name: Yup.string()
     .min(4, 'O nome de usuário precisa ter no mínimo 4 caracteres')
-    .required('O nome de usuário é obrigtatório'),
+    .required('O nome de usuário é obrigatório'),
   email: Yup.string()
     .email('Formato de email inválido')
     .required('O email é obrigatório'),
   password: Yup.string()
     .min(6, 'A senha precisa ter no mínimo 6 caracteres')
-    .required('A senha é obrigadoria'),
+    .required('A senha é obrigatória'),
   confirmpassword: Yup.string()
     .min(6, 'A confirmação de senha precisa ter no mínimo 4 caracteres')
     .required('A confirmação de senha é obrigatória')
