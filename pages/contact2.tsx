@@ -1,4 +1,4 @@
-import Layout from '@/components/Layout1';
+import Layout from '@/components/Layout';
 import React, { useState } from 'react';
 import {
   Button,

@@ -1,4 +1,4 @@
-import Layout from '@/components/Layout1';
+import Layout from '@/components/Layout';
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
 import React, { useState } from 'react';
 import {
