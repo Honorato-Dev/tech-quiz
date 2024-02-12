@@ -9,10 +9,10 @@ import { useRouter } from 'next/router';
 import Layout from '@/components/Layout';
 import { getError } from '@/utils/error';
 import SignInGoogleBtn from '@/components/SignInGoogleBtn';
-import SignInFacebookBtn from '@/components/SignInFacebookBtn';
+
 import SignInGithubBtn from '@/components/SignInGithubBtn';
 import Link from 'next/link';
-import SignInLinkedinBtn from '@/components/signInLinkedinBtn';
+
 
 interface FormType {
   email: string;
