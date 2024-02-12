@@ -89,7 +89,7 @@ const RegisterScreen = () => {
                 id="name"
                 name="name"
               />
-              <div className="text-red">
+              <div className="text-red-500">
                 <ErrorMessage name="name" />
               </div>
             </div>
@@ -105,7 +105,7 @@ const RegisterScreen = () => {
                 id="email"
                 name="email"
               />
-              <div className="text-red">
+              <div className="text-red-500">
                 <ErrorMessage name="email" />
               </div>
             </div>
@@ -120,7 +120,7 @@ const RegisterScreen = () => {
                 id="password"
                 name="password"
               />
-              <div className="text-red">
+              <div className="text-red-500">
                 <ErrorMessage name="password" />
               </div>
             </div>
@@ -135,7 +135,7 @@ const RegisterScreen = () => {
                 id="confirmpassword"
                 name="confirmpassword"
               />
-              <div className="text-red">
+              <div className="text-red-500">
                 <ErrorMessage name="confirmpassword" />
               </div>
             </div>
