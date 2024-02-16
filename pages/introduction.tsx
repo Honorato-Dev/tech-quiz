@@ -61,12 +61,12 @@ function IntroductionScreen() {
               </li>
             ))}
           </ul>
-          <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-14' onClick={handleNextQuestion}>Responder</button>
+          <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2 ' onClick={handleNextQuestion}>Responder</button>
         </div>
       ) : (
-        <div>
-          <h2>You answered {score}/{quizDataIntroduction.length} questions correctly</h2>
-          <button onClick={resetQuiz}>Reload</button>
+        <div className=' justify-center'>
+          <h2 className='text-base lg:text-2xl'>Você acertou {score}/{quizDataIntroduction.length} questões corretamente</h2>
+          <button className='bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-2 ' onClick={resetQuiz}>Resetar</button>
         </div>
       )}
     </div>
