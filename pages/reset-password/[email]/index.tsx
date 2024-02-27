@@ -60,6 +60,7 @@ const ResetPassword = () => {
           toast.error(response.message, { theme: "colored" });
         } else if (response.status == 200) {
           toast.success(response.message, { theme: "colored" });
+          setLoading(false);
         }
       })
       .catch((err) => {
