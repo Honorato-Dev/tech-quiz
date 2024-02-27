@@ -4,17 +4,19 @@ import { Html } from "@react-email/html";
 import { Heading } from "@react-email/heading";
 import { Text } from "@react-email/text";
 import { Hr } from "@react-email/hr";
+import { Img } from "@react-email/components";
+
 export default function ForgotPasswordEmail({
   params,
 }:{
   params: { name: string; url: string; email:string; };
 }) {
   return (
-    <Html>
+    <Html lang="pt-br">
       <Heading as="h2"> Olá {params.name} </Heading>
       <Text>
         Nós recebemos uma requisição de alteração de senhas. Se não foi você ignore esse email {''}
-        {params.email}
+        {/* {params.email} */}
       </Text>
       <Button
         
@@ -27,6 +29,7 @@ export default function ForgotPasswordEmail({
 
       <Heading as="h3">Cumprimentos</Heading>
       <Text>Tech Quiz</Text>
+      
     </Html>
   );
 }
