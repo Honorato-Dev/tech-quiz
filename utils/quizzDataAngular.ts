@@ -131,6 +131,17 @@ const quizDataAngular = [
         ],
         "correct": "d"
       },
+      {
+        "question": "Qual é a função do NgModule em Angular?",
+        "image": "",
+        "options": [
+          { "text": "Gerenciar a configuração do roteamento", "id": "a" },
+          { "text": "Definir os serviços usados no aplicativo", "id": "b" },
+          { "text": "Organizar e configurar os componentes da aplicação", "id": "c" },
+          { "text": "Controlar o acesso aos dados do aplicativo", "id": "d" }
+        ],
+        "correct": "c"
+    },
     //   {
     //     question: "Qual opção CLI você pode usar para depurar um script de nó no Chrome DevTools?",
     //     image:"",
