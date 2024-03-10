@@ -120,6 +120,17 @@ const quizDataAngular = [
         ],
         "correct": "d"
       },
+      {
+        "question": "Qual comando Angular CLI você usaria para criar um novo componente?",
+        "image": "",
+        "options": [
+          { "text": "ng generate service", "id": "a" },
+          { "text": "ng add component", "id": "b" },
+          { "text": "ng new component", "id": "c" },
+          { "text": "ng generate component", "id": "d" }
+        ],
+        "correct": "d"
+      },
     //   {
     //     question: "Qual opção CLI você pode usar para depurar um script de nó no Chrome DevTools?",
     //     image:"",
