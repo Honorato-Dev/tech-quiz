@@ -142,6 +142,17 @@ const quizDataAngular = [
         ],
         "correct": "c"
     },
+    {
+      "question": "Qual é a finalidade do operador 'async' em Angular?",
+      "image": "",
+      "options": [
+        { "text": "Sincronizar operações assíncronas", "id": "a" },
+        { "text": "Definir um loop de repetição", "id": "b" },
+        { "text": "Criar observables", "id": "c" },
+        { "text": "Importar módulos externos", "id": "d" }
+      ],
+      "correct": "a"
+  }
     //   {
     //     question: "Qual opção CLI você pode usar para depurar um script de nó no Chrome DevTools?",
     //     image:"",
