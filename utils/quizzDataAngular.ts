@@ -108,7 +108,18 @@ const quizDataAngular = [
           { "text": "Uma extensão do Angular para desenvolvimento de jogos", "id": "d" }
         ],
         "correct": "c"
-      }
+      },
+      {
+        "question": "Como os dados são transmitidos entre um componente pai e um componente filho em Angular?",
+        "image": "",
+        "options": [
+          { "text": "Através de variáveis globais", "id": "a" },
+          { "text": "Usando métodos HTTP", "id": "b" },
+          { "text": "Utilizando serviços", "id": "c" },
+          { "text": "Por meio de propriedades de entrada e saída (@Input e @Output)", "id": "d" }
+        ],
+        "correct": "d"
+      },
     //   {
     //     question: "Qual opção CLI você pode usar para depurar um script de nó no Chrome DevTools?",
     //     image:"",
