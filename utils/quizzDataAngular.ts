@@ -87,6 +87,17 @@ const quizDataAngular = [
         ],
         correct: "b",
       },
+      {
+        "question": "Qual é a função do Angular CLI (Command Line Interface)?",
+        "image": "",
+        "options": [
+          { "text": "Criar APIs RESTful", "id": "a" },
+          { "text": "Gerenciar dependências do projeto", "id": "b" },
+          { "text": "Facilitar a criação e manutenção de projetos Angular", "id": "c" },
+          { "text": "Testar aplicações web", "id": "d" }
+        ],
+        "correct": "c"
+      },
     //   {
     //     question: "Qual opção CLI você pode usar para depurar um script de nó no Chrome DevTools?",
     //     image:"",
