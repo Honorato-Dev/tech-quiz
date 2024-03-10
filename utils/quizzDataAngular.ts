@@ -98,6 +98,17 @@ const quizDataAngular = [
         ],
         "correct": "c"
       },
+      {
+        "question": "O que é o Angular Material?",
+        "image": "",
+        "options": [
+          { "text": "Um framework de design CSS", "id": "a" },
+          { "text": "Uma ferramenta para autenticação de usuários", "id": "b" },
+          { "text": "Uma biblioteca de componentes UI baseados no Material Design", "id": "c" },
+          { "text": "Uma extensão do Angular para desenvolvimento de jogos", "id": "d" }
+        ],
+        "correct": "c"
+      }
     //   {
     //     question: "Qual opção CLI você pode usar para depurar um script de nó no Chrome DevTools?",
     //     image:"",
