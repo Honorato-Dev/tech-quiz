@@ -208,7 +208,40 @@ const quizDataAngular = [
   ],
   "correct": "d"
 },
-
+{
+  "question": "O que é lazy loading em Angular?",
+  "image": "",
+  "options": [
+    { "text": "Uma técnica para atrasar a execução de uma função até que seja necessária", "id": "a" },
+    { "text": "Um padrão de design para carregar recursos apenas quando necessário", "id": "b" },
+    { "text": "Uma técnica para otimizar o carregamento de páginas da web", "id": "c" },
+    { "text": "Um método para adiar a execução de código JavaScript desnecessário", "id": "d" }
+  ],
+  "correct": "b"
+},
+{
+  "question": "Qual é a função do arquivo 'tsconfig.json' em um projeto Angular?",
+  "image": "",
+  "options": [
+    { "text": "Gerenciar as dependências do projeto", "id": "a" },
+    { "text": "Definir as configurações do compilador TypeScript", "id": "b" },
+    { "text": "Controlar o roteamento da aplicação", "id": "c" },
+    { "text": "Armazenar as configurações de estilo do projeto", "id": "d" }
+  ],
+  "correct": "b"
+},
+{
+  "question": "Qual é o ciclo de vida de um componente Angular?",
+  "image": "",
+  "options": [
+    { "text": "Init, Update, Destroy", "id": "a" },
+    { "text": "Create, Update, Render", "id": "b" },
+    { "text": "Constructor, OnInit, OnDestroy", "id": "c" },
+    { "text": "Start, Run, Stop", "id": "d" }
+  ],
+  "correct": "c"
+},
+  
 
     //   {
     //     question: "Qual opção CLI você pode usar para depurar um script de nó no Chrome DevTools?",
