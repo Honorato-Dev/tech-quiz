@@ -152,7 +152,30 @@ const quizDataAngular = [
         { "text": "Importar módulos externos", "id": "d" }
       ],
       "correct": "a"
-  }
+  },
+  {
+    "question": "O que é uma diretiva em Angular?",
+    "image": "",
+    "options": [
+      { "text": "Uma função para manipular eventos do usuário", "id": "a" },
+      { "text": "Um componente encapsulado", "id": "b" },
+      { "text": "Uma instrução que modifica o DOM ou o comportamento de um elemento DOM", "id": "c" },
+      { "text": "Um serviço para fazer solicitações HTTP", "id": "d" }
+    ],
+    "correct": "c"
+},
+{
+  "question": "Qual é a diferença entre *ngIf e *ngFor em Angular?",
+  "image": "",
+  "options": [
+    { "text": "*ngIf é usado para exibir um elemento condicionalmente, enquanto *ngFor é usado para repetir um elemento com base em uma coleção.", "id": "a" },
+    { "text": "*ngFor é usado para manipular eventos do usuário, enquanto *ngIf é usado para manipular eventos do sistema.", "id": "b" },
+    { "text": "*ngIf é usado para criar loops, enquanto *ngFor é usado para controlar estruturas condicionais.", "id": "c" },
+    { "text": "*ngIf é usado para injetar dependências, enquanto *ngFor é usado para criar animações.", "id": "d" }
+  ],
+  "correct": "a"
+}
+
     //   {
     //     question: "Qual opção CLI você pode usar para depurar um script de nó no Chrome DevTools?",
     //     image:"",
