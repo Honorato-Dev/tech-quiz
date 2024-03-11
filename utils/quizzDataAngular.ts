@@ -196,7 +196,19 @@ const quizDataAngular = [
     { "text": "Reactive Forms são mais difíceis de aprender e usar do que Template-driven Forms.", "id": "d" }
   ],
   "correct": "a"
-}
+},
+{
+  "question": "Qual é a maneira preferencial de fazer solicitações HTTP em Angular?",
+  "image": "",
+  "options": [
+    { "text": "Usando XMLHttpRequest", "id": "a" },
+    { "text": "Utilizando a biblioteca jQuery", "id": "b" },
+    { "text": "Com a função fetch()", "id": "c" },
+    { "text": "Usando o módulo HttpClient", "id": "d" }
+  ],
+  "correct": "d"
+},
+
 
     //   {
     //     question: "Qual opção CLI você pode usar para depurar um script de nó no Chrome DevTools?",
