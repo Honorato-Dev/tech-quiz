@@ -186,7 +186,17 @@ const quizDataAngular = [
   ],
   "correct": "d"
 },
-
+{
+  "question": "Qual é a principal diferença entre Reactive Forms e Template-driven Forms em Angular?",
+  "image": "",
+  "options": [
+    { "text": "Reactive Forms oferecem uma abordagem mais declarativa, enquanto Template-driven Forms oferecem uma abordagem mais programática.", "id": "a" },
+    { "text": "Reactive Forms são mais adequados para formulários simples, enquanto Template-driven Forms são mais adequados para formulários complexos.", "id": "b" },
+    { "text": "Reactive Forms são baseados em classes, enquanto Template-driven Forms são baseados em modelos HTML.", "id": "c" },
+    { "text": "Reactive Forms são mais difíceis de aprender e usar do que Template-driven Forms.", "id": "d" }
+  ],
+  "correct": "a"
+}
 
     //   {
     //     question: "Qual opção CLI você pode usar para depurar um script de nó no Chrome DevTools?",
