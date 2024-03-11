@@ -174,7 +174,19 @@ const quizDataAngular = [
     { "text": "*ngIf é usado para injetar dependências, enquanto *ngFor é usado para criar animações.", "id": "d" }
   ],
   "correct": "a"
-}
+},
+{
+  "question": "O que são observables em Angular?",
+  "image": "",
+  "options": [
+    { "text": "Métodos assíncronos para manipular eventos de usuário", "id": "a" },
+    { "text": "Uma forma de lidar com exceções em um aplicativo Angular", "id": "b" },
+    { "text": "Um padrão de design para criar componentes reutilizáveis", "id": "c" },
+    { "text": "Uma abstração que facilita a manipulação de fluxos de dados assíncronos", "id": "d" }
+  ],
+  "correct": "d"
+},
+
 
     //   {
     //     question: "Qual opção CLI você pode usar para depurar um script de nó no Chrome DevTools?",
