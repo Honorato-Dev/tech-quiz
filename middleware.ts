@@ -3,12 +3,14 @@ import { NextRequest, NextResponse } from 'next/server';
 export {NextRequest, NextResponse} from 'next/server'
 
 export function middleware(req:NextRequest) {
-    console.log("Request", req.nextUrl.pathname)
+    //console.log("Request", req.nextUrl.pathname)
+    const allCookies = req.cookies
+    console.log("Cookie", allCookies)
     return NextResponse.next()
 }
 
 
-//middlewarwe only runs in the package starts in '/'
+// middlewarwe only runs in the package starts in '/'
 
 // export function middleware(req:NextRequest) {
 //     if(req.nextUrl.pathname.startsWith('/')){
