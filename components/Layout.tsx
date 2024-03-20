@@ -14,6 +14,7 @@ import { FaDiscord } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from "react-icons/fa";
+import CookiesConsent from './CookiesConsent';
 
 
 
@@ -127,6 +128,7 @@ const Layout = ({ children, title }: any) => {
         </header>
         <main className="container m-auto  mt-4 px-4">{children}</main>
 
+         <CookiesConsent/>       
         <footer className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">
           <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div className="md:flex md:justify-between">
