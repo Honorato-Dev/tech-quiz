@@ -12,6 +12,7 @@
     "@react-email/components": "0.0.12",
     "@react-email/hr": "0.0.7",
     "@react-email/text": "0.0.7",
+    "cookies-next": "^4.1.1",
     "crypto-random-string": "^5.0.0",
     "cryptr": "^6.3.0",
     "framer-motion": "^10.16.16",
