@@ -95,7 +95,7 @@ const PrivacyPolicyScreen = () => {
         <h2 className="text-xl md:text-2xl lg:text-3xl">8. Contato</h2>
         <p className="text:sm md:text-base lg:text-lg">
           Se tiver dúvidas ou preocupações sobre esta Política de Privacidade,
-          entre em contato conosco pelo e-mail devnautas.dev@gmail.com. Ao
+          entre em contato conosco pelo e-mail techquizbr@gmail.com. Ao
           utilizar o Tech Quiz, você concorda com os termos desta Política de
           Privacidade. Obrigado por confiar em nós para proteger suas
           informações.
