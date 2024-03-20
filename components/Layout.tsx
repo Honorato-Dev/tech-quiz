@@ -150,7 +150,7 @@ const Layout = ({ children, title }: any) => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
                     Recursos
                   </h2>
-                  <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                  <ul className="text-gray-800 dark:text-gray-400 font-medium">
                     <li className="mb-4">
                       <Link
                         href="https://www.mongodb.com/"
@@ -181,7 +181,7 @@ const Layout = ({ children, title }: any) => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
                     Sigam-nos
                   </h2>
-                  <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                  <ul className="text-gray-800 dark:text-gray-400 font-medium">
                     <li className="mb-4">
                       <Link
                         href="https://github.com/vituhonorato"
@@ -212,7 +212,7 @@ const Layout = ({ children, title }: any) => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
                     Legal
                   </h2>
-                  <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                  <ul className="text-gray-800 dark:text-gray-400 font-medium">
                     <li className="mb-4">
                       <Link href="/privacy-policy" className="hover:text-white">
                         Política de Privacidade
@@ -234,7 +234,7 @@ const Layout = ({ children, title }: any) => {
             </div>
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div className="sm:flex sm:items-center sm:justify-between">
-              <span className="text-sm text-gray-500 sm:text-center dark:text-gray-900">
+              <span className="text-sm text-gray-800 sm:text-center dark:text-gray-900">
                 © 2023 - 2024{' '}
                 <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">
                   Tech Quiz™
