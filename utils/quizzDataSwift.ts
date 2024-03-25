@@ -1,6 +1,7 @@
 const quizDataSwift = [
   {
     question: "Quem desenvolveu a linguagem de programação Swift?",
+    image:"",
     options: [
         { text: "Google", id: "a" },
         { text: "Apple", id: "b" },
@@ -11,6 +12,7 @@ const quizDataSwift = [
 },
 {
   question: "Em que ano o Swift foi anunciado pela primeira vez pela Apple?",
+  image:"",
   options: [
       { text: "2010", id: "a" },
       { text: "2011", id: "b" },
@@ -21,6 +23,7 @@ const quizDataSwift = [
 },
 {
   question: "Qual é o principal objetivo do Swift?",
+  image:"",
   options: [
       { text: "Substituir o Objective-C", id: "a" },
       { text: "Ser uma linguagem de programação multiplataforma", id: "b" },
@@ -31,6 +34,7 @@ const quizDataSwift = [
 },
 {
   question: "Qual é a extensão de arquivo usada para arquivos de código-fonte Swift?",
+  image:"",
   options: [
       { text: ".swift", id: "a" },
       { text: ".sw", id: "b" },
@@ -41,6 +45,7 @@ const quizDataSwift = [
 },
 {
   question: "Qual é a estrutura de controle de fluxo utilizada em Swift para tomar decisões?",
+  image:"",
   options: [
       { text: "if...else", id: "a" },
       { text: "switch", id: "b" },
@@ -51,6 +56,7 @@ const quizDataSwift = [
 },
 {
   question: "Qual é a função usada para imprimir uma mensagem no console em Swift?",
+  image:"",
   options: [
       { text: "console.log()", id: "a" },
       { text: "System.out.println()", id: "b" },
@@ -62,6 +68,7 @@ const quizDataSwift = [
 
 {
   question: "Qual é a palavra-chave usada para declarar uma constante em Swift?",
+  image:"",
   options: [
       { text: "let", id: "a" },
       { text: "var", id: "b" },
@@ -72,6 +79,7 @@ const quizDataSwift = [
 },
 {
   question: "Como você cria um comentário de uma linha em Swift?",
+  image:"",
   options: [
       { text: "//", id: "a" },
       { text: "#", id: "b" },
@@ -83,6 +91,7 @@ const quizDataSwift = [
 
 {
   question: "Qual é o operador usado para concatenar strings em Swift?",
+  image:"",
   options: [
       { text: "+", id: "a" },
       { text: "&", id: "b" },
@@ -93,6 +102,7 @@ const quizDataSwift = [
 },
 {
   question: "Qual é a função usada para converter uma string em um número em Swift?",
+  image:"",
   options: [
       { text: "toInt()", id: "a" },
       { text: "parseInt()", id: "b" },
@@ -103,6 +113,7 @@ const quizDataSwift = [
 },
 {
   question: "Qual é a estrutura de dados usada para armazenar uma coleção de valores únicos em Swift?",
+  image:"",
   options: [
       { text: "Array", id: "a" },
       { text: "Set", id: "b" },
@@ -114,6 +125,7 @@ const quizDataSwift = [
 
 {
   question: "Qual é a palavra-chave usada para iniciar um loop em Swift?",
+  image:"",
   options: [
       { text: "loop", id: "a" },
       { text: "for", id: "b" },
@@ -124,6 +136,7 @@ const quizDataSwift = [
 },
 {
   question: "Qual é o tipo de dados usado para representar um número inteiro em Swift?",
+  image:"",
   options: [
       { text: "int", id: "a" },
       { text: "integer", id: "b" },
@@ -134,6 +147,7 @@ const quizDataSwift = [
 },
 {
   question: "Qual é o tipo de dados usado para representar um número de ponto flutuante em Swift?",
+  image:"",
   options: [
       { text: "float", id: "a" },
       { text: "double", id: "b" },
@@ -144,6 +158,7 @@ const quizDataSwift = [
 },
 {
   question: "Qual é o operador usado para comparar dois valores em Swift?",
+  image:"",
   options: [
       { text: "==", id: "a" },
       { text: "=", id: "b" },
@@ -154,6 +169,7 @@ const quizDataSwift = [
 },
 {
   question: "Qual é o método usado para adicionar um elemento a uma coleção em Swift?",
+  image:"",
   options: [
       { text: "add()", id: "a" },
       { text: "insert()", id: "b" },
@@ -164,6 +180,7 @@ const quizDataSwift = [
 },
 {
   question: "Qual é o operador usado para acessar um elemento de uma coleção em Swift?",
+  image:"",
   options: [
       { text: "()", id: "a" },
       { text: "[]", id: "b" },
@@ -174,6 +191,7 @@ const quizDataSwift = [
 },
 {
   question: "Qual é a palavra-chave usada para definir uma função em Swift?",
+  image:"",
   options: [
       { text: "def", id: "a" },
       { text: "func", id: "b" },
@@ -184,6 +202,7 @@ const quizDataSwift = [
 },
 {
   question: "Qual é o operador usado para forçar o desempacotamento de um valor opcional em Swift?",
+  image:"",
   options: [
       { text: "!", id: "a" },
       { text: "?", id: "b" },
@@ -194,6 +213,7 @@ const quizDataSwift = [
 },
 {
   question: "Qual é a anotação usada para tratar exceções em Swift?",
+  image:"",
   options: [
       { text: "@throws", id: "a" },
       { text: "@catch", id: "b" },
