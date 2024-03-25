@@ -1,6 +1,7 @@
 const quizDataMongoDb = [
   {
     question: "O que MongoDB é?",
+    image:"",
     options: [
         { text: "Um banco de dados relacional", id: "a" },
         { text: "Um banco de dados NoSQL", id: "b" },
@@ -11,6 +12,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é a linguagem de consulta usada no MongoDB?",
+  image:"",
   options: [
       { text: "SQL", id: "a" },
       { text: "JSON", id: "b" },
@@ -21,6 +23,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o formato de armazenamento de dados padrão no MongoDB?",
+  image:"",
   options: [
       { text: "JSON", id: "a" },
       { text: "XML", id: "b" },
@@ -31,6 +34,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Como você se conecta a um servidor MongoDB?",
+  image:"",
   options: [
       { text: "Usando uma conexão HTTP", id: "a" },
       { text: "Usando um driver de banco de dados específico da linguagem", id: "b" },
@@ -41,6 +45,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o comando usado para listar todos os bancos de dados no MongoDB?",
+  image:"",
   options: [
       { text: "show databases", id: "a" },
       { text: "list dbs", id: "b" },
@@ -51,6 +56,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o comando usado para criar um novo banco de dados no MongoDB?",
+  image:"",
   options: [
       { text: "create database", id: "a" },
       { text: "db.create()", id: "b" },
@@ -61,6 +67,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o comando usado para criar uma nova coleção no MongoDB?",
+  image:"",
   options: [
       { text: "create collection", id: "a" },
       { text: "new collection", id: "b" },
@@ -71,6 +78,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o comando usado para inserir documentos em uma coleção no MongoDB?",
+  image:"",
   options: [
       { text: "insert", id: "a" },
       { text: "create", id: "b" },
@@ -81,6 +89,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o tipo de dados que MongoDB usa para armazenar identificadores exclusivos para documentos em uma coleção?",
+  image:"",
   options: [
       { text: "UUID", id: "a" },
       { text: "OID (ObjectID)", id: "b" },
@@ -91,6 +100,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o comando usado para encontrar documentos em uma coleção no MongoDB?",
+  image:"",
   options: [
       { text: "search", id: "a" },
       { text: "find", id: "b" },
@@ -101,6 +111,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o operador usado para especificar uma igualdade em consultas no MongoDB?",
+  image:"",
   options: [
       { text: "==", id: "a" },
       { text: "=", id: "b" },
@@ -111,6 +122,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o comando usado para atualizar um documento em uma coleção no MongoDB?",
+  image:"",
   options: [
       { text: "update", id: "a" },
       { text: "modify", id: "b" },
@@ -121,6 +133,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o operador usado para adicionar elementos a um array em um documento no MongoDB?",
+  image:"",
   options: [
       { text: "$push", id: "a" },
       { text: "$add", id: "b" },
@@ -131,6 +144,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o comando usado para excluir documentos de uma coleção no MongoDB?",
+  image:"",
   options: [
       { text: "delete", id: "a" },
       { text: "remove", id: "b" },
@@ -141,6 +155,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o comando usado para excluir uma coleção no MongoDB?",
+  image:"",
   options: [
       { text: "delete collection", id: "a" },
       { text: "remove collection", id: "b" },
@@ -151,6 +166,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o comando usado para renomear uma coleção no MongoDB?",
+  image:"",
   options: [
       { text: "rename", id: "a" },
       { text: "move", id: "b" },
@@ -161,6 +177,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o comando usado para criar um índice em uma coleção no MongoDB?",
+  image:"",
   options: [
       { text: "create index", id: "a" },
       { text: "index", id: "b" },
@@ -171,6 +188,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o tipo de dados usado para armazenar dados binários em documentos MongoDB?",
+  image:"",
   options: [
       { text: "Binary", id: "a" },
       { text: "BLOB", id: "b" },
@@ -181,6 +199,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o operador usado para realizar operações de agregação no MongoDB?",
+  image:"",
   options: [
       { text: "$group", id: "a" },
       { text: "$aggregate", id: "b" },
@@ -191,6 +210,7 @@ const quizDataMongoDb = [
 },
 {
   question: "Qual é o comando usado para iniciar o shell do MongoDB?",
+  image:"",
   options: [
       { text: "mongo", id: "a" },
       { text: "start mongo", id: "b" },
