@@ -1,6 +1,7 @@
 const quizDataPhp = [
   {
     question: "Qual é o significado de PHP?",
+    image:"",
     options: [
         { text: "PHP: Hypertext Preprocessor", id: "a" },
         { text: "Personal Home Page", id: "b" },
@@ -11,6 +12,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é o símbolo usado para iniciar uma variável no PHP?",
+  image:"",
   options: [
       { text: "&", id: "a" },
       { text: "$", id: "b" },
@@ -21,6 +23,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é o operador de concatenação de strings no PHP?",
+  image:"",
   options: [
       { text: "+", id: "a" },
       { text: "&", id: "b" },
@@ -31,6 +34,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é a função usada para imprimir texto no PHP?",
+  image:"",
   options: [
       { text: "echo", id: "a" },
       { text: "print", id: "b" },
@@ -41,6 +45,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é o método utilizado para enviar dados para um servidor no PHP?",
+  image:"",
   options: [
       { text: "GET", id: "a" },
       { text: "POST", id: "b" },
@@ -51,6 +56,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é o operador usado para verificar a igualdade de valor e tipo no PHP?",
+  image:"",
   options: [
       { text: "===", id: "a" },
       { text: "==", id: "b" },
@@ -61,6 +67,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é a instrução de controle de fluxo usada para tomar decisões no PHP?",
+  image:"",
   options: [
       { text: "switch", id: "a" },
       { text: "if...else", id: "b" },
@@ -71,6 +78,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é a função utilizada para iniciar uma sessão no PHP?",
+  image:"",
   options: [
       { text: "session_start()", id: "a" },
       { text: "start_session()", id: "b" },
@@ -81,6 +89,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é o comando usado para incluir o conteúdo de um arquivo no PHP?",
+  image:"",
   options: [
       { text: "require", id: "a" },
       { text: "load", id: "b" },
@@ -91,6 +100,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é a função usada para verificar se uma variável está definida no PHP?",
+  image:"",
   options: [
       { text: "is_defined()", id: "a" },
       { text: "isset()", id: "b" },
@@ -101,6 +111,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é a função utilizada para obter o comprimento de uma string no PHP?",
+  image:"",
   options: [
       { text: "length()", id: "a" },
       { text: "size()", id: "b" },
@@ -111,6 +122,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é a instrução usada para iniciar um bloco de código condicional no PHP?",
+  image:"",
   options: [
       { text: "if", id: "a" },
       { text: "begin", id: "b" },
@@ -121,6 +133,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é o operador usado para acessar um elemento de matriz no PHP?",
+  image:"",
   options: [
       { text: ":", id: "a" },
       { text: ".", id: "b" },
@@ -131,6 +144,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é o operador usado para incrementar uma variável no PHP?",
+  image:"",
   options: [
       { text: "++", id: "a" },
       { text: "--", id: "b" },
@@ -141,6 +155,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é a função usada para converter uma string em minúsculas no PHP?",
+  image:"",
   options: [
       { text: "toLower()", id: "a" },
       { text: "lowercase()", id: "b" },
@@ -151,6 +166,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é a função usada para converter uma string em maiúsculas no PHP?",
+  image:"",
   options: [
       { text: "toUpperCase()", id: "a" },
       { text: "uppercase()", id: "b" },
@@ -161,6 +177,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é a função utilizada para retornar o valor máximo de uma matriz no PHP?",
+  image:"",
   options: [
       { text: "max()", id: "a" },
       { text: "maximum()", id: "b" },
@@ -171,6 +188,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é a função usada para remover espaços em branco do início e do final de uma string no PHP?",
+  image:"",
   options: [
       { text: "trim()", id: "a" },
       { text: "strip()", id: "b" },
@@ -181,6 +199,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é a função usada para dividir uma string em uma matriz no PHP?",
+  image:"",
   options: [
       { text: "split()", id: "a" },
       { text: "explode()", id: "b" },
@@ -191,6 +210,7 @@ const quizDataPhp = [
 },
 {
   question: "Qual é a função usada para juntar elementos de uma matriz em uma string no PHP?",
+  image:"",
   options: [
       { text: "implode()", id: "a" },
       { text: "join()", id: "b" },
