@@ -98,17 +98,7 @@ const quizDataJs = [
         ],
         correct: "b",
       },
-      {
-        question: "Você precisa corresponder a um valor de tempo como 12:00:32. Qual das seguintes expressões regulares funcionaria para o seu código?",
-        image:"",
-        options: [
-          { text: "/[0-9]{2,}:[0-9]{2,}:[0-9]{2,}/", id: "a" },
-          { text: "/\d\d:\d\d:\d\d/", id: "b" },
-          { text: "/[0-9]+:[0-9]+:[0-9]+/", id: "c" },
-          { text: "/ : : /", id: "d" },
-        ],
-        correct: "b",
-      },
+     
       {
         question: "Qual propriedade referencia o objeto DOM que despachou um evento?",
         image:"",
