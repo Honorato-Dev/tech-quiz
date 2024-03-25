@@ -1,6 +1,7 @@
 const quizDataReact = [
   {
     question: "Qual é a biblioteca JavaScript de código aberto mais popular para a construção de interfaces de usuário?",
+    image:"",
     options: [
         { text: "Vue.js", id: "a" },
         { text: "Angular", id: "b" },
@@ -11,6 +12,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é o conceito central do React para a construção de interfaces de usuário?",
+  image:"",
   options: [
       { text: "Componentes", id: "a" },
       { text: "Diretivas", id: "b" },
@@ -21,6 +23,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é a sintaxe usada para renderizar um componente no React?",
+  image:"",
   options: [
       { text: "<Componente />", id: "a" },
       { text: "{ Componente }", id: "b" },
@@ -31,6 +34,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é o método utilizado para atualizar o estado de um componente no React?",
+  image:"",
   options: [
       { text: "this.setState()", id: "a" },
       { text: "this.updateState()", id: "b" },
@@ -41,6 +45,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é o hook usado para adicionar estado a um componente funcional no React?",
+  image:"",
   options: [
       { text: "useState()", id: "a" },
       { text: "useEffect()", id: "b" },
@@ -51,6 +56,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é o método utilizado para lidar com eventos no React?",
+  image:"",
   options: [
       { text: "handleEvent()", id: "a" },
       { text: "eventHandler()", id: "b" },
@@ -61,6 +67,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é a ferramenta usada para criar um novo projeto React?",
+  image:"",
   options: [
       { text: "create-react-app", id: "a" },
       { text: "react-create", id: "b" },
@@ -71,6 +78,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é o conceito usado para dividir uma interface de usuário em componentes independentes e reutilizáveis no React?",
+  image:"",
   options: [
       { text: "Fragmentação", id: "a" },
       { text: "Segmentação", id: "b" },
@@ -81,6 +89,7 @@ const quizDataReact = [
 }, 
 {
   question: "Qual é a ferramenta usada para adicionar estilos CSS a um componente React?",
+  image:"",
   options: [
       { text: "React Styles", id: "a" },
       { text: "Styled Components", id: "b" },
@@ -91,6 +100,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é o método utilizado para fazer uma solicitação HTTP no React?",
+  image:"",
   options: [
       { text: "axios()", id: "a" },
       { text: "fetch()", id: "b" },
@@ -101,6 +111,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é o componente React utilizado para renderizar uma lista de elementos com chaves únicas?",
+  image:"",
   options: [
       { text: "<List />", id: "a" },
       { text: "<ul />", id: "b" },
@@ -111,6 +122,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é o método usado para fazer com que um componente React interrompa a renderização desnecessária?",
+  image:"",
   options: [
       { text: "shouldComponentUpdate()", id: "a" },
       { text: "componentShouldUpdate()", id: "b" },
@@ -121,6 +133,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é o componente usado para representar a lógica de negócios em um aplicativo React?",
+  image:"",
   options: [
       { text: "Container", id: "a" },
       { text: "Presenter", id: "b" },
@@ -131,6 +144,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é o hook usado para disparar efeitos secundários em um componente funcional React?",
+  image:"",
   options: [
       { text: "useEffect()", id: "a" },
       { text: "useState()", id: "b" },
@@ -142,6 +156,7 @@ const quizDataReact = [
 
 {
   question: "Qual é a biblioteca de roteamento mais comumente usada para aplicativos React?",
+  image:"",
   options: [
       { text: "react-router", id: "a" },
       { text: "route-react", id: "b" },
@@ -152,6 +167,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é o método utilizado para criar uma referência a um elemento DOM no React?",
+  image:"",
   options: [
       { text: "createRef()", id: "a" },
       { text: "newRef()", id: "b" },
@@ -162,6 +178,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é o método usado para adicionar uma chave única a uma lista de elementos no React?",
+  image:"",
   options: [
       { text: "addKey()", id: "a" },
       { text: "key()", id: "b" },
@@ -172,6 +189,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é o hook utilizado para acessar o contexto em um componente funcional no React?",
+  image:"",
   options: [
       { text: "useContext()", id: "a" },
       { text: "useState()", id: "b" },
@@ -182,6 +200,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é o método usado para criar um portal no React?",
+  image:"",
   options: [
       { text: "createPortal()", id: "a" },
       { text: "newPortal()", id: "b" },
@@ -192,6 +211,7 @@ const quizDataReact = [
 },
 {
   question: "Qual é o conceito usado para manter o estado global em um aplicativo React?",
+  image:"",
   options: [
       { text: "Contexto", id: "a" },
       { text: "Estado compartilhado", id: "b" },
