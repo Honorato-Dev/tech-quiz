@@ -55,10 +55,10 @@ function AngularScreen() {
           <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-14' onClick={handleNextQuestion}>Responder</button>
         </div>
       ) : (
-        <div>
-          <h2>You answered {score}/{quizDataAngular.length} questions correctly</h2>
-          <button onClick={resetQuiz}>Reload</button>
-        </div>
+        <div className='justify-content  text-center'>
+        <h2 className='text-lg md:text-xl lg:text-2xl mb-6'>Você respondeu <span className='fond-bold text-2xl md:text-3xl lg:text-4xl'>{score}/{quizDataAngular.length}</span> questões corretamente</h2>
+        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6' onClick={resetQuiz}>Reload</button>
+      </div>
       )}
     </div>
     </Layout>
