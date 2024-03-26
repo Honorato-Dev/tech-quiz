@@ -89,25 +89,23 @@ const ContactScreen = () => {
 
           <div className="flex  flex-col text-center space-y-5 md:text-left md:flex-row    mx-auto items-center">
             <div className="flex flex-col space-y-5 lg:space-y-10 ">
-              <h4 className="text-xl font-semibold text-center md:text-2xl lg:text-3xl">
-                Fale conosco
-              </h4>
+            
 
-              <div className=" flex items-center space-x-5 justify-center">
+              {/* <div className=" flex items-center space-x-5 justify-center">
                 <PhoneIcon className="text-green500 h-4 w-4 md:h-5 md:w-5   lg:h-7 lg:w-7 animate-pulse" />
                 <p className="text-sm lg:text-xl lg:text-2xl">71 99942-6443</p>
-              </div>
+              </div> */}
               <div className=" flex items-center space-x-5 justify-center">
-                <EnvelopeIcon className="text-green500 h-4 w-4 md:h-5 md:w-5  lg:h-7 lg:w-7 animate-pulse" />
+                <EnvelopeIcon className="text-purple-400 h-4 w-4 md:h-5 md:w-5  lg:h-7 lg:w-7 animate-pulse" />
                 <p className="text-sm lg:text-xl lg:text-2xl">
-                  parquedasarvores.secretaria@gmail.com
+                  techquizbr@gmail.com
                 </p>
               </div>
 
-              <div className=" flex items-center space-x-5 justify-center">
+              {/* <div className=" flex items-center space-x-5 justify-center">
                 <MapPinIcon className="text-green500 h-4 w-4 md:h-5 md:w-5   lg:h-7 lg:w-7  animate-pulse" />
                 <p className="text-sm lg:text-xl lg:text-2xl">Litoral Norte</p>
-              </div>
+              </div> */}
             </div>
 
             <Container maxW="450px" m={1}>
@@ -162,8 +160,8 @@ const ContactScreen = () => {
                 <FormErrorMessage>Required</FormErrorMessage>
               </FormControl>
               <Button
-                className="bg-[#f7ab0a] py-5 px-1- rounded-md text-black font-bold text-lg"
-                variant="outline"
+                className="bg-[#cf82bf] py-5 px-1- rounded-md text-black font-bold text-lg"
+                variant=""
                 colorScheme="blue"
                 isLoading={isLoading}
                 disabled={
