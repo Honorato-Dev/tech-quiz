@@ -4,7 +4,7 @@ import { Html } from "@react-email/html";
 import { Heading } from "@react-email/heading";
 import { Text } from "@react-email/text";
 import { Hr } from "@react-email/hr";
-import { Img } from "@react-email/components";
+
 
 export default function ForgotPasswordEmail({
   params,

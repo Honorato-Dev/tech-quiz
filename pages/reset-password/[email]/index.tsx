@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const ResetPassword = () => {
   const searchParam = useSearchParams();
@@ -12,7 +13,7 @@ const ResetPassword = () => {
   const [passwordError, setPasswordError] = useState('');
   const [confirmPasswordError, setConfirmPasswordError] = useState('');
 
-
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
   const submit = (event: React.FormEvent) => {
     event.preventDefault();
@@ -25,24 +26,28 @@ const ResetPassword = () => {
         // Check if password is empty
         if (!password) {
           setPasswordError('Digite a nova senha');
+          setLoading(false);
           return;
         }
-    
+        
         // Check if password meets certain criteria (e.g., length)
         if (password.length < 8) {
           setPasswordError('A senha deve ter pelo menos 8 caracteres');
+          setLoading(false);
           return;
         }
     
         // Check if confirmPassword is empty
         if (!confirmPassword) {
           setConfirmPasswordError('Por favor, confirme sua senha');
+          setLoading(false);
           return;
         }
     
         // Check if passwords match
         if (password !== confirmPassword) {
           setConfirmPasswordError('As senhas não correspondem');
+          setLoading(false);
           return;
         }
 
@@ -58,6 +63,7 @@ const ResetPassword = () => {
         const response = res.data;
         if (response.status == 400) {
           toast.error(response.message, { theme: "colored" });
+          router.push('/');
         } else if (response.status == 200) {
           toast.success(response.message, { theme: "colored" });
           setLoading(false);
