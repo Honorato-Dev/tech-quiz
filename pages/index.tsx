@@ -15,15 +15,15 @@ const Home = () => {
       <div className="flex flex-col space-y-8  justify-center mx-auto ">
         <div className="flex flex-col justify-center lg:mt-24 lg:mb-24">
           <div className={alfa.className}>
-            <h1 className="text-2xl md:text-3xl lg:text-5xl text-center  text-white ">
-              Bem-vindo ao <span className=''>Tech Quiz!</span>
+            <h1 className="text-2xl md:text-3xl lg:text-5xl text-center   ">
+              Bem-vindo ao <span className='bg-gradient-to-l from-green-400 to-cyan-400 text-transparent bg-clip-text'>Tech Quiz!</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl lg:text-5xl text-center text-white mb-10">
+            <h2 className="text-2xl md:text-3xl lg:text-5xl text-center  mb-10">
               {' '}
               Explore o Universo da Tecnologia.
             </h2>
           </div>
-          <p className="text-lg md:text-xl lg:text-2xl font-semibold text-center  text-white mt-11 mb-4">
+          <p className="text-lg md:text-xl lg:text-2xl font-semibold text-center   mt-11 mb-4">
             No Tech Quiz, sua jornada pelo vasto universo da tecnologia começa
             aqui! Somos um destino online que se aprofunda nas profundezas do
             conhecimento digital, oferecendo um espaço dinâmico e interativo
@@ -34,7 +34,7 @@ const Home = () => {
           </p>
           <div className="text-center mb-20 mt-20">
             <Link
-              className="font-bold py-7 px-7 rounded-md bg-blue-500 text-white bg-blue-700;"
+              className="font-bold py-7 px-7 rounded-md bg-blue-500  bg-blue-700;"
               href="/getstarted"
             >
               Get Started
@@ -44,7 +44,7 @@ const Home = () => {
 
         <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-2   lg:flex-row  lg:space-x-16 justify-center ">
           <div className="   bg-opacity-70 w-[] h-[350px] mt-4 rounded-md lg:w-[680px] lg:h-[450px] ">
-            <p className="flex  text-white font-semibold text-base lg:text-2xl">
+            <p className="flex   font-semibold text-base lg:text-2xl">
               Responder a um questionário de tecnologia pode oferecer uma série
               de vantagens significativas no contexto da evolução de carreira.
               Em um mundo cada vez mais orientado pela inovação e digitalização,
@@ -57,7 +57,7 @@ const Home = () => {
           <div className=" p-4 space-y-3 bg-opacity-70  mt-4 rounded-md lg:w-[680px] lg:h-[450px]">
             <p className="flex font-semibold p-1 text-sm lg:text-base">
               <span className={alfa.className}>
-                <span className="mr-4 text-lg lg:text-xl text-white font-normal ">
+                <span className="mr-4 text-lg lg:text-xl  font-normal ">
                   Atualização de Conhecimentos:
                 </span>
               </span>{' '}
@@ -68,7 +68,7 @@ const Home = () => {
             </p>
             <p className="flex font-semibold p-1 text-sm lg:text-base">
               <span className={alfa.className}>
-                <span className="mr-4 text-lg lg:text-xl text-white font-normal ">
+                <span className="mr-4 text-lg lg:text-xl  font-normal ">
                   Destaque no Mercado:
                 </span>
               </span>
@@ -80,7 +80,7 @@ const Home = () => {
             </p>
             <p className="flex font-semibold p-1 text-sm lg:text-base">
               <span className={alfa.className}>
-                <span className="mr-4 text-lg lg:text-xl text-white font-normal ">
+                <span className="mr-4 text-lg lg:text-xl  font-normal ">
                   Networking e Oportunidades:
                 </span>
               </span>
@@ -98,7 +98,7 @@ const Home = () => {
           <div className="  p-4 space-y-3  bg-opacity-70   lg:mt-4 rounded-md lg:w-[680px] lg:h-[450px] ">
             <p className="flex font-semibold p-1 ml-1 text-sm lg:text-base">
               <span className={alfa.className}>
-                <span className="flex mr-4 pr-2 text-lg lg:text-xl text-white font-normal ">
+                <span className="flex mr-4 pr-2 text-lg lg:text-xl  font-normal ">
                   Certificação Informal:
                 </span>
               </span>
@@ -111,7 +111,7 @@ const Home = () => {
             <p className="flex font-semibold p-1 text-sm lg:text-base">
               {' '}
               <span className={alfa.className}>
-                <span className="flex mr-4 text-lg lg:text-xl text-white font-normal ">
+                <span className="flex mr-4 text-lg lg:text-xl  font-normal ">
                   Autoavaliação e Desenvolvimento Pessoal:
                 </span>
               </span>{' '}
@@ -123,7 +123,7 @@ const Home = () => {
             </p>
             <p className="flex font-semibold p-1 text-sm lg:text-base">
               <span className={alfa.className}>
-                <span className="flex mr-4 text-lg lg:text-xl text-white font-normal ">
+                <span className="flex mr-4 text-lg lg:text-xl  font-normal ">
                   Acesso a Recursos Educacionais:
                 </span>
               </span>

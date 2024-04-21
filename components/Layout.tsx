@@ -15,10 +15,12 @@ import { FaInstagram } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from "react-icons/fa";
 import CookiesConsent from './CookiesConsent';
+import ThemeToogle from './ThemeToogle';
 
 
 
 const Layout = ({ children, title }: any) => {
+ 
   const { status, data: session }: any = useSession();
   const logoutClickHandler = () => {
     signOut({ callbackUrl: '/login' });
@@ -36,25 +38,26 @@ const Layout = ({ children, title }: any) => {
       <div className="flex min-h-screen flex-col justify-between">
         <header>
           {/* <CurrentDate/> */}
-          <nav className="flex h-25 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  justify-between items-center px-4">
+          <nav className="flex h-25  justify-between items-center px-4">
             <div className="text-3xl py-3 flex items-center">
               <Link href="/">
                 <Image
                   src="/images/techquiz-logo.png"
                   alt="pmc logo"
-                  width={80}
-                  height={80}
+                  width={50}
+                  height={50}
                 />
                 
               </Link>
             </div>
-           
+            <ThemeToogle/>
             <div>
               {status === 'loading' ? (
                 'loading'
               ) : session?.user ? (
                 <Menu as="div" className="relative inline-block">
-                  <Menu.Button className="text-black flex">
+                  
+                  <Menu.Button className=" flex">
                     <p className="px-2 font-bold">Olá</p>
                     {session.user.name}
                   </Menu.Button>
@@ -129,7 +132,7 @@ const Layout = ({ children, title }: any) => {
         <main className="container m-auto  mt-4 px-4">{children}</main>
 
          <CookiesConsent/>       
-        <footer className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">
+        <footer className=" ">
           <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div className="md:flex md:justify-between">
               <div className="mb-6 md:mb-0">
@@ -140,17 +143,17 @@ const Layout = ({ children, title }: any) => {
                   <Image
                     src="/images/techquiz-logo.png"
                     alt="pmc logo"
-                    width={60}
-                    height={60}
+                    width={30}
+                    height={30}
                   />
                 </Link>
               </div>
               <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                 <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
+                  <h2 className="mb-6 text-sm font-semibold  uppercase ">
                     Recursos
                   </h2>
-                  <ul className="text-gray-800 dark:text-gray-400 font-medium">
+                  <ul className=" dark:text-gray-400 font-medium">
                     <li className="mb-4">
                       <Link
                         href="https://www.mongodb.com/"
@@ -178,13 +181,13 @@ const Layout = ({ children, title }: any) => {
                   </ul>
                 </div>
                 <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
+                  <h2 className="mb-6 text-sm font-semibold  uppercase ">
                     Sigam-nos
                   </h2>
-                  <ul className="text-gray-800 dark:text-gray-400 font-medium">
+                  <ul className=" dark:text-gray-400 font-medium">
                     <li className="mb-4">
                       <Link
-                        href="https://github.com/vituhonorato"
+                        href="https://github.com/Honorato-Dev"
                         className="hover:text-white "
                       >
                         Github
@@ -209,10 +212,10 @@ const Layout = ({ children, title }: any) => {
                   </ul>
                 </div>
                 <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
+                  <h2 className="mb-6 text-sm font-semibold  uppercase ">
                     Legal
                   </h2>
-                  <ul className="text-gray-800 dark:text-gray-400 font-medium">
+                  <ul className=" dark:text-gray-400 font-medium">
                     <li className="mb-4">
                       <Link href="/privacy-policy" className="hover:text-white">
                         Política de Privacidade
@@ -234,7 +237,7 @@ const Layout = ({ children, title }: any) => {
             </div>
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div className="sm:flex sm:items-center sm:justify-between">
-              <span className="text-sm text-gray-800 sm:text-center dark:text-gray-900">
+              <span className="text-sm  sm:text-center dark:">
                 © 2023 - 2024{' '}
                 <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">
                   Tech Quiz™
@@ -244,28 +247,28 @@ const Layout = ({ children, title }: any) => {
               <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
                 <Link
                   href="https://www.linkedin.com/in/jvmh/"
-                  className="text-gray-800 hover:text-gray-900 dark:hover:text-gray-700"
+                  className=" hover:text-gray-900 dark:hover:text-gray-700"
                 >
                   <FaLinkedin />
                   <span className="sr-only">Linkedin page</span>
                 </Link>
                 <Link
                   href="https://discord.gg/TJu3XjEw"
-                  className="text-gray-800 hover:text-gray-900 dark:hover:text-gray-700"
+                  className=" hover:text-gray-900 dark:hover:text-gray-700"
                 >
                   <FaDiscord />
                   <span className="sr-only">Discord community</span>
                 </Link>
                 <Link
                   href="#"
-                  className="text-gray-800 hover:text-gray-900 dark:hover:text-gray-700"
+                  className=" hover:text-gray-900 dark:hover:text-gray-700"
                 >
                   <FaInstagram />
                   <span className="sr-only">Instagram</span>
                 </Link>
                 <Link
                   href="https://github.com/vituhonorato"
-                  className="text-gray-800 hover:text-gray-900 dark:hover:text-gray-700"
+                  className=" hover:text-gray-900 dark:hover:text-gray-700"
                 >
                   <FaGithub />
                   <span className="sr-only">GitHub account</span>
