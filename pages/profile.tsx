@@ -40,7 +40,7 @@ const ProfileScreen = () => {
         email,
         password,
       });
-      toast.success('Perfil atualizado com sucesso!');
+      toast.success('Successful updated profile!');
       if (result?.error) {
         toast.error(result.error);
       }
@@ -49,12 +49,12 @@ const ProfileScreen = () => {
     }
   };
   return (
-    <Layout title="Atualizar Perfil">
+    <Layout title="Update Profile">
       <form
         className="mx-auto max-w-screen-md"
         onSubmit={handleSubmit(submitHandler)}
       >
-        <h1 className="mb-4 text-2xl font-semibold">Atualizar Perfil</h1>
+        <h1 className="mb-4 text-2xl font-semibold">Update Profile</h1>
         <div className="bg-white p-3 rounded-md bg-opacity-80">
           <div className="mb-4">
             <label className="font-semibold" htmlFor="name">
@@ -94,7 +94,7 @@ const ProfileScreen = () => {
           </div>
           <div className="mb-4">
             <label className="font-semibold" htmlFor="password">
-              Senha
+              Password
             </label>
             <input
               className="w-full"
@@ -113,7 +113,7 @@ const ProfileScreen = () => {
           </div>
           <div className="mb-4">
             <label className="font-semibold" htmlFor="password">
-              Confirmar Senha
+             Confirm password
             </label>
             <input
               className="w-full"
@@ -133,7 +133,7 @@ const ProfileScreen = () => {
               )}
           </div>
           <div className="mb-4">
-            <button className="primary-button">Atualizar Perfil</button>
+            <button className="primary-button">Update Profile</button>
           </div>
         </div>
       </form>

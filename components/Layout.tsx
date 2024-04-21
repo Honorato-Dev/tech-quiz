@@ -58,13 +58,13 @@ const Layout = ({ children, title }: any) => {
                 <Menu as="div" className="relative inline-block">
                   
                   <Menu.Button className=" flex">
-                    <p className="px-2 font-bold">Olá</p>
+                    <p className="px-2 font-bold">Hello</p>
                     {session.user.name}
                   </Menu.Button>
                   <Menu.Items className="absolute right-0 w-56 origin-top-right shadow-lg">
                     <Menu.Item>
                       <DropdownLink className="dropdown-link" href="/profile">
-                        Perfil
+                        Profile
                       </DropdownLink>
                     </Menu.Item>
                     <Menu.Item>
@@ -72,23 +72,14 @@ const Layout = ({ children, title }: any) => {
                     Get Started
                   </DropdownLink>
                 </Menu.Item>
-                    {session.user.isAdmin && (
-                      <Menu.Item>
-                        <DropdownLink
-                          className="dropdown-link"
-                          href="/admin/dashboard"
-                        >
-                          Painel Admin
-                        </DropdownLink>
-                      </Menu.Item>
-                    )}
+                   
                     <Menu.Item>
                       <Link
                         className="dropdown-link"
                         href="/#"
                         onClick={logoutClickHandler}
                       >
-                        Sair
+                        Sign-out
                       </Link>
                     </Menu.Item>
                   </Menu.Items>
@@ -96,7 +87,7 @@ const Layout = ({ children, title }: any) => {
               ) : (
                 <>
                   <Link href="/login">
-                    <p className="text-lg font-semibold">Logar</p>
+                    <p className="text-lg font-semibold">Sign-in</p>
                   </Link>
                 </>
               )}
@@ -122,7 +113,7 @@ const Layout = ({ children, title }: any) => {
                 
                 <Menu.Item>
                   <DropdownLink className="dropdown-link" href="/contact">
-                    Contato
+                    Contact
                   </DropdownLink>
                 </Menu.Item>
               </Menu.Items>
@@ -151,7 +142,7 @@ const Layout = ({ children, title }: any) => {
               <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                 <div>
                   <h2 className="mb-6 text-sm font-semibold  uppercase ">
-                    Recursos
+                    Resources
                   </h2>
                   <ul className=" dark:text-gray-400 font-medium">
                     <li className="mb-4">
@@ -182,7 +173,7 @@ const Layout = ({ children, title }: any) => {
                 </div>
                 <div>
                   <h2 className="mb-6 text-sm font-semibold  uppercase ">
-                    Sigam-nos
+                   Follow us
                   </h2>
                   <ul className=" dark:text-gray-400 font-medium">
                     <li className="mb-4">
@@ -218,17 +209,17 @@ const Layout = ({ children, title }: any) => {
                   <ul className=" dark:text-gray-400 font-medium">
                     <li className="mb-4">
                       <Link href="/privacy-policy" className="hover:text-white">
-                        Política de Privacidade
+                       Privacy Policy
                       </Link>
                     </li>
                     <li className="mb-4">
                       <Link href="/terms-and-conditions" className="hover:text-white">
-                        Termos &amp; Condições
+                        Terms &amp; Conditions
                       </Link>
                     </li>
                     <li>
                       <Link href="/contact" className="hover:text-white">
-                        Contato
+                        Contact
                       </Link>
                     </li>
                   </ul>
@@ -242,7 +233,7 @@ const Layout = ({ children, title }: any) => {
                 <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">
                   Tech Quiz™
                 </a>
-                . Todos os Direitos Reservardos.
+                . All rights reserved.
               </span>
               <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
                 <Link

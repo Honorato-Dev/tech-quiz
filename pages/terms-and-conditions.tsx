@@ -3,35 +3,35 @@ import React from 'react'
 
 const TermsAndConditionsScreem = () => {
   return (
-    <Layout title="Termos e condições">
+    <Layout title="TEMOUS AND CONDITIONS">
         <div className="flex flex-col space-y-4 py-6 px-4 bg-white justify-center">
-        <h1 className="text-xl md:text-2xl lg:text-3xl">Termos e Condições do Tech Quiz</h1>
-        <p className="text:sm md:text-base lg:text-lg">Bem-vindo aos Termos e Condições do Tech Quiz. Ao acessar e utilizar nosso site, você concorda em cumprir estes termos. Leia atentamente as seguintes informações antes de continuar a usar nossos serviços.</p>
-        <h2 className="text-xl md:text-2xl lg:text-3xl">1. Uso do Tech Quiz</h2>
-        <p className="text:sm md:text-base lg:text-lg">1.1 Permissão de Uso: Concedemos a você uma licença limitada, não exclusiva e intransferível para acessar e utilizar o Tech Quiz estritamente de acordo com estes Termos e Condições.</p>
-        <p className="text:sm md:text-base lg:text-lg">1.2 Restrições de Uso: Você concorda em não reproduzir, distribuir, modificar, criar obras derivadas, realizar engenharia reversa ou explorar comercialmente qualquer parte do Tech Quiz sem nossa permissão expressa por escrito.</p>
+        <h1 className="text-xl md:text-2xl lg:text-3xl">Tech Quiz terms and conditions</h1>
+        <p className="text:sm md:text-base lg:text-lg">Welcome to the terms and conditions of Tech Quiz.When accessing and using our site, you agree to comply with these terms.Read the following information carefully before continuing to use our services.</p>
+        <h2 className="text-xl md:text-2xl lg:text-3xl">1. usoDoTechQuiz</h2>
+        <p className="text:sm md:text-base lg:text-lg">1.1 Use Permission: We grant you a limited, non -exclusive and non -transferable license to access and use Tech Quiz strictly in accordance with these Terms and Conditions.</p>
+        <p className="text:sm md:text-base lg:text-lg">1.2 Use Restrictions: You agree not to reproduce, distribute, modify, create derivative works, perform reverse engineering or commercially explore any part of Tech Quiz without our express permission in writing.</p>
         
         
-        <h2 className="text-xl md:text-2xl lg:text-3xl">2. Conta do Usuário</h2>
-        <p className="text:sm md:text-base lg:text-lg">2.1 Registro de Conta: Para acessar determinados recursos do Tech Quiz, você pode precisar criar uma conta. Você concorda em fornecer informações precisas, completas e atualizadas durante o processo de registro.</p>
-        <p className="text:sm md:text-base lg:text-lg">2.2 Responsabilidade pela Conta: Você é responsável por manter a confidencialidade de suas informações de conta, incluindo senha, e por todas as atividades que ocorrem em sua conta.</p>
-        <h2 className="text-xl md:text-2xl lg:text-3xl">3. Conteúdo do Usuário</h2>
-        <p className="text:sm md:text-base lg:text-lg">3.1 Contribuições: Ao enviar perguntas, respostas ou qualquer outro conteúdo para o Tech Quiz, você concede a nós uma licença mundial, não exclusiva, transferível, sublicenciável, livre de royalties para usar, reproduzir, modificar, distribuir e exibir esse conteúdo.</p>
-        <p className="text:sm md:text-base lg:text-lg">3.2 Responsabilidade pelo Conteúdo: Você é inteiramente responsável por todo o conteúdo que envia. O Tech Quiz não endossa, garante a veracidade ou assume responsabilidade pelo conteúdo gerado pelos usuários.</p>
-        <h2 className="text-xl md:text-2xl lg:text-3xl">4. Conduta do Usuário</h2>
-        <p className="text:sm md:text-base lg:text-lg">Ao utilizar o Tech Quiz, você concorda em não:</p>
-        <p className="text:sm md:text-base lg:text-lg">4.1. Violar qualquer lei ou regulamento aplicável.</p>
-        <p className="text:sm md:text-base lg:text-lg">4.2. Enviar conteúdo difamatório, obsceno, abusivo, ameaçador ou ilegal.</p>
-        <p className="text:sm md:text-base lg:text-lg">4.3. Interferir ou tentar interferir na segurança do Tech Quiz ou nos serviços relacionados.</p>
-        <p className="text:sm md:text-base lg:text-lg">4.4. Utilizar qualquer dispositivo, software ou rotina para interferir ou tentar interferir no funcionamento adequado do Tech Quiz.</p>
-        <h2 className="text-xl md:text-2xl lg:text-3xl">5. Modificações e Interrupções</h2>
-        <p className="text:sm md:text-base lg:text-lg">Reservamo-nos o direito de modificar ou descontinuar, temporária ou permanentemente, o Tech Quiz, com ou sem aviso prévio. Não seremos responsáveis perante você ou terceiros por qualquer modificação, suspensão ou interrupção dos serviços.</p>
-        <h2 className="text-xl md:text-2xl lg:text-3xl">6. Limitação de Responsabilidade</h2>
-        <p className="text:sm md:text-base lg:text-lg">Em nenhuma circunstância o Tech Quiz, seus administradores, colaboradores ou afiliados serão responsáveis por quaisquer danos diretos, indiretos, incidentais, especiais ou consequentes resultantes do uso ou incapacidade de usar o Tech Quiz.</p>
-        <h2 className="text-xl md:text-2xl lg:text-3xl">7. Disposições Gerais</h2>
-        <p className="text:sm md:text-base lg:text-lg">7.1 Legislação Aplicável: Estes Termos e Condições são regidos e interpretados de acordo com as leis do Brasil, sem levar em consideração os conflitos de princípios legais.</p>
-        <p className="text:sm md:text-base lg:text-lg">7.2 Alterações nos Termos: Reservamo-nos o direito de modificar estes Termos e Condições a qualquer momento. As alterações entrarão em vigor imediatamente após a publicação no Tech Quiz. Recomendamos que você revise regularmente os Termos e Condições para estar ciente de quaisquer alterações.</p>
-        <p className="text:sm md:text-base lg:text-lg">Ao utilizar o Tech Quiz, você concorda em cumprir estes Termos e Condições. Se você não concorda com algum aspecto destes termos, por favor, interrompa o uso do Tech Quiz. Se tiver dúvidas ou preocupações, entre em contato conosco pelo e-mail devnautas.dev@gmail.com. Obrigado por escolher o Tech Quiz!</p>
+        <h2 className="text-xl md:text-2xl lg:text-3xl">2. User Account</h2>
+        <p className="text:sm md:text-base lg:text-lg">2.1 Account Record: To access certain features of Tech Quiz, you may need to create an account.You agree to provide accurate, complete and updated information during the registration process.</p>
+        <p className="text:sm md:text-base lg:text-lg">2.2 Account Responsibility: You are responsible for maintaining the confidentiality of your account information, including password, and for all activities that occur in your account.</p>
+        <h2 className="text-xl md:text-2xl lg:text-3xl">3. User Content</h2>
+        <p className="text:sm md:text-base lg:text-lg">3.1 Contributions: By sending questions, answers or any other content to Tech Quiz, you give us a worldwide, non -exclusive, transferable, sublicensible, royalties license to use, reproduce, modify, distribute and display this content.</p>
+        <p className="text:sm md:text-base lg:text-lg">3.2 Content Responsibility: You are entirely responsible for all the content you send.Tech Quiz does not endorse, guarantees the veracity or assumes responsibility for the content generated by users.</p>
+        <h2 className="text-xl md:text-2xl lg:text-3xl">4. User conduct</h2>
+        <p className="text:sm md:text-base lg:text-lg">When using Tech Quiz, you agree not to:</p>
+        <p className="text:sm md:text-base lg:text-lg">4.1. Violate any applicable law or regulation.</p>
+        <p className="text:sm md:text-base lg:text-lg">4.2.Send defamatory, obscene, abusive, threatening or illegal content.</p>
+        <p className="text:sm md:text-base lg:text-lg">4.3. Interfere or try to interfere with the safety of Tech Quiz or related services.</p>
+        <p className="text:sm md:text-base lg:text-lg">4.4. Use any device, software or routine to interfere or try to interfere with the proper operation of Tech Quiz.</p>
+        <h2 className="text-xl md:text-2xl lg:text-3xl">5. Modifications and interruptions</h2>
+        <p className="text:sm md:text-base lg:text-lg">We reserve the right to modify or discontinue, temporary or permanently, the Tech Quiz, with or without notice.We will not be responsible before you or third parties for any modification, suspension or interruption of services. </p>
+        <h2 className = "Text-XL MD: Text-2xl LG: Text-3xl"> 6.Limitation of liability </h2>
+        <p className="text:sm md:text-base lg:text-lg">Under no circumstances is tech quiz, their administrators, employees or affiliates will be responsible for any direct, indirect, incidental, special or consequent damage resulting from the use or inability to use Tech Quiz.</p>
+        <h2 className="text-xl md:text-2xl lg:text-3xl">7. General provisions</h2>
+        <p className="text:sm md:text-base lg:text-lg">7.1 Applicable legislation: These terms and conditions are governed and interpreted in accordance with the laws of Brazil, regardless of the conflicts of legal principles.</p>
+        <p className="text:sm md:text-base lg:text-lg">7.2 Changes in the terms: We reserve the right to modify these terms and conditions at any time.Changes will take effect immediately after publication in Tech Quiz.We recommend that you regularly review the terms and conditions to be aware of any changes.</p>
+        <p className="text:sm md:text-base lg:text-lg">By using Tech Quiz, you agree to comply with these terms and conditions.If you do not agree with any aspect of these terms, please stop the use of Tech Quiz.If you have questions or concerns, contact us by email devnautas.dev@gmail.com.Thanks for choosing tech quiz!</p>
        
 
         </div>

@@ -3,102 +3,102 @@ import React from 'react';
 
 const PrivacyPolicyScreen = () => {
   return (
-    <Layout title="Política de privacidade">
+    <Layout title="Privacy Policy">
       <div className="flex flex-col space-y-4 py-6 px-4 bg-white justify-center">
         <h1 className="text-xl md:text-2xl lg:text-3xl">
           {' '}
-          Política de Privacidade
+         Privacy Policy
         </h1>
         <p className="text:sm md:text-base lg:text-lg">
-          Bem-vindo à Política de Privacidade do Tech Quiz. Esta página descreve
-          como coletamos, usamos, compartilhamos e protegemos suas informações
-          quando você utiliza nossos serviços. Ao acessar ou utilizar o site
-          Tech Quiz, você concorda com os termos desta política.
+          Welcome to Tech Quizs privacy policy.This page describes
+          as we collect, use, share and protect your information
+          When you use our services.When accessing or using the site
+          Tech Quiz, you agree with the terms of this policy.
         </p>
         <h2 className="text-xl md:text-2xl lg:text-3xl">
-          1. Informações Coletadas
+          1. Collected information
         </h2>
         <p className="text:sm md:text-base lg:text-lg">
-          1.1 Informações Pessoais: Podemos coletar informações pessoais
-          fornecidas voluntariamente por você, como nome, endereço de e-mail e
-          outras informações relevantes para a prestação dos serviços.
+          1.1 Personal Information: We can collect personal information
+          voluntarily provided by you, such as name, email address and
+          Other information relevant to the provision of services.
         </p>
         <p className="text:sm md:text-base lg:text-lg">
-          1.2 Informações Automáticas: Ao utilizar o Tech Quiz, coletamos
-          automaticamente informações não pessoais, como dados de navegação,
-          endereço IP, tipo de navegador, dispositivo utilizado e outras
-          estatísticas anônimas.
+          1.2 Automatic information: When using Tech Quiz, we collect
+          automatically non -personal information, such as navigation data,
+          IP address, browser type, device used and others
+          anonymous statistics.
         </p>
         <h2 className="text-xl md:text-2xl lg:text-3xl">
           2. Uso das Informações
         </h2>
         <p className="text:sm md:text-base lg:text-lg">
-          2.1 Melhoria dos Serviços: Utilizamos as informações coletadas para
-          melhorar e personalizar sua experiência no Tech Quiz, desenvolvendo
-          novos recursos, analisando tendências e otimizando o desempenho do
+          2.1Improvement of Services: We use the information collected for
+          improve and customize your experience at Tech Quiz, developing
+          new resources, analyzing trends and optimizing the performance of
           site.
         </p>
         <p className="text:sm md:text-base lg:text-lg">
-          2.2 Comunicação: Podemos utilizar seu endereço de e-mail para enviar
-          informações sobre atualizações, novos recursos, ou outras notificações
-          relacionadas ao Tech Quiz. Você pode optar por não receber essas
-          comunicações a qualquer momento.
+          2.2 Communication: We can use your email address to send
+          information about updates, new resources, or other notifications
+          related to Tech Quiz.You can choose not to receive these
+          communications at any time.
         </p>
         <h2 className="text-xl md:text-2xl lg:text-3xl">
-          3. Compartilhamento de Informações
+          3. Information sharing
         </h2>
         <p className="text:sm md:text-base lg:text-lg">
-          3.1 Parceiros e Fornecedores de Serviços: Podemos compartilhar suas
-          informações com parceiros e fornecedores de serviços que ajudam na
-          operação do Tech Quiz, como provedores de hospedagem, processadores de
-          pagamento e outros prestadores de serviços.
+          3.1 Partners and Service Suppliers: We can share your
+          information with partners and service suppliers that help in the
+          TECH QUIZ operation, such as hosting providers, processors
+          payment and other service providers.
         </p>
         <p className="text:sm md:text-base lg:text-lg">
-          3.2 Requisitos Legais: Reservamo-nos o direito de divulgar suas
-          informações, caso seja necessário cumprir com obrigações legais,
-          responder a processos judiciais, ou proteger nossos direitos legais.
+          3.2 LEGAL REQUIREMENTS: We reserve the right to disclose its
+          information, if it is necessary to comply with legal obligations,
+          respond to legal proceedings, or protect our legal rights.
         </p>
         <h2 className="text-xl md:text-2xl lg:text-3xl">
-          4. Cookies e Tecnologias Semelhantes
+          4.Similar cookies and technologies
         </h2>
         <p className="text:sm md:text-base lg:text-lg">
-          O Tech Quiz utiliza cookies e tecnologias semelhantes para melhorar a
-          funcionalidade do site, personalizar sua experiência e analisar o uso
-          dos serviços. Ao continuar a utilizar o site, você concorda com o uso
-          dessas tecnologias.
+          Tech Quiz uses similar cookies and technologies to improve
+          site functionality, customize your experience and analyze use
+          services.When continuing to use the site, you agree with the use
+          of these technologies.
         </p>
-        <h2 className="text-xl md:text-2xl lg:text-3xl">5. Segurança</h2>
+        <h2 className="text-xl md:text-2xl lg:text-3xl">5. Security</h2>
         <p className="text:sm md:text-base lg:text-lg">
-          Empregamos medidas de segurança razoáveis para proteger suas
-          informações contra acesso não autorizado, alteração, divulgação ou
-          destruição não autorizada. No entanto, não podemos garantir a
-          segurança completa de suas informações.
+          We employ reasonable security measures to protect your
+          information against unauthorized access, change, disclosure or
+          Unauthorized destruction.However, we cannot guarantee the
+          complete security of your information.
         </p>
-        <h2 className="text-xl md:text-2xl lg:text-3xl">6. Menores de Idade</h2>
+        <h2 className="text-xl md:text-2xl lg:text-3xl">6. Minors</h2>
         <p className="text:sm md:text-base lg:text-lg">
-          O Tech Quiz não se destina a menores de 13 anos. Não coletamos
-          intencionalmente informações de crianças menores de 13 anos. Se
-          tivermos conhecimento de que coletamos informações de uma criança
-          menor de 13 anos, tomaremos as medidas necessárias para excluir essas
-          informações.
+          Tech Quiz is not intended for children under 13.We do not collect
+          intentionally information from children under 13.If
+          we know that we collect information from a child
+          under 13, we will take the necessary measures to delete these
+          information.
         </p>
         <h2 className="text-xl md:text-2xl lg:text-3xl">
-          7. Alterações nesta Política de Privacidade
+          7. Changes in this Privacy Policy
         </h2>
         <p className="text:sm md:text-base lg:text-lg">
-          Reservamo-nos o direito de atualizar esta Política de Privacidade
-          periodicamente. Recomendamos que você revise esta página regularmente
-          para estar ciente de quaisquer alterações. A continuação do uso do
-          Tech Quiz após as alterações significa que você concorda com as
-          modificações.
+          We reserve the right to update this privacy policy
+          periodically.We recommend that you review this page regularly
+          to be aware of any changes.The continuation of the use of
+          Tech quiz after changes means that you agree with
+          modifications.
         </p>
-        <h2 className="text-xl md:text-2xl lg:text-3xl">8. Contato</h2>
+        <h2 className="text-xl md:text-2xl lg:text-3xl">8. Contact</h2>
         <p className="text:sm md:text-base lg:text-lg">
-          Se tiver dúvidas ou preocupações sobre esta Política de Privacidade,
-          entre em contato conosco pelo e-mail techquizbr@gmail.com. Ao
-          utilizar o Tech Quiz, você concorda com os termos desta Política de
-          Privacidade. Obrigado por confiar em nós para proteger suas
-          informações.
+       If you have questions or concerns about this privacy policy,
+          Contact us by email techquizbr@gmail.com.To the
+          Using Tech Quiz, you agree with the terms of this policy
+          Privacy.Thank you for trusting us to protect your
+          information.
         </p>
         {/* <h2 className="text-xl md:text-2xl lg:text-3xl"></h2>
         <p className="text:sm md:text-base lg:text-lg"></p>

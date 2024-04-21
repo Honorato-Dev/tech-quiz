@@ -1,5 +1,5 @@
 
-import { Alfa_Slab_One } from 'next/font/google';
+import { Alfa_Slab_One, Roboto_Mono } from 'next/font/google';
 import Link from 'next/link';
 import IntroductionScreen from './introduction';
 import Layout from '@/components/Layout';
@@ -8,29 +8,35 @@ const alfa = Alfa_Slab_One({
   subsets: ['latin'],
   weight: ['400'],
 });
+const roboto = Roboto_Mono({
+  weight: ['700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 const Home = () => {
   return (
     <Layout>
-      <div className="flex flex-col space-y-8  justify-center mx-auto ">
+      <div className={`flex flex-col space-y-8  justify-center mx-auto `&& roboto.className}>
         <div className="flex flex-col justify-center lg:mt-24 lg:mb-24">
           <div className={alfa.className}>
             <h1 className="text-2xl md:text-3xl lg:text-5xl text-center   ">
-              Bem-vindo ao <span className='bg-gradient-to-l from-green-400 to-cyan-400 text-transparent bg-clip-text'>Tech Quiz!</span>
+              Welcome to <span className='bg-gradient-to-l from-green-400 to-cyan-400 text-transparent bg-clip-text'>Tech Quiz!</span>
             </h1>
             <h2 className="text-2xl md:text-3xl lg:text-5xl text-center  mb-10">
               {' '}
-              Explore o Universo da Tecnologia.
+              Explore the universe of technology.
             </h2>
           </div>
           <p className="text-lg md:text-xl lg:text-2xl font-semibold text-center   mt-11 mb-4">
-            No Tech Quiz, sua jornada pelo vasto universo da tecnologia começa
-            aqui! Somos um destino online que se aprofunda nas profundezas do
-            conhecimento digital, oferecendo um espaço dinâmico e interativo
-            para testar suas habilidades nas principais linguagens de tecnologia
-            utilizadas atualmente. Este é o lugar onde entusiastas,
-            profissionais da área e curiosos se encontram para explorar,
-            aprender e aprimorar suas habilidades no mundo digital.
+            No Tech Quiz, his journey through the vast universe of technology begins
+            here!We are an online destination that deepens in the depths of the
+            digital knowledge, offering a dynamic and interactive space
+            To test your skills in the main technology languages
+            currently used.This is the place where enthusiasts,
+            professionals in the field and onlookers meet to explore,
+            Learn and improve your skills in the digital world.
           </p>
           <div className="text-center hover:animate-bounce   mb-20 mt-20">
             <Link
@@ -45,50 +51,50 @@ const Home = () => {
         <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-2   lg:flex-row  lg:space-x-16 justify-center ">
           <div className="   bg-opacity-70 w-[] h-[350px] mt-4 rounded-md lg:w-[680px] lg:h-[450px] ">
             <p className="flex   font-semibold text-base lg:text-2xl">
-              Responder a um questionário de tecnologia pode oferecer uma série
-              de vantagens significativas no contexto da evolução de carreira.
-              Em um mundo cada vez mais orientado pela inovação e digitalização,
-              demonstrar habilidades e conhecimentos tecnológicos é essencial
-              para o crescimento profissional. Ao participar ativamente de
-              questionários sobre tecnologia, os profissionais podem colher
-              benefícios como:
+             Responding to a technology questionnaire can offer a series
+              significant advantages in the context of career evolution.
+              In a world increasingly oriented by innovation and digitization,
+              Demonstrating technological skills and knowledge is essential
+              for professional growth.By actively participating in
+              technology questionnaires, professionals can reap
+              Benefits such as:
             </p>
           </div>
           <div className=" p-4 space-y-3 bg-opacity-70  mt-4 rounded-md lg:w-[680px] lg:h-[450px]">
             <p className="flex font-semibold p-1 text-sm lg:text-base">
               <span className={alfa.className}>
-                <span className="mr-4 text-lg lg:text-xl  font-normal ">
-                  Atualização de Conhecimentos:
+                <span className="mr-14 text-lg lg:text-xl  font-normal ">
+                 Knowledge Update:
                 </span>
               </span>{' '}
-              Ao responder perguntas sobre tecnologia, os profissionais são
-              desafiados a revisar e atualizar seus conhecimentos. Isso é vital
-              em um cenário onde a tecnologia evolui rapidamente, garantindo que
-              as habilidades estejam alinhadas com as demandas do mercado.
+            By answering questions about technology, professionals are
+              challenged to review and update their knowledge.This is vital
+              in a scenario where technology evolves rapidly, ensuring that
+              Skills are aligned with market demands.
+            </p>
+            <p className="flex font-semibold p-1 text-sm lg:text-base">
+              <span className={alfa.className}>
+                <span className="mr-10 text-lg lg:text-xl  font-normal ">
+                  Highlight in the market:
+                </span>
+              </span>
+             Actively participate in technology questionnaires can highlight
+              a professional in the job market.This shows
+              proactivity, interest in learning and adaptability,
+              characteristics valued by employers seeking talent
+              capable of accompanying technological changes.
             </p>
             <p className="flex font-semibold p-1 text-sm lg:text-base">
               <span className={alfa.className}>
                 <span className="mr-4 text-lg lg:text-xl  font-normal ">
-                  Destaque no Mercado:
+                  Networking and opportunities:
                 </span>
               </span>
-              Participar ativamente de questionários de tecnologia pode destacar
-              um profissional no mercado de trabalho. Isso demonstra
-              proatividade, interesse em aprender e adaptabilidade,
-              características valorizadas por empregadores que buscam talentos
-              capazes de acompanhar as mudanças tecnológicas.
-            </p>
-            <p className="flex font-semibold p-1 text-sm lg:text-base">
-              <span className={alfa.className}>
-                <span className="mr-4 text-lg lg:text-xl  font-normal ">
-                  Networking e Oportunidades:
-                </span>
-              </span>
-              Muitos questionários de tecnologia são promovidos por comunidades
-              e empresas do setor. Ao participar, os profissionais têm a chance
-              de expandir sua rede de contatos, interagindo com colegas, líderes
-              e especialistas. Isso pode resultar em novas oportunidades de
-              emprego, colaborações e parcerias.
+            Many technology questionnaires are promoted by communities
+              and companies in the sector.When participating, professionals have a chance
+              to expand its network of contacts, interacting with colleagues, leaders
+              and experts.This can result in new opportunities for
+              Employment, collaborations and partnerships.
             </p>
 
             <p></p>
@@ -99,42 +105,42 @@ const Home = () => {
             <p className="flex font-semibold p-1 ml-1 text-sm lg:text-base">
               <span className={alfa.className}>
                 <span className="flex mr-4 pr-2 text-lg lg:text-xl  font-normal ">
-                  Certificação Informal:
+                  Informal certification:
                 </span>
               </span>
-              Responder a questionários de tecnologia pode servir como uma forma
-              de certificação informal. Os resultados obtidos podem ser
-              compartilhados em perfis profissionais online, como o LinkedIn,
-              evidenciando o nível de conhecimento e competência do profissional
-              em determinadas áreas tecnológicas.
+             Responding to technology questionnaires can serve as a form
+              informal certification.The results obtained can be
+              shared on professional profiles online, such as LinkedIn,
+              highlighting the level of knowledge and competence of the professional
+              in certain technological areas.
             </p>
             <p className="flex font-semibold p-1 text-sm lg:text-base">
               {' '}
               <span className={alfa.className}>
                 <span className="flex mr-4 text-lg lg:text-xl  font-normal ">
-                  Autoavaliação e Desenvolvimento Pessoal:
+                  Self -assessment and personal development:
                 </span>
               </span>{' '}
-              Os questionários proporcionam uma oportunidade para autoavaliação.
-              Ao identificar áreas de conhecimento que precisam de
-              aprimoramento, os profissionais podem criar planos de
-              desenvolvimento pessoal direcionados, focando em melhorar
-              habilidades específicas.
+              The questionnaires provide an opportunity for self -assessment.
+              By identifying areas of knowledge that need
+              improvement, professionals can create plans for
+              directed personal development, focusing on improving
+              specific skills.
             </p>
             <p className="flex font-semibold p-1 text-sm lg:text-base">
               <span className={alfa.className}>
                 <span className="flex mr-4 text-lg lg:text-xl  font-normal ">
-                  Acesso a Recursos Educacionais:
+                  Access to educational resources:
                 </span>
               </span>
-              Muitos questionários de tecnologia estão associados a recursos
-              educacionais, como webinars, cursos online e material de estudo.
-              Ao participar desses questionários, os profissionais podem acessar
-              oportunidades adicionais de aprendizado que contribuem para sua
-              formação contínua.
+          Many technology questionnaires are associated with resources
+              Educational, such as Webinars, Online Courses and Study Material.
+              By participating in these questionnaires, professionals can access
+              additional learning opportunities that contribute to your
+              continuous formation.
             </p>
           </div>
-          <div className="  bg-opacity-70 w-[] h-[650px] mt-4 mb-10 rounded-md lg:w-[680px] lg:h-[450px] ">
+          <div className="  bg-opacity-70 w-[] h-[650px] mt-16 mb-16 rounded-md lg:w-[680px] lg:h-[450px] ">
             <IntroductionScreen />
           </div>
         </div>

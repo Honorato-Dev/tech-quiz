@@ -32,7 +32,7 @@ function JavaScreen() {
        <div className="h-screen">
       {currentQuiz < quizDataJava.length ? (
         <div className='flex flex-col text-center mx-auto max-w-screen-md  bg-opacity-80  rounded-sm p-6'>
-          <h2 className='text-lg lg:text-xl font-semibold mb-4'>Questão {currentQuiz + 1}</h2>
+          <h2 className='text-lg lg:text-xl font-semibold mb-4'>Question{currentQuiz + 1}</h2>
           <p className='text-lg lg:text-xl mb-6 mt-4'>{quizDataJava[currentQuiz].question}</p>
           <div className=''>{quizDataJava[currentQuiz].image}</div>
           <ul className='flex flex-col text-left'>
@@ -52,11 +52,11 @@ function JavaScreen() {
               </li>
             ))}
           </ul>
-          <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-14' onClick={handleNextQuestion}>Responder</button>
+          <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-14' onClick={handleNextQuestion}>Reply</button>
         </div>
       ) : (
         <div className='justify-content  text-center'>
-          <h2 className='text-lg md:text-xl lg:text-2xl mb-6'>Você respondeu <span className='fond-bold text-2xl md:text-3xl lg:text-4xl'>{score}/{quizDataJava.length}</span> questões corretamente</h2>
+          <h2 className='text-lg md:text-xl lg:text-2xl mb-6'>You answered <span className='fond-bold text-2xl md:text-3xl lg:text-4xl'>{score}/{quizDataJava.length}</span> Questions correctly</h2>
           <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6' onClick={resetQuiz}>Reload</button>
         </div>
       )}

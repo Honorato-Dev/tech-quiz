@@ -52,11 +52,11 @@ const ForgotPasswordScreen = () => {
         <div className="w-[500px] p-5 rounded-sm shadow-lg bg-white bg-opacity-70">
           <h1 className="text-xl lg:text-2xl font-bold">Esqueçeu a senha ?</h1>
           <p className="flex text-sm lg:text-base">
-            Não se preocupe isso acontece o tempo todo. Escreva o seu email
-            abaixo e mandaremos um email de recuperação.
+           Do not worry this happens all the time.Write your email
+Below and we will send a recovery email.
           </p>
           <p className="text-xs mt-2">
-            <span>(OBS: </span>verificar caixa de SPAM)
+            <span>(OBS: </span>Check spam box)
           </p>
           <form onSubmit={handleSubmit(submitHandler)}>
             <div className="mb-3 mt-4">
@@ -64,14 +64,14 @@ const ForgotPasswordScreen = () => {
               <input
                 type="email"
                 className="w-full mt-1"
-                placeholder="exemplo@email.com"
+                placeholder="example@email.com"
                 id="email"
                 autoFocus
                 {...register('email', {
-                  required: 'Por favor insira um email válido',
+                  required: 'Please enter a valid email ',
                   pattern: {
                     value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/i,
-                    message: 'Por favor use um formato de email válido',
+                    message: 'Please use a valid email format ',
                   },
                 })}
               />
@@ -84,7 +84,7 @@ const ForgotPasswordScreen = () => {
                 className="w-full bg-black p-2 rounded-sm text-white"
                 disabled={loading}
               >
-                {loading ? 'Processando' : 'Enviar'}
+                {loading ? 'Process' : 'To send'}
               </button>
             </div>
           </form>

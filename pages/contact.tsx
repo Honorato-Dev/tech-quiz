@@ -75,7 +75,7 @@ const ContactScreen = () => {
   return (
     <>
       <div></div>
-      <Layout title="Contato">
+      <Layout title="Contact">
         <div className="h-screen   flex  flex-col text-center   max-w-7xl px-10 justify-evenly mx-auto items-center bg-white bg-opacity-80  mb-8 p-4 rounded-md  mt-12 lg:mt-8">
           {error && (
             <Text color="red.300" my={4} fontSize="xl">
@@ -84,7 +84,7 @@ const ContactScreen = () => {
           )}
 
           <h3 className="top-24 font-semibold text-sm uppercase tracking-[20px] text-gray-500 md:text-2xl lg:text:2xl">
-            contato
+            contact
           </h3>
 
           <div className="flex  flex-col text-center space-y-5 md:text-left md:flex-row    mx-auto items-center">
@@ -117,7 +117,7 @@ const ContactScreen = () => {
               >
                 <div className="flex space-x-2">
                   <Input
-                    placeholder="Nome"
+                    placeholder="Name"
                     type="text"
                     name="name"
                     errorBorderColor="red.300"
@@ -139,7 +139,7 @@ const ContactScreen = () => {
                 </div>
 
                 <Input
-                  placeholder="Assunto"
+                  placeholder="Subject"
                   type="text"
                   name="subject"
                   errorBorderColor="red.300"
@@ -149,7 +149,7 @@ const ContactScreen = () => {
                 />
                 <FormErrorMessage>Required</FormErrorMessage>
                 <Textarea
-                  placeholder="Menssagem"
+                  placeholder="Message"
                   name="message"
                   rows={4}
                   errorBorderColor="red.300"
@@ -172,7 +172,7 @@ const ContactScreen = () => {
                 }
                 onClick={onSubmit}
               >
-                Enviar
+                To send
               </Button>
             </Container>
           </div>

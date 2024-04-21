@@ -57,7 +57,7 @@ const LoginScreen = () => {
           className="mx-auto max-w-screen-sm bg-white bg-opacity-80 border border-zinc-800  rounded-sm p-6"
           onSubmit={handleSubmit(submitHandler)}
         >
-          <h1 className="mb-4 text-xl">Logar</h1>
+          <h1 className="mb-4 text-xl">Sign-in</h1>
           <div className='flex flex-col justify-center'>
 
 <SignInGoogleBtn/>
@@ -74,10 +74,10 @@ const LoginScreen = () => {
               id="email"
               autoFocus
               {...register('email', {
-                required: 'Por favor insira um email válido',
+                required: 'Please enter a valid email',
                 pattern: {
                   value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/i,
-                  message: 'Por favor use um formato de email válido',
+                  message: 'Please use a valid email format',
                 },
               })}
             />
@@ -86,17 +86,17 @@ const LoginScreen = () => {
             )}
           </div>
           <div className="mb-4">
-            <label htmlFor="password">Senha</label>
+            <label htmlFor="password">Password</label>
             <input
               type="password"
               className="w-full"
               id="password"
               autoFocus
               {...register('password', {
-                required: 'Por favor insira uma senha válida',
+                required: 'Please enter a valid password',
                 minLength: {
                   value: 5,
-                  message: 'A senha dever ter no mínimo 5 caracteres ',
+                  message: 'The password must have at least 5 characters ',
                 },
               })}
             />
@@ -108,21 +108,21 @@ const LoginScreen = () => {
             <button className="login-button">Login</button>
           </div>
           <div className="mb-2">
-            Ainda não se cadastrou? &nbsp;
+            Have not you registered yet?&nbsp;
             <Link
               className="text-indigo-600  rounded-lg p-1 font-semibold"
               href="/register"
             >
-              Registrar
+              registrar
             </Link>
           </div>
           <div className="mb-4 text-sm">
-            Esqueçeu a senha? &nbsp;
+            Forgot password? &nbsp;
             <Link
               className="text-indigo-600  rounded-lg p-1 font-semibold"
               href="/forgot-password"
             >
-              Clique aqui
+              Click here
             </Link>
           </div>
         </form>
