@@ -51,10 +51,10 @@ const LoginScreen = () => {
 
   return (
     <Layout title="Login">
-      <div className='h-screen'>
+      <div className='h-screen' >
       <div className="pt-14">
         <form
-          className="mx-auto max-w-screen-md bg-white bg-opacity-80  rounded-sm p-6"
+          className="mx-auto max-w-screen-sm bg-white bg-opacity-80 border border-zinc-800  rounded-sm p-6"
           onSubmit={handleSubmit(submitHandler)}
         >
           <h1 className="mb-4 text-xl">Logar</h1>
