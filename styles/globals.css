@@ -33,7 +33,7 @@ body {
     @apply rounded  bg-green-300 py-2 px-4 shadow outline-none hover:bg-green-500 active:bg-green-800;
   }
   .dropdown-link {
-    @apply flex p-2 bg-purple-300 hover:bg-purple-500 bg-opacity-80 hover:bg-opacity-80 ;
+    @apply flex p-2  hover:bg-[#5ea3b9] bg-opacity-80 hover:bg-opacity-80 ;
 }
 .nav-bar {
   @apply flex p-2 text-gray-600 hover:text-purple-500

@@ -31,7 +31,7 @@ function LaravelScreen() {
     <Layout title='Java'>
        <div className="h-screen">
       {currentQuiz < quizDataLaravel.length ? (
-        <div className='flex flex-col text-center mx-auto max-w-screen-md bg-white bg-opacity-80  rounded-sm p-6'>
+        <div className='flex flex-col text-center mx-auto max-w-screen-md  bg-opacity-80  rounded-sm p-6'>
           <h2 className='text-lg lg:text-xl font-semibold mb-4'>Questão {currentQuiz + 1}</h2>
           <p className='text-lg lg:text-xl mb-6 mt-4'>{quizDataLaravel[currentQuiz].question}</p>
           <div className=''>{quizDataLaravel[currentQuiz].image}</div>

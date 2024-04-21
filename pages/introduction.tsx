@@ -36,11 +36,11 @@ function IntroductionScreen() {
     <>
        <div className="">
         <div className={alfa.className}>
-            <h1 className=' text-center text-white text-base lg:text-xl p-3'>Aprenda a usar</h1>
+            <h1 className=' text-center  text-base lg:text-xl p-3'>Aprenda a usar</h1>
         </div>
         
       {currentQuiz < quizDataIntroduction.length ? (
-        <div className='flex flex-col text-center mx-auto max-w-screen-md bg-white bg-opacity-70  rounded-sm p-6'>
+        <div className='flex flex-col text-center mx-auto max-w-screen-md  bg-opacity-70  rounded-sm p-6'>
           <h2 className='text-lg lg:text-xl font-semibold mb-4'>Questão {currentQuiz + 1}</h2>
           <p className='text-lg lg:text-xl mb-6 mt-4'>{quizDataIntroduction[currentQuiz].question}</p>
           <div className=''>{quizDataIntroduction[currentQuiz].image}</div>
@@ -61,12 +61,12 @@ function IntroductionScreen() {
               </li>
             ))}
           </ul>
-          <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2 ' onClick={handleNextQuestion}>Responder</button>
+          <button className='bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded mt-2 ' onClick={handleNextQuestion}>Responder</button>
         </div>
       ) : (
         <div className=' flex flex-col mt-10'>
           <h2 className='text-base flex justify-center lg:text-2xl'>Você acertou {score}/{quizDataIntroduction.length} questões corretamente</h2>
-          <button className='bg-yellow-500 hover:bg-yellow-600  text-white font-bold py-2 px-4 rounded mt-2 ' onClick={resetQuiz}>Resetar</button>
+          <button className='bg-yellow-500 hover:bg-yellow-600   font-bold py-2 px-4 rounded mt-2 ' onClick={resetQuiz}>Resetar</button>
         </div>
       )}
     </div>

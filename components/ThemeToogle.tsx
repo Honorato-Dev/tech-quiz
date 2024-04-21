@@ -23,12 +23,12 @@ const ThemeToogle = () => {
   return (
     <>
       <div
-        className="relative  w-16 h-8 flex items-center  bg-[#5ea3b9] cursor-pointer rounded-full p-1"
+        className="relative  w-16 h-8 flex items-center  bg-[#20a3cf] cursor-pointer rounded-sm p-1"
         onClick={() => toggleTheme()}
       >
-        <FaMoon className="text-white" size={18} />
+        <FaMoon className="text-gray-950" size={18} />
         <div
-          className="absolute bg-white dark:bg-medium w-6 h-6 rounded-full shadow-md transform transition-transform duration-300"
+          className="absolute bg-white dark:bg-medium w-6 h-6 rounded-sm shadow-md transform transition-transform duration-300"
           style={darkMode ? { left: '2px' } : { right: '2px' }}
         ></div>
         <BsSunFill
