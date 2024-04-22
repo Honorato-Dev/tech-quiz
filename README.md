@@ -29,4 +29,24 @@ This is a web application designed to quiz users on various technology-related t
      cd tech-quiz-app
      npm install
     ```
-    
+ 3. Set up environmental variables
+    - Create ".env" file in root directory
+      ```bash
+        NEXTAUTH_URL=
+        NEXTAUTH_SECRET=
+        MONGODB_URI=
+    ``
+  4. Start Server
+     ```bash
+     npm run dev
+     ```
+ ## Contributing
+
+    Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+    - Fork the repository.
+    - Create a new branch (git checkout -b feature/new-feature).
+    - Make your changes.
+    - Commit your changes (git commit -am 'Add new feature').
+    - Push to the branch (git push origin feature/new-feature).
+    - Create a new Pull Request.     
