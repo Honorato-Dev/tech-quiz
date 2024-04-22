@@ -1,5 +1,9 @@
 # Tech Quiz App
 
+![texhquiz-layout](https://github.com/Honorato-Dev/tech-quiz/assets/101150943/82f78ffd-be55-4013-b9ce-52cf35002c03)
+
+Try it: https://vercel.com/honoratos-projects/tech-quiz
+
 This is a web application designed to quiz users on various technology-related topics. It's built using Next.js, Tailwind CSS, and MongoDB with React.
 
 ## Features
@@ -42,11 +46,15 @@ This is a web application designed to quiz users on various technology-related t
      ```
  ## Contributing
 
-    Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+   #### Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
     - Fork the repository.
     - Create a new branch (git checkout -b feature/new-feature).
     - Make your changes.
     - Commit your changes (git commit -am 'Add new feature').
     - Push to the branch (git push origin feature/new-feature).
-    - Create a new Pull Request.     
+    - Create a new Pull Request.    
+
+ ## License
+
+  This project is licensed under the MIT License.  
