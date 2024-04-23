@@ -2,7 +2,7 @@
 
 ![texhquiz-layout](https://github.com/Honorato-Dev/tech-quiz/assets/101150943/82f78ffd-be55-4013-b9ce-52cf35002c03)
 
-Try it: https://vercel.com/honoratos-projects/tech-quiz
+Try it: https://tech-quiz-chi.vercel.app/
 
 This is a web application designed to quiz users on various technology-related topics. It's built using Next.js, Tailwind CSS, and MongoDB with React.
 
