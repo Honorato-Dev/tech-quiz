@@ -6,7 +6,6 @@ import React from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Menu } from '@headlessui/react';
-
 import { ImMenu } from 'react-icons/im';
 import Image from 'next/image';
 import DropdownLink from './DropdownLink';
