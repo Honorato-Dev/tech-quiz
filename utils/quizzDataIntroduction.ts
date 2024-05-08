@@ -1,6 +1,6 @@
 const quizzDataIntroduction = [
     {
-        question: "Qual é a principal linguagem de programação utilizada para desenvolvimento de aplicativos Android?",
+        question: "What is the main programming language used for Android application development?",
         image:"",
         options: [
           { text: "Java", id: "a" },
@@ -11,7 +11,7 @@ const quizzDataIntroduction = [
         correct: "a",
       },
       {
-        question: "Qual destes dispositivos é usado para armazenamento de dados de forma permanente?",
+        question: "Which of these devices is used for data storage permanently?",
         image:"",
         options: [
           { text: "RAM", id: "a" },
@@ -22,7 +22,7 @@ const quizzDataIntroduction = [
         correct: "d",
       },
       {
-        question: "Qual destes protocolos é comumente utilizado para envio de emails?",
+        question: "Which of these protocols is commonly used to send emails?",
         image:"",
         options: [
           { text: "FTP", id: "a" },
@@ -33,24 +33,24 @@ const quizzDataIntroduction = [
         correct: "c",
       },
       {
-        question: "Qual é o nome dado ao processo de ocultar mensagens ou informações dentro de uma imagem, vídeo ou áudio?",
+        question: "What is the name given to the process of hiding messages or information within an image, video or audio?",
         image:"",
         options: [
-          { text: "Encriptação", id: "a" },
-          { text: "Decodificação", id: "b" },
-          { text: "Esteganografia", id: "c" },
-          { text: "Codificação", id: "d" },
+          { text: "Grinding", id: "a" },
+          { text: "Decoding", id: "b" },
+          { text: "It isgganography", id: "c" },
+          { text: "Codification", id: "d" },
         ],
         correct: "c",
       },
       {
-        question: "Qual é o componente fundamental de um computador responsável por processar e executar instruções?",
+        question: "What is the fundamental component of a computer responsible for processing and executing instructions?",
         image:"",
         options: [
-          { text: "Placa de vídeo", id: "a" },
-          { text: "CPU (Unidade Central de Processamento)", id: "b" },
-          { text: "Memória RAM", id: "c" },
-          { text: "Disco rígido (HDD)", id: "d" },
+          { text: "Video card", id: "a" },
+          { text: "CPU (Central Processing Unit)", id: "b" },
+          { text: "Memory RAM", id: "c" },
+          { text: "Hard disk (HDD)", id: "d" },
         ],
         correct: "b",
       },

@@ -36,7 +36,7 @@ function IntroductionScreen() {
     <>
        <div className="">
         <div className={alfa.className}>
-            <h1 className=' text-center  text-base lg:text-xl p-3'>Aprenda a usar</h1>
+            <h1 className=' text-center  text-base lg:text-xl p-3'>Try it</h1>
         </div>
         
       {currentQuiz < quizDataIntroduction.length ? (

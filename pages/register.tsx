@@ -84,7 +84,7 @@ const RegisterScreen = () => {
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        <Form className="mx-auto max-w-screen-md">
+        <Form className="mx-auto max-w-screen-sm  bg-opacity-80 border border-zinc-800  rounded-sm p-6">
         
           <h1 className="mb-4 text-3xl text-center font-semibold">New Account</h1>
           <div className=" p-3 rounded-md bg-opacity-80">
@@ -99,7 +99,7 @@ const RegisterScreen = () => {
                 id="name"
                 name="name"
               />
-              <div className="text-red-500">
+              <div className="text-red-500 text-xs">
                 <ErrorMessage name="name" />
               </div>
             </div>
@@ -115,7 +115,7 @@ const RegisterScreen = () => {
                 id="email"
                 name="email"
               />
-              <div className="text-red-500">
+              <div className="text-red-500 text-xs ">
                 <ErrorMessage name="email" />
               </div>
             </div>
@@ -130,13 +130,13 @@ const RegisterScreen = () => {
                 id="password"
                 name="password"
               />
-              <div className="text-red-500">
+              <div className="text-red-500 text-xs">
                 <ErrorMessage name="password" />
               </div>
             </div>
             <div className="mb-4">
               <label htmlFor="password" className="text-lg font-semibold">
-                Confirm password
+                Confirm Password
               </label>
               <Field
                 autoFocus
@@ -145,7 +145,7 @@ const RegisterScreen = () => {
                 id="confirmpassword"
                 name="confirmpassword"
               />
-              <div className="text-red-500">
+              <div className="text-red-500 text-xs">
                 <ErrorMessage name="confirmpassword" />
               </div>
             </div>

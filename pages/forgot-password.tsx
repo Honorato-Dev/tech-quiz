@@ -4,8 +4,15 @@ import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import {  Roboto_Mono } from 'next/font/google';
 import { getError } from '@/utils/error';
+
+const roboto = Roboto_Mono({
+  weight: ['700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 interface FormType {
   email: string;
@@ -48,9 +55,11 @@ const ForgotPasswordScreen = () => {
   };
   return (
     <Layout title="Recuperar senha">
+      
       <div className="flex justify-center">
-        <div className="w-[500px] p-5 rounded-sm shadow-lg bg-white bg-opacity-70">
-          <h1 className="text-xl lg:text-2xl font-bold">Esqueçeu a senha ?</h1>
+      <div className={`mt-14 `&& roboto.className}>
+        <div className="w-[500px] p-5 rounded-sm shadow-lg  bg-opacity-70">
+          <h1 className="text-xl lg:text-2xl text-center mb-4 font-bold">Forgot password ?</h1>
           <p className="flex text-sm lg:text-base">
            Do not worry this happens all the time.Write your email
 Below and we will send a recovery email.
@@ -84,10 +93,11 @@ Below and we will send a recovery email.
                 className="w-full bg-black p-2 rounded-sm text-white"
                 disabled={loading}
               >
-                {loading ? 'Process' : 'To send'}
+                {loading ? 'Process...' : 'Send'}
               </button>
             </div>
           </form>
+        </div>
         </div>
       </div>
     </Layout>
