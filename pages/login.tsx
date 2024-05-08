@@ -1,6 +1,6 @@
 //import Link from 'next/link';
 import React, { useEffect } from 'react';
-
+import {  Roboto_Mono } from 'next/font/google';
 import { useForm } from 'react-hook-form';
 import { signIn, useSession } from 'next-auth/react';
 import { toast } from 'react-toastify';
@@ -18,6 +18,13 @@ interface FormType {
   email: string;
   password: string;
 }
+
+const roboto = Roboto_Mono({
+  weight: ['700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 const LoginScreen = () => {
   const { data: session } = useSession();
@@ -52,7 +59,7 @@ const LoginScreen = () => {
   return (
     <Layout title="Login">
       <div className='h-screen' >
-      <div className="pt-14">
+      <div className={`mt-14 `&& roboto.className}>
         <form
           className="mx-auto max-w-screen-sm  bg-opacity-80 border border-zinc-800  rounded-sm p-6"
           onSubmit={handleSubmit(submitHandler)}
@@ -113,7 +120,7 @@ const LoginScreen = () => {
               className="text-indigo-600  rounded-lg p-1 font-semibold"
               href="/register"
             >
-              registrar
+              Register
             </Link>
           </div>
           <div className="mb-4 text-sm">

@@ -4,7 +4,7 @@ import React from 'react';
 const PrivacyPolicyScreen = () => {
   return (
     <Layout title="Privacy Policy">
-      <div className="flex flex-col space-y-4 py-6 px-4 bg-white justify-center">
+      <div className="flex flex-col space-y-4 py-6 px-4  justify-center">
         <h1 className="text-xl md:text-2xl lg:text-3xl">
           {' '}
          Privacy Policy
@@ -30,7 +30,7 @@ const PrivacyPolicyScreen = () => {
           anonymous statistics.
         </p>
         <h2 className="text-xl md:text-2xl lg:text-3xl">
-          2. Uso das Informações
+          2. useOfInformation
         </h2>
         <p className="text:sm md:text-base lg:text-lg">
           2.1Improvement of Services: We use the information collected for

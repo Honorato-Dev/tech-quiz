@@ -38,9 +38,9 @@ const Home = () => {
             professionals in the field and onlookers meet to explore,
             Learn and improve your skills in the digital world.
           </p>
-          <div className="text-center hover:animate-bounce   mb-20 mt-20">
+          <div className="text-center   mb-20 mt-20">
             <Link
-              className="font-bold py-7 px-7 rounded-sm bg-blue-500  bg-blue-700;"
+              className="font-bold py-7 px-7 rounded-sm bg-blue-500 hover:bg-blue-600  bg-blue-700;"
               href="/getstarted"
             >
               Get Started

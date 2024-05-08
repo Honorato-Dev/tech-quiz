@@ -7,6 +7,7 @@ import { toast } from 'react-toastify';
 import { useRouter } from 'next/router';
 import axios from 'axios';
 import Layout from '@/components/Layout';
+import { Roboto_Mono } from 'next/font/google';
 
 interface LoginFormValues {
   name: string;
@@ -14,6 +15,13 @@ interface LoginFormValues {
   password: string;
   confirmpassword: string;
 }
+
+const roboto = Roboto_Mono({
+  weight: ['700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 const validationSchema = Yup.object({
   name: Yup.string()
@@ -70,17 +78,19 @@ const RegisterScreen = () => {
 
   return (
     <Layout title="registrar">
+      <div className={`mx-auto max-w-screen-sm  bg-opacity-80 border border-zinc-800  rounded-sm p-6`&& roboto.className}> 
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
         <Form className="mx-auto max-w-screen-md">
-          <h1 className="mb-4 text-3xl font-semibold">Create New Account</h1>
+        
+          <h1 className="mb-4 text-3xl text-center font-semibold">New Account</h1>
           <div className=" p-3 rounded-md bg-opacity-80">
             <div className="mb-4">
               <label htmlFor="email" className="text-lg font-semibold">
-               User name
+               Username
               </label>
               <Field
                 autoFocus
@@ -147,6 +157,7 @@ const RegisterScreen = () => {
           </div>
         </Form>
       </Formik>
+      </div>
     </Layout>
   );
 };

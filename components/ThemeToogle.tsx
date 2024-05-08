@@ -23,7 +23,7 @@ const ThemeToogle = () => {
   return (
     <>
       <div
-        className="relative  w-16 h-8 flex items-center  bg-[#20a3cf] cursor-pointer rounded-tr-lg rounded-tl-lg  rounded-br-lg  rounded-bl-lg  p-1"
+        className="relative  w-16 h-3/4 flex items-center  bg-[#20a3cf] cursor-pointer rounded-tr-lg rounded-tl-lg  rounded-br-lg  rounded-bl-lg  p-1"
         onClick={() => toggleTheme()}
       >
         <FaMoon className="text-gray-950" size={18} />
