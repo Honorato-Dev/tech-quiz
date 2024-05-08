@@ -95,12 +95,12 @@ const ContactScreen = () => {
                 <PhoneIcon className="text-green500 h-4 w-4 md:h-5 md:w-5   lg:h-7 lg:w-7 animate-pulse" />
                 <p className="text-sm lg:text-xl lg:text-2xl">71 99942-6443</p>
               </div> */}
-              <div className=" flex items-center space-x-5 justify-center">
+              {/* <div className=" flex items-center space-x-5 justify-center">
                 <EnvelopeIcon className="text-purple-400 h-4 w-4 md:h-5 md:w-5  lg:h-7 lg:w-7 animate-pulse" />
                 <p className="text-sm lg:text-xl lg:text-2xl">
                   techquizbr@gmail.com
                 </p>
-              </div>
+              </div> */}
 
               {/* <div className=" flex items-center space-x-5 justify-center">
                 <MapPinIcon className="text-green500 h-4 w-4 md:h-5 md:w-5   lg:h-7 lg:w-7  animate-pulse" />
@@ -160,7 +160,7 @@ const ContactScreen = () => {
                 <FormErrorMessage>Required</FormErrorMessage>
               </FormControl>
               <Button
-                className="bg-[#cf82bf] py-5 px-1- rounded-md text-black font-bold text-lg"
+                className="bg-[#5c85d3] w-full hover:bg-[#2c5297] py-5 px-1- rounded-md text-black font-bold text-lg"
                 variant=""
                 colorScheme="blue"
                 isLoading={isLoading}
@@ -172,7 +172,7 @@ const ContactScreen = () => {
                 }
                 onClick={onSubmit}
               >
-                To send
+              Send
               </Button>
             </Container>
           </div>
