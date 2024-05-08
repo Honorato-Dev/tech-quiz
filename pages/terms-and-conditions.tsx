@@ -4,7 +4,7 @@ import React from 'react'
 const TermsAndConditionsScreem = () => {
   return (
     <Layout title="TEMOUS AND CONDITIONS">
-        <div className="flex flex-col space-y-4 py-6 px-4 bg-white justify-center">
+        <div className="flex flex-col space-y-4 py-6 px-4  justify-center">
         <h1 className="text-xl md:text-2xl lg:text-3xl">Tech Quiz terms and conditions</h1>
         <p className="text:sm md:text-base lg:text-lg">Welcome to the terms and conditions of Tech Quiz.When accessing and using our site, you agree to comply with these terms.Read the following information carefully before continuing to use our services.</p>
         <h2 className="text-xl md:text-2xl lg:text-3xl">1. usoDoTechQuiz</h2>
