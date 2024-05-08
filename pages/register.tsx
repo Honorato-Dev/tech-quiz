@@ -77,7 +77,7 @@ const RegisterScreen = () => {
       >
         <Form className="mx-auto max-w-screen-md">
           <h1 className="mb-4 text-3xl font-semibold">Create New Account</h1>
-          <div className="bg-white p-3 rounded-md bg-opacity-80">
+          <div className=" p-3 rounded-md bg-opacity-80">
             <div className="mb-4">
               <label htmlFor="email" className="text-lg font-semibold">
                User name
@@ -126,7 +126,7 @@ const RegisterScreen = () => {
             </div>
             <div className="mb-4">
               <label htmlFor="password" className="text-lg font-semibold">
-                confirm password
+                Confirm password
               </label>
               <Field
                 autoFocus
@@ -141,7 +141,7 @@ const RegisterScreen = () => {
             </div>
             <div className="mb-4">
               <button type="submit" className="primary-button">
-               Registrar
+               Register
               </button>
             </div>
           </div>
