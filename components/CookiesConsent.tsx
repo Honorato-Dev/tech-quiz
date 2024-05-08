@@ -25,11 +25,11 @@ const CookiesConsent = () => {
     <div className='fixed insert-0 bg-slate-700 bg-opacity-70 z-[5000]'>
         <div className='fixed bottom-0 left-0 flex items-center justify-between px-4 py-8 bg-[#ffffff] text-white'>
             <span className='text-black text-base mr-16 '>
-            Este site usa cookies para garantir que você obtenha a melhor experiência em nosso site.<Link href="/privacy-policy" className='font-bold '> Política de Privacidade</Link>
+            This website uses cookies to ensure you get the best experience on our website.<Link href="/privacy-policy" className='font-bold '> Privacy Policy</Link>
             </span>
 
             <button className='bg-indigo-700 text-white py-2 px-10 rounded' onClick={() => acceptCookie()}>
-                Aceitar
+                Accept
             </button>
         </div>
     </div>
